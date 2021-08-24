@@ -1,3 +1,10 @@
+:root {
+    --selection-color: 135, 175, 175;
+    --nice-sans-font: "Nunito Sans", "Lato";
+    --crispy-sans-font: "Open Sans";
+}
+
+
 body {
 	padding: 50px;
 	max-width: 1100px;
@@ -6,59 +13,106 @@ body {
 }
 
 h1,h2,h3,h4 {
-    font-family: "Nunito", Lato, sans-serif;
+    font-family: var(--nice-sans-font), sans-serif;
 }
 
+.talk, .event {
+	margin-top: 0.5ex;
+    padding: 0.5ex 1ex 0.5ex 1ex;
+    vertical-align: text-top;
+	border-radius: 10px;
+    text-align: center;
+    border: 3px solid lightgray;
+}
 .talk {
-	padding: .5em;
-	border-radius: 5px;
-    background-color: lightblue;
-	font-size: 14px;
+    background-color: rgba(150, 215, 253, 0.8);
 }
 
 .event {
-	padding: .5em;
-	border-radius: 5px;
-    background-color: lightgreen;
-	font-size: 14px;
+    background-color: rgba(182, 253, 150, 0.8);
 }
 
 .talk-title,
 .talk-presenter,
 .talk-coauthors {
+    font-family: var(--nice-sans-font);
 	display: block;
 }
 
 h3.talk-title {
     font-weight: bold;
+    font: 10pt;
+    display: inline-block;
+    border-bottom: 1pt dashed;
+    padding-bottom: 1ex;
 }
 .talk-presenter {
     font-weight: bold;
 }
 
-.session-title,
 .time-slot {
 	margin: 0;
 	font-size: 1em;
 }
 
-.session-title a {
-	color: #fff;
-	text-decoration-style: dotted;
-	
-	&:hover {
-		font-style: italic;
-	}
-	
-	&:focus {
-		outline: 2px dotted rgba(255,255,255,.8);
-	}
+.time-rule {
+    border-top: 2px solid rgba(220,220,220,1);
+    height: 0pt;
 }
 
-.track-slot,
+.days-button-list {
+    display: none; /* shown by js */
+    margin-bottom: 1.5em;
+}
+
+.days-button-list[enabled] {
+    display: grid; /* shown by js */
+}
+
+.days-button-list button {
+    font-family: var(--nice-sans-font), sans-serif;
+    text-align: center;
+    border: 0pt;
+    padding: 1ex;
+    font-size: 14pt;
+    border-radius: 2pt;
+    background-color: rgba(var(--selection-color), 0);
+}
+.days-button-list button:hover {
+    background-color: rgba(var(--selection-color), 0.1);
+}
+
+.button-label-date {
+    display: inline-block;
+    border-bottom: solid lightgray;
+    padding-bottom: 2pt;
+    margin-bottom: 3pt;
+}
+.button-label-weekday {
+    display: block;
+}
+.days-button-list button[selected] {
+    background-color: rgba(var(--selection-color), 0.2);
+}
+
+
+.talk-details {
+    text-align: left;
+}
+
+.event-details {
+}
+
 .time-slot {
-	font-weight: bold;
-	font-size:.75em;
+	font-size: 10pt;
+    padding-top: 4px;
+    font-family: var(--crispy-sans-font), sans-serif;
+}
+.track-slot {
+    font-size: 12pt;
+    text-align: center;
+    font-family: var(--crispy-sans-font), sans-serif;
+	background-color: rgba(255,255,255,.9);
 }
 
 .track-1 {
@@ -88,23 +142,4 @@ h3.talk-title {
 	background: #ccc;
 	color: #000;
 	box-shadow: none;
-}
-
-.text {
-	max-width: 750px;
-	font-size: 18px;
-	margin: 0 auto 50px;
-}
-
-.meta {
-	color: #555;
-	font-style: italic;
-}
-
-.meta a {
-	color: #555;
-}
-
-hr {
-	margin: 40px 0;
 }

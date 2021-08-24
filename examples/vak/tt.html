@@ -10,144 +10,187 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="tt.css">
     <link rel="stylesheet" href="visuals.css">
+    <script type="text/javascript" src="tt.js" defer></script>
     <title>расписание</title>
   </head>
   <body>
-  <div class="conference-day-0">
+  <div class="days-button-list">
+    <button type="button" id="button-day-0" style="grid-column: 1">
+      <span class="button-label-date">23.08.2021</span>
+      <span class="button-label-weekday">Понедельник</span>
+    </button>
+    <button type="button" id="button-day-1" style="grid-column: 2">
+      <span class="button-label-date">24.08.2021</span>
+      <span class="button-label-weekday">Вторник</span>
+    </button>
+    <button type="button" id="button-day-2" style="grid-column: 3">
+      <span class="button-label-date">25.08.2021</span>
+      <span class="button-label-weekday">Среда</span>
+    </button>
+    <button type="button" id="button-day-3" style="grid-column: 4">
+      <span class="button-label-date">26.08.2021</span>
+      <span class="button-label-weekday">Четверг</span>
+    </button>
+    <button type="button" id="button-day-4" style="grid-column: 5">
+      <span class="button-label-date">27.08.2021</span>
+      <span class="button-label-weekday">Пятница</span>
+    </button>
+  </div>
+
+  <div class="schedule" aria-labelledby="schedule-heading">
+    <div class="conference-day-0">
     <h2 class="conference-current-date">23.08.2021 (Понедельник)</h2>
-    <div class="schedule" aria-labelledby="schedule-heading">
 
-      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">inst</span>
-      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">celm</span>
-      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">stars</span>
-      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">planets</span>
-      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">hea</span>
-      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">msa</span>
-      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">sun</span>
-      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">galaxies</span>
-   
+      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
+      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
+      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">ЗВ&МС</span>
+      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">ПЛАН</span>
+      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">РА&ГВ</span>
+      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">СЗА</span>
+      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">СОЛН</span>
+      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">ГА&КО</span>
+  
       <span class="time-slot" style="grid-row: time-0930;">09:30</span>
-      <span class="time-slot" style="grid-row: time-0935;">09:35</span>
-      <span class="time-slot" style="grid-row: time-0940;">09:40</span>
-      <span class="time-slot" style="grid-row: time-0945;">09:45</span>
-      <span class="time-slot" style="grid-row: time-0950;">09:50</span>
-      <span class="time-slot" style="grid-row: time-0955;">09:55</span>
+      <span class="time-rule" style="grid-row: time-0930;"></span>
       <span class="time-slot" style="grid-row: time-1000;">10:00</span>
-      <span class="time-slot" style="grid-row: time-1005;">10:05</span>
-      <span class="time-slot" style="grid-row: time-1010;">10:10</span>
-      <span class="time-slot" style="grid-row: time-1015;">10:15</span>
-      <span class="time-slot" style="grid-row: time-1020;">10:20</span>
-      <span class="time-slot" style="grid-row: time-1025;">10:25</span>
-      <span class="time-slot" style="grid-row: time-1030;">10:30</span>
-      <span class="time-slot" style="grid-row: time-1035;">10:35</span>
+      <span class="time-rule" style="grid-row: time-1000;"></span>
       <span class="time-slot" style="grid-row: time-1040;">10:40</span>
-      <span class="time-slot" style="grid-row: time-1045;">10:45</span>
-      <span class="time-slot" style="grid-row: time-1050;">10:50</span>
-      <span class="time-slot" style="grid-row: time-1055;">10:55</span>
-      <span class="time-slot" style="grid-row: time-1100;">11:00</span>
-      <span class="time-slot" style="grid-row: time-1105;">11:05</span>
-      <span class="time-slot" style="grid-row: time-1110;">11:10</span>
-      <span class="time-slot" style="grid-row: time-1115;">11:15</span>
+      <span class="time-rule" style="grid-row: time-1040;"></span>
       <span class="time-slot" style="grid-row: time-1120;">11:20</span>
-      <span class="time-slot" style="grid-row: time-1125;">11:25</span>
-      <span class="time-slot" style="grid-row: time-1130;">11:30</span>
-      <span class="time-slot" style="grid-row: time-1135;">11:35</span>
+      <span class="time-rule" style="grid-row: time-1120;"></span>
       <span class="time-slot" style="grid-row: time-1140;">11:40</span>
-      <span class="time-slot" style="grid-row: time-1145;">11:45</span>
-      <span class="time-slot" style="grid-row: time-1150;">11:50</span>
-      <span class="time-slot" style="grid-row: time-1155;">11:55</span>
-      <span class="time-slot" style="grid-row: time-1200;">12:00</span>
-      <span class="time-slot" style="grid-row: time-1205;">12:05</span>
-      <span class="time-slot" style="grid-row: time-1210;">12:10</span>
-      <span class="time-slot" style="grid-row: time-1215;">12:15</span>
+      <span class="time-rule" style="grid-row: time-1140;"></span>
       <span class="time-slot" style="grid-row: time-1220;">12:20</span>
-      <span class="time-slot" style="grid-row: time-1225;">12:25</span>
-      <span class="time-slot" style="grid-row: time-1230;">12:30</span>
-      <span class="time-slot" style="grid-row: time-1235;">12:35</span>
-      <span class="time-slot" style="grid-row: time-1240;">12:40</span>
-      <span class="time-slot" style="grid-row: time-1245;">12:45</span>
-      <span class="time-slot" style="grid-row: time-1250;">12:50</span>
-      <span class="time-slot" style="grid-row: time-1255;">12:55</span>
+      <span class="time-rule" style="grid-row: time-1220;"></span>
       <span class="time-slot" style="grid-row: time-1300;">13:00</span>
-      <span class="time-slot" style="grid-row: time-1305;">13:05</span>
-      <span class="time-slot" style="grid-row: time-1310;">13:10</span>
-      <span class="time-slot" style="grid-row: time-1315;">13:15</span>
-      <span class="time-slot" style="grid-row: time-1320;">13:20</span>
-      <span class="time-slot" style="grid-row: time-1325;">13:25</span>
-      <span class="time-slot" style="grid-row: time-1330;">13:30</span>
-      <span class="time-slot" style="grid-row: time-1335;">13:35</span>
-      <span class="time-slot" style="grid-row: time-1340;">13:40</span>
-      <span class="time-slot" style="grid-row: time-1345;">13:45</span>
-      <span class="time-slot" style="grid-row: time-1350;">13:50</span>
-      <span class="time-slot" style="grid-row: time-1355;">13:55</span>
+      <span class="time-rule" style="grid-row: time-1300;"></span>
       <span class="time-slot" style="grid-row: time-1400;">14:00</span>
+      <span class="time-rule" style="grid-row: time-1400;"></span>
       <span class="time-slot" style="grid-row: time-1405;">14:05</span>
+      <span class="time-rule" style="grid-row: time-1405;"></span>
       <span class="time-slot" style="grid-row: time-1410;">14:10</span>
+      <span class="time-rule" style="grid-row: time-1410;"></span>
       <span class="time-slot" style="grid-row: time-1415;">14:15</span>
+      <span class="time-rule" style="grid-row: time-1415;"></span>
       <span class="time-slot" style="grid-row: time-1420;">14:20</span>
+      <span class="time-rule" style="grid-row: time-1420;"></span>
       <span class="time-slot" style="grid-row: time-1425;">14:25</span>
+      <span class="time-rule" style="grid-row: time-1425;"></span>
       <span class="time-slot" style="grid-row: time-1430;">14:30</span>
+      <span class="time-rule" style="grid-row: time-1430;"></span>
       <span class="time-slot" style="grid-row: time-1435;">14:35</span>
+      <span class="time-rule" style="grid-row: time-1435;"></span>
       <span class="time-slot" style="grid-row: time-1440;">14:40</span>
+      <span class="time-rule" style="grid-row: time-1440;"></span>
       <span class="time-slot" style="grid-row: time-1445;">14:45</span>
+      <span class="time-rule" style="grid-row: time-1445;"></span>
       <span class="time-slot" style="grid-row: time-1450;">14:50</span>
+      <span class="time-rule" style="grid-row: time-1450;"></span>
       <span class="time-slot" style="grid-row: time-1455;">14:55</span>
+      <span class="time-rule" style="grid-row: time-1455;"></span>
       <span class="time-slot" style="grid-row: time-1500;">15:00</span>
+      <span class="time-rule" style="grid-row: time-1500;"></span>
       <span class="time-slot" style="grid-row: time-1505;">15:05</span>
+      <span class="time-rule" style="grid-row: time-1505;"></span>
       <span class="time-slot" style="grid-row: time-1510;">15:10</span>
+      <span class="time-rule" style="grid-row: time-1510;"></span>
       <span class="time-slot" style="grid-row: time-1515;">15:15</span>
+      <span class="time-rule" style="grid-row: time-1515;"></span>
       <span class="time-slot" style="grid-row: time-1520;">15:20</span>
+      <span class="time-rule" style="grid-row: time-1520;"></span>
       <span class="time-slot" style="grid-row: time-1525;">15:25</span>
+      <span class="time-rule" style="grid-row: time-1525;"></span>
       <span class="time-slot" style="grid-row: time-1530;">15:30</span>
+      <span class="time-rule" style="grid-row: time-1530;"></span>
       <span class="time-slot" style="grid-row: time-1535;">15:35</span>
+      <span class="time-rule" style="grid-row: time-1535;"></span>
       <span class="time-slot" style="grid-row: time-1540;">15:40</span>
+      <span class="time-rule" style="grid-row: time-1540;"></span>
       <span class="time-slot" style="grid-row: time-1545;">15:45</span>
+      <span class="time-rule" style="grid-row: time-1545;"></span>
       <span class="time-slot" style="grid-row: time-1550;">15:50</span>
+      <span class="time-rule" style="grid-row: time-1550;"></span>
       <span class="time-slot" style="grid-row: time-1555;">15:55</span>
+      <span class="time-rule" style="grid-row: time-1555;"></span>
       <span class="time-slot" style="grid-row: time-1600;">16:00</span>
+      <span class="time-rule" style="grid-row: time-1600;"></span>
       <span class="time-slot" style="grid-row: time-1605;">16:05</span>
+      <span class="time-rule" style="grid-row: time-1605;"></span>
       <span class="time-slot" style="grid-row: time-1610;">16:10</span>
+      <span class="time-rule" style="grid-row: time-1610;"></span>
       <span class="time-slot" style="grid-row: time-1615;">16:15</span>
+      <span class="time-rule" style="grid-row: time-1615;"></span>
       <span class="time-slot" style="grid-row: time-1620;">16:20</span>
+      <span class="time-rule" style="grid-row: time-1620;"></span>
       <span class="time-slot" style="grid-row: time-1625;">16:25</span>
+      <span class="time-rule" style="grid-row: time-1625;"></span>
       <span class="time-slot" style="grid-row: time-1630;">16:30</span>
+      <span class="time-rule" style="grid-row: time-1630;"></span>
       <span class="time-slot" style="grid-row: time-1635;">16:35</span>
+      <span class="time-rule" style="grid-row: time-1635;"></span>
       <span class="time-slot" style="grid-row: time-1640;">16:40</span>
+      <span class="time-rule" style="grid-row: time-1640;"></span>
       <span class="time-slot" style="grid-row: time-1645;">16:45</span>
+      <span class="time-rule" style="grid-row: time-1645;"></span>
       <span class="time-slot" style="grid-row: time-1650;">16:50</span>
+      <span class="time-rule" style="grid-row: time-1650;"></span>
       <span class="time-slot" style="grid-row: time-1655;">16:55</span>
+      <span class="time-rule" style="grid-row: time-1655;"></span>
       <span class="time-slot" style="grid-row: time-1700;">17:00</span>
+      <span class="time-rule" style="grid-row: time-1700;"></span>
       <span class="time-slot" style="grid-row: time-1705;">17:05</span>
+      <span class="time-rule" style="grid-row: time-1705;"></span>
       <span class="time-slot" style="grid-row: time-1710;">17:10</span>
+      <span class="time-rule" style="grid-row: time-1710;"></span>
       <span class="time-slot" style="grid-row: time-1715;">17:15</span>
+      <span class="time-rule" style="grid-row: time-1715;"></span>
       <span class="time-slot" style="grid-row: time-1720;">17:20</span>
+      <span class="time-rule" style="grid-row: time-1720;"></span>
       <span class="time-slot" style="grid-row: time-1725;">17:25</span>
+      <span class="time-rule" style="grid-row: time-1725;"></span>
       <span class="time-slot" style="grid-row: time-1730;">17:30</span>
+      <span class="time-rule" style="grid-row: time-1730;"></span>
       <span class="time-slot" style="grid-row: time-1735;">17:35</span>
+      <span class="time-rule" style="grid-row: time-1735;"></span>
       <span class="time-slot" style="grid-row: time-1740;">17:40</span>
+      <span class="time-rule" style="grid-row: time-1740;"></span>
       <span class="time-slot" style="grid-row: time-1745;">17:45</span>
+      <span class="time-rule" style="grid-row: time-1745;"></span>
       <span class="time-slot" style="grid-row: time-1750;">17:50</span>
+      <span class="time-rule" style="grid-row: time-1750;"></span>
       <span class="time-slot" style="grid-row: time-1755;">17:55</span>
+      <span class="time-rule" style="grid-row: time-1755;"></span>
       <span class="time-slot" style="grid-row: time-1800;">18:00</span>
+      <span class="time-rule" style="grid-row: time-1800;"></span>
       <span class="time-slot" style="grid-row: time-1805;">18:05</span>
+      <span class="time-rule" style="grid-row: time-1805;"></span>
       <span class="time-slot" style="grid-row: time-1810;">18:10</span>
+      <span class="time-rule" style="grid-row: time-1810;"></span>
       <span class="time-slot" style="grid-row: time-1815;">18:15</span>
+      <span class="time-rule" style="grid-row: time-1815;"></span>
       <span class="time-slot" style="grid-row: time-1820;">18:20</span>
+      <span class="time-rule" style="grid-row: time-1820;"></span>
       <span class="time-slot" style="grid-row: time-1825;">18:25</span>
+      <span class="time-rule" style="grid-row: time-1825;"></span>
       <span class="time-slot" style="grid-row: time-1830;">18:30</span>
+      <span class="time-rule" style="grid-row: time-1830;"></span>
       <span class="time-slot" style="grid-row: time-1835;">18:35</span>
+      <span class="time-rule" style="grid-row: time-1835;"></span>
       <span class="time-slot" style="grid-row: time-1840;">18:40</span>
+      <span class="time-rule" style="grid-row: time-1840;"></span>
       <span class="time-slot" style="grid-row: time-1845;">18:45</span>
+      <span class="time-rule" style="grid-row: time-1845;"></span>
       <span class="time-slot" style="grid-row: time-1850;">18:50</span>
+      <span class="time-rule" style="grid-row: time-1850;"></span>
       <span class="time-slot" style="grid-row: time-1855;">18:55</span>
+      <span class="time-rule" style="grid-row: time-1855;"></span>
       <span class="time-slot" style="grid-row: time-1900;">19:00</span>
+      <span class="time-rule" style="grid-row: time-1900;"></span>
       <span class="time-slot" style="grid-row: time-1905;">19:05</span>
+      <span class="time-rule" style="grid-row: time-1905;"></span>
       <span class="time-slot" style="grid-row: time-1910;">19:10</span>
-      <span class="time-slot" style="grid-row: time-1915;">19:15</span>
-      <span class="time-slot" style="grid-row: time-1920;">19:20</span>
-      <span class="time-slot" style="grid-row: time-1925;">19:25</span>
-      <span class="time-slot" style="grid-row: time-1930;">19:30</span>
-
+      <span class="time-rule" style="grid-row: time-1910;"></span>
+    
       
       
   <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-0930 / time-1000;">
@@ -623,6 +666,148 @@
 
       
       
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Циклические вариации активных областей разных магнито-морфологических классов в 23-м и 24-м циклах</h3>
+		<span class="talk-presenter">Жукова А.В.</span>
+		<span class="talk-coauthors">Соколов Д.Д.,Абраменко В.И.,Хлыстова А.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Синтетическая широтно-временная диаграмма для групп солнечных пятен, нарушающих правило полярности Хейла, и работа мелкомасштабного динамо на Солнце</h3>
+		<span class="talk-presenter">Соколов Д.Д.</span>
+		<span class="talk-coauthors">Жукова А.В.,Хлыстова А.И.,Абраменко В.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Особенности эволюции солнечных магнитных полей разного масштаба в 21-24 циклах</h3>
+		<span class="talk-presenter">Биленко И.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">11-летняя динамика площадей корональных дыр и солнечных пятен</h3>
+		<span class="talk-presenter">Андреева О.А.</span>
+		<span class="talk-coauthors">Абраменко В.И.,Малащук В.М</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">Солнечная активность и эволюция магнитных полей пятен по измерениям максимальных напряженностей в КрАО РАН: циклы 22-24</h3>
+		<span class="talk-presenter">Ахтемов З.С.</span>
+		<span class="talk-coauthors">Цап Ю.Т.,Малащук В.М.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;">
+    <div class="talk-details">
+    <h3 class="talk-title">Дифференциальное вращение Солнца по движению активных и эфемерных областей</h3>
+		<span class="talk-presenter">Куценко А.С.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Визуализация распределения микротурбулентных скоростей по поверхности Солнца</h3>
+		<span class="talk-presenter">Можаровский С.Г.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Статистический анализ затухания магнитного потока активных областей</h3>
+		<span class="talk-presenter">Плотников А.А.</span>
+		<span class="talk-coauthors">Куценко А.С.,Абраменко В.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-sun" style="grid-column: track-sun; grid-row: time-1600 / time-1620;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;">
+    <div class="talk-details">
+    <h3 class="talk-title">Комплексы активности на Солнце в 24 цикле солнечной активности</h3>
+		<span class="talk-presenter">Язев С.А.</span>
+		<span class="talk-coauthors">Томозов В.М.,Исаева Е.С</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Поперечные колебания солнечных волокон по наблюдениям в линии 304 А</h3>
+		<span class="talk-presenter">Смирнова В.В.</span>
+		<span class="talk-coauthors">Цап Ю.Т.,Jelinek P.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1650 / time-1705;">
+    <div class="talk-details">
+    <h3 class="talk-title">Распределенный электрический ток и его связь со вспышечной продуктивностью активной области</h3>
+		<span class="talk-presenter">Фурсяк Ю.А.</span>
+		<span class="talk-coauthors">Абраменко В.И.,Куценко А.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1705 / time-1720;">
+    <div class="talk-details">
+    <h3 class="talk-title">Ускорение корональных выбросов массы в солнечных вспашках: импульсной ( Х6.9 09.08.2011) и постепенной (M3.7 07.03.2011)</h3>
+		<span class="talk-presenter">Струминский А.Б.</span>
+		<span class="talk-coauthors">Садовский А.М.,Григорьева И.Ю.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1720 / time-1735;">
+    <div class="talk-details">
+    <h3 class="talk-title">Наблюдение кривых блеска солнечных вспышек и сравнение их со звезднами вспышками</h3>
+		<span class="talk-presenter">Купряков Ю.А.</span>
+		<span class="talk-coauthors">Бычков К.В.,Белова О.М.,Горшков А.Б.,Heinzel P.,Kotrč P.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1735 / time-1750;">
+    <div class="talk-details">
+    <h3 class="talk-title">Сравнение разных способов оценки продольного магнитного поля извлекаемой из данных HINODE SOT/SP</h3>
+		<span class="talk-presenter">Можаровский С.Г.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-sun" style="grid-column: track-sun; grid-row: time-1750 / time-1820;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 5 минут)</h3>
+    </div>
+	</div>
+
+
+      
+      
   <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1435;">
     <div class="talk-details">
     <h3 class="talk-title">Обзор всего неба телескопом ART-XC имени М.Н. Павлинского</h3>
@@ -728,415 +913,2425 @@
 
 
     </div>
-  </div>
-  <div class="conference-day-1">
+    <div class="conference-day-1">
     <h2 class="conference-current-date">24.08.2021 (Вторник)</h2>
-    <div class="schedule" aria-labelledby="schedule-heading">
 
-      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">inst</span>
-      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">celm</span>
-      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">stars</span>
-      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">planets</span>
-      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">hea</span>
-      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">msa</span>
-      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">sun</span>
-      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">galaxies</span>
-   
-      <span class="time-slot" style="grid-row: time-0930;">09:30</span>
-      <span class="time-slot" style="grid-row: time-0935;">09:35</span>
-      <span class="time-slot" style="grid-row: time-0940;">09:40</span>
-      <span class="time-slot" style="grid-row: time-0945;">09:45</span>
-      <span class="time-slot" style="grid-row: time-0950;">09:50</span>
-      <span class="time-slot" style="grid-row: time-0955;">09:55</span>
+      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
+      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
+      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">ЗВ&МС</span>
+      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">ПЛАН</span>
+      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">РА&ГВ</span>
+      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">СЗА</span>
+      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">СОЛН</span>
+      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">ГА&КО</span>
+  
       <span class="time-slot" style="grid-row: time-1000;">10:00</span>
-      <span class="time-slot" style="grid-row: time-1005;">10:05</span>
-      <span class="time-slot" style="grid-row: time-1010;">10:10</span>
-      <span class="time-slot" style="grid-row: time-1015;">10:15</span>
-      <span class="time-slot" style="grid-row: time-1020;">10:20</span>
-      <span class="time-slot" style="grid-row: time-1025;">10:25</span>
-      <span class="time-slot" style="grid-row: time-1030;">10:30</span>
-      <span class="time-slot" style="grid-row: time-1035;">10:35</span>
+      <span class="time-rule" style="grid-row: time-1000;"></span>
       <span class="time-slot" style="grid-row: time-1040;">10:40</span>
-      <span class="time-slot" style="grid-row: time-1045;">10:45</span>
-      <span class="time-slot" style="grid-row: time-1050;">10:50</span>
-      <span class="time-slot" style="grid-row: time-1055;">10:55</span>
-      <span class="time-slot" style="grid-row: time-1100;">11:00</span>
-      <span class="time-slot" style="grid-row: time-1105;">11:05</span>
-      <span class="time-slot" style="grid-row: time-1110;">11:10</span>
-      <span class="time-slot" style="grid-row: time-1115;">11:15</span>
+      <span class="time-rule" style="grid-row: time-1040;"></span>
       <span class="time-slot" style="grid-row: time-1120;">11:20</span>
-      <span class="time-slot" style="grid-row: time-1125;">11:25</span>
-      <span class="time-slot" style="grid-row: time-1130;">11:30</span>
-      <span class="time-slot" style="grid-row: time-1135;">11:35</span>
+      <span class="time-rule" style="grid-row: time-1120;"></span>
       <span class="time-slot" style="grid-row: time-1140;">11:40</span>
-      <span class="time-slot" style="grid-row: time-1145;">11:45</span>
-      <span class="time-slot" style="grid-row: time-1150;">11:50</span>
-      <span class="time-slot" style="grid-row: time-1155;">11:55</span>
-      <span class="time-slot" style="grid-row: time-1200;">12:00</span>
-      <span class="time-slot" style="grid-row: time-1205;">12:05</span>
-      <span class="time-slot" style="grid-row: time-1210;">12:10</span>
-      <span class="time-slot" style="grid-row: time-1215;">12:15</span>
+      <span class="time-rule" style="grid-row: time-1140;"></span>
       <span class="time-slot" style="grid-row: time-1220;">12:20</span>
-      <span class="time-slot" style="grid-row: time-1225;">12:25</span>
-      <span class="time-slot" style="grid-row: time-1230;">12:30</span>
-      <span class="time-slot" style="grid-row: time-1235;">12:35</span>
-      <span class="time-slot" style="grid-row: time-1240;">12:40</span>
-      <span class="time-slot" style="grid-row: time-1245;">12:45</span>
-      <span class="time-slot" style="grid-row: time-1250;">12:50</span>
-      <span class="time-slot" style="grid-row: time-1255;">12:55</span>
+      <span class="time-rule" style="grid-row: time-1220;"></span>
       <span class="time-slot" style="grid-row: time-1300;">13:00</span>
-      <span class="time-slot" style="grid-row: time-1305;">13:05</span>
-      <span class="time-slot" style="grid-row: time-1310;">13:10</span>
-      <span class="time-slot" style="grid-row: time-1315;">13:15</span>
-      <span class="time-slot" style="grid-row: time-1320;">13:20</span>
-      <span class="time-slot" style="grid-row: time-1325;">13:25</span>
-      <span class="time-slot" style="grid-row: time-1330;">13:30</span>
-      <span class="time-slot" style="grid-row: time-1335;">13:35</span>
-      <span class="time-slot" style="grid-row: time-1340;">13:40</span>
-      <span class="time-slot" style="grid-row: time-1345;">13:45</span>
-      <span class="time-slot" style="grid-row: time-1350;">13:50</span>
-      <span class="time-slot" style="grid-row: time-1355;">13:55</span>
+      <span class="time-rule" style="grid-row: time-1300;"></span>
       <span class="time-slot" style="grid-row: time-1400;">14:00</span>
+      <span class="time-rule" style="grid-row: time-1400;"></span>
       <span class="time-slot" style="grid-row: time-1405;">14:05</span>
+      <span class="time-rule" style="grid-row: time-1405;"></span>
       <span class="time-slot" style="grid-row: time-1410;">14:10</span>
+      <span class="time-rule" style="grid-row: time-1410;"></span>
       <span class="time-slot" style="grid-row: time-1415;">14:15</span>
+      <span class="time-rule" style="grid-row: time-1415;"></span>
       <span class="time-slot" style="grid-row: time-1420;">14:20</span>
+      <span class="time-rule" style="grid-row: time-1420;"></span>
       <span class="time-slot" style="grid-row: time-1425;">14:25</span>
+      <span class="time-rule" style="grid-row: time-1425;"></span>
       <span class="time-slot" style="grid-row: time-1430;">14:30</span>
+      <span class="time-rule" style="grid-row: time-1430;"></span>
       <span class="time-slot" style="grid-row: time-1435;">14:35</span>
+      <span class="time-rule" style="grid-row: time-1435;"></span>
       <span class="time-slot" style="grid-row: time-1440;">14:40</span>
+      <span class="time-rule" style="grid-row: time-1440;"></span>
       <span class="time-slot" style="grid-row: time-1445;">14:45</span>
+      <span class="time-rule" style="grid-row: time-1445;"></span>
       <span class="time-slot" style="grid-row: time-1450;">14:50</span>
+      <span class="time-rule" style="grid-row: time-1450;"></span>
       <span class="time-slot" style="grid-row: time-1455;">14:55</span>
+      <span class="time-rule" style="grid-row: time-1455;"></span>
       <span class="time-slot" style="grid-row: time-1500;">15:00</span>
+      <span class="time-rule" style="grid-row: time-1500;"></span>
       <span class="time-slot" style="grid-row: time-1505;">15:05</span>
+      <span class="time-rule" style="grid-row: time-1505;"></span>
       <span class="time-slot" style="grid-row: time-1510;">15:10</span>
+      <span class="time-rule" style="grid-row: time-1510;"></span>
       <span class="time-slot" style="grid-row: time-1515;">15:15</span>
+      <span class="time-rule" style="grid-row: time-1515;"></span>
       <span class="time-slot" style="grid-row: time-1520;">15:20</span>
+      <span class="time-rule" style="grid-row: time-1520;"></span>
       <span class="time-slot" style="grid-row: time-1525;">15:25</span>
+      <span class="time-rule" style="grid-row: time-1525;"></span>
       <span class="time-slot" style="grid-row: time-1530;">15:30</span>
+      <span class="time-rule" style="grid-row: time-1530;"></span>
       <span class="time-slot" style="grid-row: time-1535;">15:35</span>
+      <span class="time-rule" style="grid-row: time-1535;"></span>
       <span class="time-slot" style="grid-row: time-1540;">15:40</span>
+      <span class="time-rule" style="grid-row: time-1540;"></span>
       <span class="time-slot" style="grid-row: time-1545;">15:45</span>
+      <span class="time-rule" style="grid-row: time-1545;"></span>
       <span class="time-slot" style="grid-row: time-1550;">15:50</span>
+      <span class="time-rule" style="grid-row: time-1550;"></span>
       <span class="time-slot" style="grid-row: time-1555;">15:55</span>
+      <span class="time-rule" style="grid-row: time-1555;"></span>
       <span class="time-slot" style="grid-row: time-1600;">16:00</span>
+      <span class="time-rule" style="grid-row: time-1600;"></span>
       <span class="time-slot" style="grid-row: time-1605;">16:05</span>
+      <span class="time-rule" style="grid-row: time-1605;"></span>
       <span class="time-slot" style="grid-row: time-1610;">16:10</span>
+      <span class="time-rule" style="grid-row: time-1610;"></span>
       <span class="time-slot" style="grid-row: time-1615;">16:15</span>
+      <span class="time-rule" style="grid-row: time-1615;"></span>
       <span class="time-slot" style="grid-row: time-1620;">16:20</span>
+      <span class="time-rule" style="grid-row: time-1620;"></span>
       <span class="time-slot" style="grid-row: time-1625;">16:25</span>
+      <span class="time-rule" style="grid-row: time-1625;"></span>
       <span class="time-slot" style="grid-row: time-1630;">16:30</span>
+      <span class="time-rule" style="grid-row: time-1630;"></span>
       <span class="time-slot" style="grid-row: time-1635;">16:35</span>
+      <span class="time-rule" style="grid-row: time-1635;"></span>
       <span class="time-slot" style="grid-row: time-1640;">16:40</span>
+      <span class="time-rule" style="grid-row: time-1640;"></span>
       <span class="time-slot" style="grid-row: time-1645;">16:45</span>
+      <span class="time-rule" style="grid-row: time-1645;"></span>
       <span class="time-slot" style="grid-row: time-1650;">16:50</span>
+      <span class="time-rule" style="grid-row: time-1650;"></span>
       <span class="time-slot" style="grid-row: time-1655;">16:55</span>
+      <span class="time-rule" style="grid-row: time-1655;"></span>
       <span class="time-slot" style="grid-row: time-1700;">17:00</span>
+      <span class="time-rule" style="grid-row: time-1700;"></span>
       <span class="time-slot" style="grid-row: time-1705;">17:05</span>
+      <span class="time-rule" style="grid-row: time-1705;"></span>
       <span class="time-slot" style="grid-row: time-1710;">17:10</span>
+      <span class="time-rule" style="grid-row: time-1710;"></span>
       <span class="time-slot" style="grid-row: time-1715;">17:15</span>
+      <span class="time-rule" style="grid-row: time-1715;"></span>
       <span class="time-slot" style="grid-row: time-1720;">17:20</span>
+      <span class="time-rule" style="grid-row: time-1720;"></span>
       <span class="time-slot" style="grid-row: time-1725;">17:25</span>
+      <span class="time-rule" style="grid-row: time-1725;"></span>
       <span class="time-slot" style="grid-row: time-1730;">17:30</span>
+      <span class="time-rule" style="grid-row: time-1730;"></span>
       <span class="time-slot" style="grid-row: time-1735;">17:35</span>
+      <span class="time-rule" style="grid-row: time-1735;"></span>
       <span class="time-slot" style="grid-row: time-1740;">17:40</span>
+      <span class="time-rule" style="grid-row: time-1740;"></span>
       <span class="time-slot" style="grid-row: time-1745;">17:45</span>
+      <span class="time-rule" style="grid-row: time-1745;"></span>
       <span class="time-slot" style="grid-row: time-1750;">17:50</span>
+      <span class="time-rule" style="grid-row: time-1750;"></span>
       <span class="time-slot" style="grid-row: time-1755;">17:55</span>
+      <span class="time-rule" style="grid-row: time-1755;"></span>
       <span class="time-slot" style="grid-row: time-1800;">18:00</span>
+      <span class="time-rule" style="grid-row: time-1800;"></span>
       <span class="time-slot" style="grid-row: time-1805;">18:05</span>
+      <span class="time-rule" style="grid-row: time-1805;"></span>
       <span class="time-slot" style="grid-row: time-1810;">18:10</span>
+      <span class="time-rule" style="grid-row: time-1810;"></span>
       <span class="time-slot" style="grid-row: time-1815;">18:15</span>
+      <span class="time-rule" style="grid-row: time-1815;"></span>
       <span class="time-slot" style="grid-row: time-1820;">18:20</span>
+      <span class="time-rule" style="grid-row: time-1820;"></span>
       <span class="time-slot" style="grid-row: time-1825;">18:25</span>
+      <span class="time-rule" style="grid-row: time-1825;"></span>
       <span class="time-slot" style="grid-row: time-1830;">18:30</span>
+      <span class="time-rule" style="grid-row: time-1830;"></span>
       <span class="time-slot" style="grid-row: time-1835;">18:35</span>
+      <span class="time-rule" style="grid-row: time-1835;"></span>
       <span class="time-slot" style="grid-row: time-1840;">18:40</span>
+      <span class="time-rule" style="grid-row: time-1840;"></span>
       <span class="time-slot" style="grid-row: time-1845;">18:45</span>
+      <span class="time-rule" style="grid-row: time-1845;"></span>
       <span class="time-slot" style="grid-row: time-1850;">18:50</span>
+      <span class="time-rule" style="grid-row: time-1850;"></span>
       <span class="time-slot" style="grid-row: time-1855;">18:55</span>
+      <span class="time-rule" style="grid-row: time-1855;"></span>
       <span class="time-slot" style="grid-row: time-1900;">19:00</span>
+      <span class="time-rule" style="grid-row: time-1900;"></span>
       <span class="time-slot" style="grid-row: time-1905;">19:05</span>
+      <span class="time-rule" style="grid-row: time-1905;"></span>
       <span class="time-slot" style="grid-row: time-1910;">19:10</span>
+      <span class="time-rule" style="grid-row: time-1910;"></span>
       <span class="time-slot" style="grid-row: time-1915;">19:15</span>
+      <span class="time-rule" style="grid-row: time-1915;"></span>
       <span class="time-slot" style="grid-row: time-1920;">19:20</span>
-      <span class="time-slot" style="grid-row: time-1925;">19:25</span>
-      <span class="time-slot" style="grid-row: time-1930;">19:30</span>
+      <span class="time-rule" style="grid-row: time-1920;"></span>
+    
+      
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+    <div class="talk-details">
+    <h3 class="talk-title">Современные наблюдения электрических токов в активных областях Солнца и их связь со вспышками</h3>
+		<span class="talk-presenter">Зимовец И.В.</span>
+		<span class="talk-coauthors">Шарыкин И.Н. (ИКИ РАН)</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+    <div class="talk-details">
+    <h3 class="talk-title">Проблема солнечного и звездного динамо</h3>
+		<span class="talk-presenter">Кичатинов Л.Л. (ИСЗФ СО РАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-1120 / time-1140;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+    <div class="talk-details">
+    <h3 class="talk-title">Нагрев короны и современные проблемы физики солнечного ветра</h3>
+		<span class="talk-presenter">Зайцев В.В. (ИПФ РАН)</span>
+		<span class="talk-coauthors">Степанов А.В. (ГАО РАН),Чашей И.В. (АКЦ ФИАН)</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+    <div class="talk-details">
+    <h3 class="talk-title">Молодые звезды</h3>
+		<span class="talk-presenter">Ламзин С.А. (ГАИШ МГУ)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-1300 / time-1400;">
+    <div class="event-details">
+    <h3 class="event-name">Обеденный перерыв</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Эмиссия пыли в областях звёздообразования</h3>
+		<span class="talk-presenter">Дроздов С.А.</span>
+		<span class="talk-coauthors">Васильев Е.О.,Щекинов Ю.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Диски и истечения вокруг массивных протозвезд</h3>
+		<span class="talk-presenter">Зинченко И.И.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Дейтерированные молекулы в областях образования массивных звезд</h3>
+		<span class="talk-presenter">Зинченко И.И.</span>
+		<span class="talk-coauthors">Пазухин А.Г.,Трофимова Е.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Влияние магнитного поля на образование протозвездных дисков</h3>
+		<span class="talk-presenter">Каргальцева Н.С.</span>
+		<span class="talk-coauthors">Хайбрахманов С.А.,Дудоров А.Е.,Замоздра С.Н.,Жилкин А.Г.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">PRESTALINE: инструмент для моделирования молекулярных спектров в областях звездообразования</h3>
+		<span class="talk-presenter">Кочина О.В.</span>
+		<span class="talk-coauthors">Van Looveren G.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+    <div class="talk-details">
+    <h3 class="talk-title">Мультиволновой анализ областей звёздообразования с помощью онлайн базы данных мазерных источников MaserDB.net</h3>
+		<span class="talk-presenter">Ладейщиков Д.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Коллимированные потоки молекулярного водорода в ассоциации Mon R1</h3>
+		<span class="talk-presenter">Магакян Т.Ю.</span>
+		<span class="talk-coauthors">Татарников А.М.,Мовсесян Т.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Цепочка холодного образования метанола: проверка химической модели</h3>
+		<span class="talk-presenter">Пунанова А.Ф.</span>
+		<span class="talk-coauthors">Васюнин А.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование волокнообразного инфракрасного темного облака G351.78-0.54</h3>
+		<span class="talk-presenter">Рябухина О.Л.</span>
+		<span class="talk-coauthors">Зинченко И.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+    <div class="talk-details">
+    <h3 class="talk-title">Астрохимическое исследование плотных сгустков волокна WB 673</h3>
+		<span class="talk-presenter">Рябухина О.Л.</span>
+		<span class="talk-coauthors">Кирсанова М.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-stars" style="grid-column: track-stars; grid-row: time-1630 / time-1645;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+    <div class="talk-details">
+    <h3 class="talk-title">Наблюдения метанольных мазеров I класса в темных инфракрасных облаках на 20-метровом радиотелескопе в Онсале</h3>
+		<span class="talk-presenter">Шахворостова Н.Н.</span>
+		<span class="talk-coauthors">Алакоз А.В.,Баяндина О.С.,Вальтц И.Е.,Олофссон А.О.Х.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+    <div class="talk-details">
+    <h3 class="talk-title">Сверхкомпактные мазеры Н2О в области звездообразования W49N</h3>
+		<span class="talk-presenter">Шахворостова Н.Н.</span>
+		<span class="talk-coauthors">Moran J.,Алакоз А.В.,Imai H.,Соболев А.М.,Литовченко И.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+    <div class="talk-details">
+    <h3 class="talk-title">Фотометрия и кинематика внегалактических комплексов звездообразования</h3>
+		<span class="talk-presenter">Кузин А.В.</span>
+		<span class="talk-coauthors">Лисицын Д.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование молекулярного и атомарного газа в звездообразования галактик: NGC 5194, NGC 5457, NGC 628 и NGC 6946</h3>
+		<span class="talk-presenter">Смирнова К.И.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+    <div class="talk-details">
+    <h3 class="talk-title">Наблюдение и моделирование сверхновой SN 2012aw. Определение параметров</h3>
+		<span class="talk-presenter">Никифорова А.А.</span>
+		<span class="talk-coauthors">Бакланов П.В.,Блинников С.И. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование сверхновых, найденных в базе данных Zwicky Transient Facility</h3>
+		<span class="talk-presenter">Новинская А.К. Пружинская М.В.</span>
+		<span class="talk-coauthors">Маланчев К.Л.,Корнилов М.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1815 / time-1830;">
+    <div class="talk-details">
+    <h3 class="talk-title">Поиск аномальных объектов в Zwicky Transient Facility</h3>
+		<span class="talk-presenter">Маланчев К.Л.</span>
+		<span class="talk-coauthors">Пружинская М.В.,Королев В.С. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-stars" style="grid-column: track-stars; grid-row: time-1830 / time-1845;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 3 минуты)</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1400 / time-1420;">
+    <div class="talk-details">
+    <h3 class="talk-title">Аэрономия верхних атмосфер горячих экзопланет» (приглашенный)</h3>
+		<span class="talk-presenter">Шематович В.И.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1420 / time-1435;">
+    <div class="talk-details">
+    <h3 class="talk-title">Сравнение нетепловых атмосферных потерь для горячих экзопланет</h3>
+		<span class="talk-presenter">Автаева А.А.</span>
+		<span class="talk-coauthors">Шематович В.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1435 / time-1450;">
+    <div class="talk-details">
+    <h3 class="talk-title">Об убегании атмосферы экзопланеты Pi Men c</h3>
+		<span class="talk-presenter">Калиничева Е.С.</span>
+		<span class="talk-coauthors">Шематович В.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1450 / time-1505;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование возможных сценариев вековой эволюции орбитальных движений в системе, состоящей из звезды и двух планет</h3>
+		<span class="talk-presenter">Сидоренко В.В.</span>
+		<span class="talk-coauthors">Иванова А.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1505 / time-1520;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование орбитальной эволюции компактной трехпланетной системы GJ 357 на длительных интервалах времени</h3>
+		<span class="talk-presenter">Перминов А.С.</span>
+		<span class="talk-coauthors">Кузнецов Э.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1520 / time-1535;">
+    <div class="talk-details">
+    <h3 class="talk-title">Миграция планетезималей к планетам в зоне обитаемости в Солнечной системе и системе Проксима Центавра</h3>
+		<span class="talk-presenter">Ипатов С.И.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1535 / time-1550;">
+    <div class="talk-details">
+    <h3 class="talk-title">Формирование планет земной группы и Луны</h3>
+		<span class="talk-presenter">Ипатов С.И.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-planets" style="grid-column: track-planets; grid-row: time-1600 / time-1630;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1630 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Активные астероиды Главного пояса как реликты процессов формирования планет-гигантов</h3>
+		<span class="talk-presenter">Бусарев В.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1650 / time-1705;">
+    <div class="talk-details">
+    <h3 class="talk-title">Новые спектры отражения астероидов Главного пояса: уточнение таксономических типов и состава вещества</h3>
+		<span class="talk-presenter">Щербина М.П.</span>
+		<span class="talk-coauthors">Бусарев В.В.,Барабанов С.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1705 / time-1720;">
+    <div class="talk-details">
+    <h3 class="talk-title">Орбитальная эволюция системы Солнце – Юпитер – Сатурн – Уран – Нептун на космогонических интервалах времени</h3>
+		<span class="talk-presenter">Перминов А.С.</span>
+		<span class="talk-coauthors">Кузнецов Э.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1720 / time-1735;">
+    <div class="talk-details">
+    <h3 class="talk-title">Оценка возраста пар транснептуновых объектов на близких орбитах</h3>
+		<span class="talk-presenter">Кузнецов Э.Д.</span>
+		<span class="talk-coauthors">Аль-Шиблави О.М.,Гусев В.Д.,Устинов Д.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1735 / time-1750;">
+    <div class="talk-details">
+    <h3 class="talk-title">О негравитационном эффекте в движении астероидов Главного пояса</h3>
+		<span class="talk-presenter">Кузнецов В.Б.</span>
+		<span class="talk-coauthors">Чернетенко Ю.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1750 / time-1805;">
+    <div class="talk-details">
+    <h3 class="talk-title">Определение орбит спутников и параметров вращения Нептуна</h3>
+		<span class="talk-presenter">Долгаков И.А.</span>
+		<span class="talk-coauthors">Павлов Д.А.</span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1400 / time-1420;">
+    <div class="talk-details">
+    <h3 class="talk-title">О масштабе возможных отклонений сверхмассивной черной дыры от барицентра Галактики при движении в поле регулярных сил</h3>
+		<span class="talk-presenter">Никифоров И.И.</span>
+		<span class="talk-coauthors">Веселова А.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1420 / time-1440;">
+    <div class="talk-details">
+    <h3 class="talk-title">Межзвёздное поглощение в высоких галактических широтах сквозь весь слой пыли в Галактике</h3>
+		<span class="talk-presenter">Гончаров Г.А.</span>
+		<span class="talk-coauthors">Мосенков А.В.,Ильин В.Б. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1440 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Определение параметров межзвездного поглощения в высоких галактических широтах</h3>
+		<span class="talk-presenter">Авдеева А.С.</span>
+		<span class="talk-coauthors">Малков О.Ю.,Ковалева Д.А.,Некрасов А.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1500 / time-1520;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование пространственного распределения молодых звезд Галактики методами кластерного анализа</h3>
+		<span class="talk-presenter">Чемель А.А.</span>
+		<span class="talk-coauthors">Глушкова Е.В.,Дамбис А.К.,Richard de Grijs</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1520 / time-1540;">
+    <div class="talk-details">
+    <h3 class="talk-title">Пространственные детали спирального узора Галактики по мазерным источникам</h3>
+		<span class="talk-presenter">Веселова А.В.</span>
+		<span class="talk-coauthors">Никифоров И.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1540 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Поиск протяженных звёздных структур методом кластеризации пар в данных Gaia</h3>
+		<span class="talk-presenter">Сапожников С.А.</span>
+		<span class="talk-coauthors">Ковалева Д.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-msa" style="grid-column: track-msa; grid-row: time-1600 / time-1620;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1620 / time-1640;">
+    <div class="talk-details">
+    <h3 class="talk-title">Свойства галактических шаровых скоплений по Gaia EDR3 и другим данным, сопоставленным с теоретическими изохронами</h3>
+		<span class="talk-presenter">Гончаров Г.А.</span>
+		<span class="talk-coauthors">Мосенков А.В.,Ховричев М.Ю. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1640 / time-1700;">
+    <div class="talk-details">
+    <h3 class="talk-title">Многоканальное изучение рассеянного звездного скопления NGC 225</h3>
+		<span class="talk-presenter">Ялялиева Л.Н.</span>
+		<span class="talk-coauthors">Глушкова Е.В. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1700 / time-1720;">
+    <div class="talk-details">
+    <h3 class="talk-title">Изучение кинематики потока Большая Медведица</h3>
+		<span class="talk-presenter">Сизова М.Д.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1720 / time-1740;">
+    <div class="talk-details">
+    <h3 class="talk-title">Определение степени концентрации звезд в шаровых скоплениях на основе данных космических наблюдений</h3>
+		<span class="talk-presenter">Нуритдинов С.Н.</span>
+		<span class="talk-coauthors">Расторгуев А.С.,Таджибаев И.У.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1740 / time-1800;">
+    <div class="talk-details">
+    <h3 class="talk-title">Система рассеянных звездных скоплений Collinder 135 и UBC 7</h3>
+		<span class="talk-presenter">Ковалева Д.А.</span>
+		<span class="talk-coauthors">Ishchenko M.,Постникова Е.С. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1800 / time-1820;">
+    <div class="talk-details">
+    <h3 class="talk-title">Поиск неразрешенных двойных систем в рассеянных скоплениях на основе данных фотометрии в видимом и инфракрасном диапазоне</h3>
+		<span class="talk-presenter">Селезнев А.Ф.</span>
+		<span class="talk-coauthors">Малофеева А.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-msa" style="grid-column: track-msa; grid-row: time-1820 / time-1845;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 5 минут)</h3>
+    </div>
+	</div>
+
+      
+  <div class="event track-msa" style="grid-column: track-msa; grid-row: time-1845 / time-1900;">
+    <div class="event-details">
+    <h3 class="event-name">Заключительные замечания</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Проявление цикличности в процессах солнечного динамо и вариации солнечной активности промежуточного масштаба</h3>
+		<span class="talk-presenter">Обридко В.Н.</span>
+		<span class="talk-coauthors">Пипин В.В.,Соколов Д.Д.,Шибалова А.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Гелиосейсмологические свидетельства существования крупномасштабных ячеек поля скоростей в конвективной зоне Солнца</h3>
+		<span class="talk-presenter">Гетлинг А.В.</span>
+		<span class="talk-coauthors">Косовичев А.Г.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вариации подфотосферных зональных и меридиональных течений в 24 цикле солнечной активности</h3>
+		<span class="talk-presenter">Гетлинг А.В.</span>
+		<span class="talk-coauthors">Косовичев А.Г.,Zhao J.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Возможности диагностики динамо по наблюдениям морфологии активных областей с сильными вспышками</h3>
+		<span class="talk-presenter">Абраменко В.И.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">Тонкая структура периодов вращения общего магнитного поля Солнца</h3>
+		<span class="talk-presenter">Ханейчук В.И.</span>
+		<span class="talk-coauthors">Котов В.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;">
+    <div class="talk-details">
+    <h3 class="talk-title">Токовая структура полоидального магнитного поля Солнца</h3>
+		<span class="talk-presenter">Мерзляков В.Л.</span>
+		<span class="talk-coauthors">Баранов Д.Г.,Вернова Е.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Взаимодействие вращательного разрыва с головной ударной волной Земли</h3>
+		<span class="talk-presenter">Кропотина Ю.А.</span>
+		<span class="talk-coauthors">Артемьев А.В.,Быков А.М.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Об ориентации флуктуаций скорости в спокойном солнечном ветре</h3>
+		<span class="talk-presenter">Ерофеев Д.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-sun" style="grid-column: track-sun; grid-row: time-1600 / time-1620;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;">
+    <div class="talk-details">
+    <h3 class="talk-title">Сравнение оценок скоростей солнечного ветра по однопунктовым и трехпунктовым наблюдениям мерцаний компактного и протяженного радиоисточников</h3>
+		<span class="talk-presenter">Чашей И.В.</span>
+		<span class="talk-coauthors">Лукманов В.Р.,Тюльбашев С.А.,Tokumaru M.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Солнечно-земные связи: солнечная активность и пандемия COVID-19</h3>
+		<span class="talk-presenter">Рагульская М.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-sun" style="grid-column: track-sun; grid-row: time-1650 / time-1705;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 5 минут)</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1420;">
+    <div class="talk-details">
+    <h3 class="talk-title">Спектр реликтовых нейтрино в области малых координатных импульсов</h3>
+		<span class="talk-presenter">Юрченко В.Ю.</span>
+		<span class="talk-coauthors">Иванчик А.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1420 / time-1440;">
+    <div class="talk-details">
+    <h3 class="talk-title">Молекулы HD на больших красных смещениях: оценка скорости ионизации космическими лучами в диффузной фазе межзвездной среды</h3>
+		<span class="talk-presenter">Косенко Д.Н.</span>
+		<span class="talk-coauthors">Балашев С.А.,и др</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1440 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Фрактальная размерность космического микроволнового фона по данным Planck</h3>
+		<span class="talk-presenter">Тараканов П.А.</span>
+		<span class="talk-coauthors">Костина М.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1500 / time-1520;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вклад в шум путаницы от различных источников</h3>
+		<span class="talk-presenter">Ермаш А.А.</span>
+		<span class="talk-coauthors">Пилипенко С.В.,Лукаш В.Н.,Михеева Е.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1520 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Истечение из квазаров первого типа на больших красных смещениях</h3>
+		<span class="talk-presenter">Балашев С.А.</span>
+		<span class="talk-coauthors">Нотердам П.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1545 / time-1605;">
+    <div class="talk-details">
+    <h3 class="talk-title">Образование и излучение H2 в оттоках ярких ИК- галактик</h3>
+		<span class="talk-presenter">Новиков Игорь мл.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1625;">
+    <div class="talk-details">
+    <h3 class="talk-title">Распространенность первичного He-4: систематические эффекты и новые определения</h3>
+		<span class="talk-presenter">Куричин О.А.</span>
+		<span class="talk-coauthors">Кислицын П.А.,Клименко В.В.,Балашев С.А.,Иванчик А.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1625 / time-1645;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1645 / time-1710;">
+    <div class="talk-details">
+    <h3 class="talk-title">Межзвездное вещество в галактиках на больших красных смещениях: темп остывания газа в линии [CII]</h3>
+		<span class="talk-presenter">Теликова К.Н.</span>
+		<span class="talk-coauthors">Балашев С.А.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1710 / time-1730;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование структуры скоплений на z=1.5-2</h3>
+		<span class="talk-presenter">Афанасьев А.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1730 / time-1750;">
+    <div class="talk-details">
+    <h3 class="talk-title">Пекулярные скорости SNIa в скоплениях галактик</h3>
+		<span class="talk-presenter">Балакина Е.А.</span>
+		<span class="talk-coauthors">Пружинская М.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1750 / time-1810;">
+    <div class="talk-details">
+    <h3 class="talk-title">Спектроскопические определения красных смещений выборки далеких квазаров обсерватории СРГ по наблюдениям на РТТ-150</h3>
+		<span class="talk-presenter">Бикмаев И.Ф.</span>
+		<span class="talk-coauthors">Иртуганов Э.Н.,Николаева Е.А. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1810 / time-1830;">
+    <div class="talk-details">
+    <h3 class="talk-title">Возможное объяснение проблемы с постоянной Хаббла серой межгалактической пылью</h3>
+		<span class="talk-presenter">Ершов В.Н.</span>
+		<span class="talk-coauthors">Райков А.А.,Ловягин Н.Ю.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1830 / time-1850;">
+    <div class="talk-details">
+    <h3 class="talk-title">Квазары со сверхвысокими светимостями и мезолинзирование</h3>
+		<span class="talk-presenter">Райков А.А.</span>
+		<span class="talk-coauthors">Ершов В.Н.,Ловягин Н.Ю.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1850 / time-1920;">
+    <div class="event-details">
+    <h3 class="event-name">Дискуссия</h3>
+    </div>
+	</div>
+
 
     </div>
-  </div>
-  <div class="conference-day-2">
+    <div class="conference-day-2">
     <h2 class="conference-current-date">25.08.2021 (Среда)</h2>
-    <div class="schedule" aria-labelledby="schedule-heading">
 
-      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">inst</span>
-      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">celm</span>
-      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">stars</span>
-      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">planets</span>
-      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">hea</span>
-      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">msa</span>
-      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">sun</span>
-      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">galaxies</span>
-   
-      <span class="time-slot" style="grid-row: time-0930;">09:30</span>
-      <span class="time-slot" style="grid-row: time-0935;">09:35</span>
-      <span class="time-slot" style="grid-row: time-0940;">09:40</span>
-      <span class="time-slot" style="grid-row: time-0945;">09:45</span>
-      <span class="time-slot" style="grid-row: time-0950;">09:50</span>
-      <span class="time-slot" style="grid-row: time-0955;">09:55</span>
+      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
+      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
+      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">ЗВ&МС</span>
+      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">ПЛАН</span>
+      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">РА&ГВ</span>
+      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">СЗА</span>
+      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">СОЛН</span>
+      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">ГА&КО</span>
+  
       <span class="time-slot" style="grid-row: time-1000;">10:00</span>
-      <span class="time-slot" style="grid-row: time-1005;">10:05</span>
-      <span class="time-slot" style="grid-row: time-1010;">10:10</span>
-      <span class="time-slot" style="grid-row: time-1015;">10:15</span>
-      <span class="time-slot" style="grid-row: time-1020;">10:20</span>
-      <span class="time-slot" style="grid-row: time-1025;">10:25</span>
-      <span class="time-slot" style="grid-row: time-1030;">10:30</span>
-      <span class="time-slot" style="grid-row: time-1035;">10:35</span>
+      <span class="time-rule" style="grid-row: time-1000;"></span>
       <span class="time-slot" style="grid-row: time-1040;">10:40</span>
-      <span class="time-slot" style="grid-row: time-1045;">10:45</span>
-      <span class="time-slot" style="grid-row: time-1050;">10:50</span>
-      <span class="time-slot" style="grid-row: time-1055;">10:55</span>
-      <span class="time-slot" style="grid-row: time-1100;">11:00</span>
-      <span class="time-slot" style="grid-row: time-1105;">11:05</span>
-      <span class="time-slot" style="grid-row: time-1110;">11:10</span>
-      <span class="time-slot" style="grid-row: time-1115;">11:15</span>
+      <span class="time-rule" style="grid-row: time-1040;"></span>
       <span class="time-slot" style="grid-row: time-1120;">11:20</span>
-      <span class="time-slot" style="grid-row: time-1125;">11:25</span>
-      <span class="time-slot" style="grid-row: time-1130;">11:30</span>
-      <span class="time-slot" style="grid-row: time-1135;">11:35</span>
+      <span class="time-rule" style="grid-row: time-1120;"></span>
       <span class="time-slot" style="grid-row: time-1140;">11:40</span>
-      <span class="time-slot" style="grid-row: time-1145;">11:45</span>
-      <span class="time-slot" style="grid-row: time-1150;">11:50</span>
-      <span class="time-slot" style="grid-row: time-1155;">11:55</span>
-      <span class="time-slot" style="grid-row: time-1200;">12:00</span>
-      <span class="time-slot" style="grid-row: time-1205;">12:05</span>
-      <span class="time-slot" style="grid-row: time-1210;">12:10</span>
-      <span class="time-slot" style="grid-row: time-1215;">12:15</span>
+      <span class="time-rule" style="grid-row: time-1140;"></span>
       <span class="time-slot" style="grid-row: time-1220;">12:20</span>
-      <span class="time-slot" style="grid-row: time-1225;">12:25</span>
-      <span class="time-slot" style="grid-row: time-1230;">12:30</span>
-      <span class="time-slot" style="grid-row: time-1235;">12:35</span>
-      <span class="time-slot" style="grid-row: time-1240;">12:40</span>
-      <span class="time-slot" style="grid-row: time-1245;">12:45</span>
-      <span class="time-slot" style="grid-row: time-1250;">12:50</span>
-      <span class="time-slot" style="grid-row: time-1255;">12:55</span>
+      <span class="time-rule" style="grid-row: time-1220;"></span>
       <span class="time-slot" style="grid-row: time-1300;">13:00</span>
-      <span class="time-slot" style="grid-row: time-1305;">13:05</span>
-      <span class="time-slot" style="grid-row: time-1310;">13:10</span>
-      <span class="time-slot" style="grid-row: time-1315;">13:15</span>
-      <span class="time-slot" style="grid-row: time-1320;">13:20</span>
-      <span class="time-slot" style="grid-row: time-1325;">13:25</span>
-      <span class="time-slot" style="grid-row: time-1330;">13:30</span>
-      <span class="time-slot" style="grid-row: time-1335;">13:35</span>
-      <span class="time-slot" style="grid-row: time-1340;">13:40</span>
-      <span class="time-slot" style="grid-row: time-1345;">13:45</span>
-      <span class="time-slot" style="grid-row: time-1350;">13:50</span>
-      <span class="time-slot" style="grid-row: time-1355;">13:55</span>
+      <span class="time-rule" style="grid-row: time-1300;"></span>
       <span class="time-slot" style="grid-row: time-1400;">14:00</span>
+      <span class="time-rule" style="grid-row: time-1400;"></span>
       <span class="time-slot" style="grid-row: time-1405;">14:05</span>
+      <span class="time-rule" style="grid-row: time-1405;"></span>
       <span class="time-slot" style="grid-row: time-1410;">14:10</span>
+      <span class="time-rule" style="grid-row: time-1410;"></span>
       <span class="time-slot" style="grid-row: time-1415;">14:15</span>
+      <span class="time-rule" style="grid-row: time-1415;"></span>
       <span class="time-slot" style="grid-row: time-1420;">14:20</span>
+      <span class="time-rule" style="grid-row: time-1420;"></span>
       <span class="time-slot" style="grid-row: time-1425;">14:25</span>
+      <span class="time-rule" style="grid-row: time-1425;"></span>
       <span class="time-slot" style="grid-row: time-1430;">14:30</span>
+      <span class="time-rule" style="grid-row: time-1430;"></span>
       <span class="time-slot" style="grid-row: time-1435;">14:35</span>
+      <span class="time-rule" style="grid-row: time-1435;"></span>
       <span class="time-slot" style="grid-row: time-1440;">14:40</span>
+      <span class="time-rule" style="grid-row: time-1440;"></span>
       <span class="time-slot" style="grid-row: time-1445;">14:45</span>
+      <span class="time-rule" style="grid-row: time-1445;"></span>
       <span class="time-slot" style="grid-row: time-1450;">14:50</span>
+      <span class="time-rule" style="grid-row: time-1450;"></span>
       <span class="time-slot" style="grid-row: time-1455;">14:55</span>
+      <span class="time-rule" style="grid-row: time-1455;"></span>
       <span class="time-slot" style="grid-row: time-1500;">15:00</span>
+      <span class="time-rule" style="grid-row: time-1500;"></span>
       <span class="time-slot" style="grid-row: time-1505;">15:05</span>
+      <span class="time-rule" style="grid-row: time-1505;"></span>
       <span class="time-slot" style="grid-row: time-1510;">15:10</span>
+      <span class="time-rule" style="grid-row: time-1510;"></span>
       <span class="time-slot" style="grid-row: time-1515;">15:15</span>
+      <span class="time-rule" style="grid-row: time-1515;"></span>
       <span class="time-slot" style="grid-row: time-1520;">15:20</span>
+      <span class="time-rule" style="grid-row: time-1520;"></span>
       <span class="time-slot" style="grid-row: time-1525;">15:25</span>
+      <span class="time-rule" style="grid-row: time-1525;"></span>
       <span class="time-slot" style="grid-row: time-1530;">15:30</span>
+      <span class="time-rule" style="grid-row: time-1530;"></span>
       <span class="time-slot" style="grid-row: time-1535;">15:35</span>
+      <span class="time-rule" style="grid-row: time-1535;"></span>
       <span class="time-slot" style="grid-row: time-1540;">15:40</span>
+      <span class="time-rule" style="grid-row: time-1540;"></span>
       <span class="time-slot" style="grid-row: time-1545;">15:45</span>
+      <span class="time-rule" style="grid-row: time-1545;"></span>
       <span class="time-slot" style="grid-row: time-1550;">15:50</span>
+      <span class="time-rule" style="grid-row: time-1550;"></span>
       <span class="time-slot" style="grid-row: time-1555;">15:55</span>
+      <span class="time-rule" style="grid-row: time-1555;"></span>
       <span class="time-slot" style="grid-row: time-1600;">16:00</span>
+      <span class="time-rule" style="grid-row: time-1600;"></span>
       <span class="time-slot" style="grid-row: time-1605;">16:05</span>
+      <span class="time-rule" style="grid-row: time-1605;"></span>
       <span class="time-slot" style="grid-row: time-1610;">16:10</span>
+      <span class="time-rule" style="grid-row: time-1610;"></span>
       <span class="time-slot" style="grid-row: time-1615;">16:15</span>
+      <span class="time-rule" style="grid-row: time-1615;"></span>
       <span class="time-slot" style="grid-row: time-1620;">16:20</span>
+      <span class="time-rule" style="grid-row: time-1620;"></span>
       <span class="time-slot" style="grid-row: time-1625;">16:25</span>
+      <span class="time-rule" style="grid-row: time-1625;"></span>
       <span class="time-slot" style="grid-row: time-1630;">16:30</span>
+      <span class="time-rule" style="grid-row: time-1630;"></span>
       <span class="time-slot" style="grid-row: time-1635;">16:35</span>
+      <span class="time-rule" style="grid-row: time-1635;"></span>
       <span class="time-slot" style="grid-row: time-1640;">16:40</span>
+      <span class="time-rule" style="grid-row: time-1640;"></span>
       <span class="time-slot" style="grid-row: time-1645;">16:45</span>
+      <span class="time-rule" style="grid-row: time-1645;"></span>
       <span class="time-slot" style="grid-row: time-1650;">16:50</span>
+      <span class="time-rule" style="grid-row: time-1650;"></span>
       <span class="time-slot" style="grid-row: time-1655;">16:55</span>
+      <span class="time-rule" style="grid-row: time-1655;"></span>
       <span class="time-slot" style="grid-row: time-1700;">17:00</span>
+      <span class="time-rule" style="grid-row: time-1700;"></span>
       <span class="time-slot" style="grid-row: time-1705;">17:05</span>
+      <span class="time-rule" style="grid-row: time-1705;"></span>
       <span class="time-slot" style="grid-row: time-1710;">17:10</span>
+      <span class="time-rule" style="grid-row: time-1710;"></span>
       <span class="time-slot" style="grid-row: time-1715;">17:15</span>
+      <span class="time-rule" style="grid-row: time-1715;"></span>
       <span class="time-slot" style="grid-row: time-1720;">17:20</span>
+      <span class="time-rule" style="grid-row: time-1720;"></span>
       <span class="time-slot" style="grid-row: time-1725;">17:25</span>
+      <span class="time-rule" style="grid-row: time-1725;"></span>
       <span class="time-slot" style="grid-row: time-1730;">17:30</span>
+      <span class="time-rule" style="grid-row: time-1730;"></span>
       <span class="time-slot" style="grid-row: time-1735;">17:35</span>
+      <span class="time-rule" style="grid-row: time-1735;"></span>
       <span class="time-slot" style="grid-row: time-1740;">17:40</span>
+      <span class="time-rule" style="grid-row: time-1740;"></span>
       <span class="time-slot" style="grid-row: time-1745;">17:45</span>
+      <span class="time-rule" style="grid-row: time-1745;"></span>
       <span class="time-slot" style="grid-row: time-1750;">17:50</span>
+      <span class="time-rule" style="grid-row: time-1750;"></span>
       <span class="time-slot" style="grid-row: time-1755;">17:55</span>
+      <span class="time-rule" style="grid-row: time-1755;"></span>
       <span class="time-slot" style="grid-row: time-1800;">18:00</span>
+      <span class="time-rule" style="grid-row: time-1800;"></span>
       <span class="time-slot" style="grid-row: time-1805;">18:05</span>
+      <span class="time-rule" style="grid-row: time-1805;"></span>
       <span class="time-slot" style="grid-row: time-1810;">18:10</span>
+      <span class="time-rule" style="grid-row: time-1810;"></span>
       <span class="time-slot" style="grid-row: time-1815;">18:15</span>
+      <span class="time-rule" style="grid-row: time-1815;"></span>
       <span class="time-slot" style="grid-row: time-1820;">18:20</span>
+      <span class="time-rule" style="grid-row: time-1820;"></span>
       <span class="time-slot" style="grid-row: time-1825;">18:25</span>
+      <span class="time-rule" style="grid-row: time-1825;"></span>
       <span class="time-slot" style="grid-row: time-1830;">18:30</span>
+      <span class="time-rule" style="grid-row: time-1830;"></span>
       <span class="time-slot" style="grid-row: time-1835;">18:35</span>
+      <span class="time-rule" style="grid-row: time-1835;"></span>
       <span class="time-slot" style="grid-row: time-1840;">18:40</span>
+      <span class="time-rule" style="grid-row: time-1840;"></span>
       <span class="time-slot" style="grid-row: time-1845;">18:45</span>
+      <span class="time-rule" style="grid-row: time-1845;"></span>
       <span class="time-slot" style="grid-row: time-1850;">18:50</span>
+      <span class="time-rule" style="grid-row: time-1850;"></span>
       <span class="time-slot" style="grid-row: time-1855;">18:55</span>
+      <span class="time-rule" style="grid-row: time-1855;"></span>
       <span class="time-slot" style="grid-row: time-1900;">19:00</span>
+      <span class="time-rule" style="grid-row: time-1900;"></span>
       <span class="time-slot" style="grid-row: time-1905;">19:05</span>
+      <span class="time-rule" style="grid-row: time-1905;"></span>
       <span class="time-slot" style="grid-row: time-1910;">19:10</span>
+      <span class="time-rule" style="grid-row: time-1910;"></span>
       <span class="time-slot" style="grid-row: time-1915;">19:15</span>
+      <span class="time-rule" style="grid-row: time-1915;"></span>
       <span class="time-slot" style="grid-row: time-1920;">19:20</span>
+      <span class="time-rule" style="grid-row: time-1920;"></span>
       <span class="time-slot" style="grid-row: time-1925;">19:25</span>
+      <span class="time-rule" style="grid-row: time-1925;"></span>
       <span class="time-slot" style="grid-row: time-1930;">19:30</span>
+      <span class="time-rule" style="grid-row: time-1930;"></span>
+      <span class="time-slot" style="grid-row: time-1935;">19:35</span>
+      <span class="time-rule" style="grid-row: time-1935;"></span>
+      <span class="time-slot" style="grid-row: time-2100;">21:00</span>
+      <span class="time-rule" style="grid-row: time-2100;"></span>
+    
+      
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+    <div class="talk-details">
+    <h3 class="talk-title">Результаты космического телескопа Gaia</h3>
+		<span class="talk-presenter">Клионер С.А. (Обсерватория института Лормана</span>
+		<span class="talk-coauthors">Дрезденский технический университет)</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+    <div class="talk-details">
+    <h3 class="talk-title">Изменения периодов цефеид и звездная эволюция</h3>
+		<span class="talk-presenter">Бердников Л.Н. (ГАИШ МГУ)</span>
+		<span class="talk-coauthors">Самусь Н.Н. (ИНАСАН,ГАИШ МГУ)</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-1120 / time-1140;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+    <div class="talk-details">
+    <h3 class="talk-title">Аккреция газа на галактики</h3>
+		<span class="talk-presenter">Моисеев А.В. (САО РАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+    <div class="talk-details">
+    <h3 class="talk-title">Современные методы исследования устойчивости звездных систем</h3>
+		<span class="talk-presenter">Поляченко Е.В. (ИНАСАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-1300 / time-1400;">
+    <div class="event-details">
+    <h3 class="event-name">Обеденный перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1930 / time-2100;">
+    <div class="talk-details">
+    <h3 class="talk-title">Прорывные научные проекты космической миссии Миллиметрон</h3>
+		<span class="talk-presenter">Новиков И.Д. (АКЦ ФИАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1615 / time-1635;">
+    <div class="talk-details">
+    <h3 class="talk-title">Анализ фотоэлектрических покрытий и построение цифровой модели лунной либрационной зоны</h3>
+		<span class="talk-presenter">Чуркин К.О.</span>
+		<span class="talk-coauthors">Нефедьев Ю.А.,Андреев А. О.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1635 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Численное моделирование динамики окололунных объектов</h3>
+		<span class="talk-presenter">Попандопуло Н.А.</span>
+		<span class="talk-coauthors">Александрова А. Г.,Бордовицына Т. В.,Авдюшев В. А.,Томилова И. В.</span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Производящая функция компонент тензора Эйлера-Пуансо малых небесных тел</h3>
+		<span class="talk-presenter">Буров А.А.</span>
+		<span class="talk-coauthors">Никонова Е.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">О точках либрации равномерно вращающихся небесных тел с полостями</h3>
+		<span class="talk-presenter">Буров А.А.</span>
+		<span class="talk-coauthors">Никонов В.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1430 / time-1450;">
+    <div class="talk-details">
+    <h3 class="talk-title">Метрики в пространстве кеплеровых орбит и семействе его фактор-пространств</h3>
+		<span class="talk-presenter">Щепалова А.С.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1450 / time-1505;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование прецессии экзо-планеты в планетной задаче четырех тел с учетом эволюции орбиты спутника планеты</h3>
+		<span class="talk-presenter">Красильников П.С.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1505 / time-1525;">
+    <div class="talk-details">
+    <h3 class="talk-title">Уточнение массы Главного пояса астероидов и индивидуальных масс астероидов в динамической модели эфемерид EPM с использованием данных инфракрасных наблюдений</h3>
+		<span class="talk-presenter">Кан М.О.</span>
+		<span class="talk-coauthors">Павлов Д.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1525 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Обновленная версия эфемерид EPM2021 ИПА РАН</h3>
+		<span class="talk-presenter">Павлов Д.А.</span>
+		<span class="talk-coauthors">Питьева Е.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-celm" style="grid-column: track-celm; grid-row: time-1545 / time-1615;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1650 / time-1710;">
+    <div class="talk-details">
+    <h3 class="talk-title">Нелинейность в обратных задачах динамики внешних спутников Юпитера</h3>
+		<span class="talk-presenter">Баньщикова М.А.</span>
+		<span class="talk-coauthors">Авдюшев В.А.,Шмидт Е.Е.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1710 / time-1730;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование резонансных структур околопланетных орбитальных пространств методами численного моделирования</h3>
+		<span class="talk-presenter">Александрова А.Г.</span>
+		<span class="talk-coauthors">Бордовицына Т.В.,Красавин Д.С,Томилова И.В.,Попандопуло Н.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;">
+    <div class="talk-details">
+    <h3 class="talk-title">Численные исследования регулярной и хаотической динамики АСЗ, находящихся вблизи некоторых резонансов с Венерой, Землей и Юпитером</h3>
+		<span class="talk-presenter">Ниганова Е.Н.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;">
+    <div class="talk-details">
+    <h3 class="talk-title">Нелинейность в разных орбитальных параметрах в обратных задачах астероидной динамики</h3>
+		<span class="talk-presenter">Сюсина О.М.</span>
+		<span class="talk-coauthors">Авдюшев В.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вероятностная орбитальная эволюция астероида 2015 HG</h3>
+		<span class="talk-presenter">Летнер О.Н.</span>
+		<span class="talk-coauthors">Галушина Т.Ю.</span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Зависимость спектральной переменности звезд типа FK Com от вращения звезды</h3>
+		<span class="talk-presenter">Алексеев И.Ю.</span>
+		<span class="talk-coauthors">Козлова О.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Модуляция аккреции и ветра звезды типа Т Тельца RY Tau – планета на расстоянии 0.2 а.е.?</h3>
+		<span class="talk-presenter">Артеменко С.А.</span>
+		<span class="talk-coauthors">Бабина Е.В.,Гранкин К.Н.,Петров П.П.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Динамика аккреции и ветра как показатель магнитной активности RY Tельца</h3>
+		<span class="talk-presenter">Бабина Е.В.</span>
+		<span class="talk-coauthors">Артеменко С.А.,Гранкин К.Н.,Петров П.П.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Периодические изменения блеска красного карлика V647 Her</h3>
+		<span class="talk-presenter">Бондарь Н.И.</span>
+		<span class="talk-coauthors">Антонюк К.А.,Пить Н.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">Применение машинного обучения для обнаружения нестандартных кривых блеска</h3>
+		<span class="talk-presenter">Вольнова А.А.</span>
+		<span class="talk-coauthors">Пружинская М.В.,Ишида Э.Э.О. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вспышки светимости у звезд до главной последовательности. Можно ли определить их спусковой механизм?</h3>
+		<span class="talk-presenter">Воробьев Э.И.</span>
+		<span class="talk-coauthors">Элбакян В.Г.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Определение характеристик предкатаклизмических переменных по моделированию их оптического излучения</h3>
+		<span class="talk-presenter">Дёминова Н.Р.</span>
+		<span class="talk-coauthors">Шиманский В.В.,Борисов Н.В.,Бикмаев И.Ф.,Иртуганов Э.Н.,Габдеев М.М.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Нестационарность ионизации в магнитосферах молодых звезд RZ Psc</h3>
+		<span class="talk-presenter">Дмитриев Д.В.</span>
+		<span class="talk-coauthors">Гринин В.П.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;">
+    <div class="talk-details">
+    <h3 class="talk-title">IRAS 02143+5852: цефеида типа W Девы с пылевой оболочкой</h3>
+		<span class="talk-presenter">Иконникова Н.П.</span>
+		<span class="talk-coauthors">Бурлак М.А.,Шугаров С.Ю. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+    <div class="talk-details">
+    <h3 class="talk-title">Спектральная переменность Ae звезды Хербига AB Aur и ее связь с процессом планетообразования</h3>
+		<span class="talk-presenter">Козлова О.В.</span>
+		<span class="talk-coauthors">Алексеев И.Ю.,Фурсяк М.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-stars" style="grid-column: track-stars; grid-row: time-1630 / time-1645;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+    <div class="talk-details">
+    <h3 class="talk-title">Звёздная активность в системе AT Mic по данным многоволновых наблюдений обсерватории AstroSat</h3>
+		<span class="talk-presenter">Кузнецов А.А.</span>
+		<span class="talk-coauthors">Каракотов Р.Р.,Chandrashekhar K.,Banerjee D.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вспышки и корональные выбросы массы на звездах разных классов</h3>
+		<span class="talk-presenter">Садовский А.М.</span>
+		<span class="talk-coauthors">Струминский А.Б.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+    <div class="talk-details">
+    <h3 class="talk-title">MASTER OT J172758.09+380021.5: необычная активная карликовая новая, возможно, пропущенная классическая Новая в недавнем прошлом</h3>
+		<span class="talk-presenter">Павленко Е.П.</span>
+		<span class="talk-coauthors">Като Т.,Антонюк К. И др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+    <div class="talk-details">
+    <h3 class="talk-title">EZ Lyn: быстрое остывание белого карлика после вспышки 2010 года</h3>
+		<span class="talk-presenter">Сосновский А.А.</span>
+		<span class="talk-coauthors">Павленко Е.П.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+    <div class="talk-details">
+    <h3 class="talk-title">Быстрая и cверхбыстрая переменность профилей линий в спектрах звезд ранних спектральных классов</h3>
+		<span class="talk-presenter">Холтыгин А.Ф.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;">
+    <div class="talk-details">
+    <h3 class="talk-title">Параметры SS433 по наблюдениям на Кавказской горной обсерватории ГАИШ МГУ</h3>
+		<span class="talk-presenter">Черепащук А.М.</span>
+		<span class="talk-coauthors">Додин А.В.,Постнов К.А. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1815 / time-1830;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование V3101 Cyg – звезды типа WZ Sge</h3>
+		<span class="talk-presenter">Шугаров С.Ю.</span>
+		<span class="talk-coauthors">Катышева Н.А.,Кирсанкина А.П.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1830 / time-1845;">
+    <div class="talk-details">
+    <h3 class="talk-title">Новые списки обозначений переменных звезд и перспективы ОКПЗ</h3>
+		<span class="talk-presenter">Самусь Н.Н.</span>
+		<span class="talk-coauthors">Казаровец Е.В.,Дурлевич О.В. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-stars" style="grid-column: track-stars; grid-row: time-1845 / time-1900;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 3 минуты)</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1630 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Поиск метана в атмосфере Марса и другие чувствительные измерения TGO ExoMars</h3>
+		<span class="talk-presenter">Трохимовский А.Ю.</span>
+		<span class="talk-coauthors">Кораблев О.И.,Федорова А.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1650 / time-1705;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вертикальное распределение водяного пара на Марса, насыщение и потеря воды по данным затменных экспериментов на орбите Марса</h3>
+		<span class="talk-presenter">Федорова А.А.</span>
+		<span class="talk-coauthors">Кораблев О.И.,Montmessin F.,Трохимовский А.Ю.,Беляев Д.А.,Лугинин М.С.,and ACS and SPICAM teams</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1705 / time-1720;">
+    <div class="talk-details">
+    <h3 class="talk-title">Циркуляция облачного слоя Венеры по многолетним наблюдениям дневной стороны планеты камерой VMC/Venus Express в ультрафиолетовом, видимом и инфракрасном диапазонах</h3>
+		<span class="talk-presenter">Хатунцев И.В.</span>
+		<span class="talk-coauthors">Пацаева М.В.,Титов Д.В. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1720 / time-1735;">
+    <div class="talk-details">
+    <h3 class="talk-title">Изменение скорости ветра на верхней границе облачного слоя в экваториальных широтах по результатам многолетних наблюдений VMC (Венера Экспресс) и UVI (Акацуки)</h3>
+		<span class="talk-presenter">Пацаева М.В.</span>
+		<span class="talk-coauthors">Хатунцев И.В.,Тюрин А.В.,Засова Л.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-planets" style="grid-column: track-planets; grid-row: time-1735 / time-1815;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 3 минуты)</h3>
+    </div>
+	</div>
+
+      
+  <div class="event track-planets" style="grid-column: track-planets; grid-row: time-1815 / time-1830;">
+    <div class="event-details">
+    <h3 class="event-name">Общая дискуссия</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1400 / time-1420;">
+    <div class="talk-details">
+    <h3 class="talk-title">Тепловая эволюция ядер ледяных спутников планет-гигантов</h3>
+		<span class="talk-presenter">Кронрод Е.В.</span>
+		<span class="talk-coauthors">Кронрод В.А.,Кусков О.Л.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1420 / time-1435;">
+    <div class="talk-details">
+    <h3 class="talk-title">Модельные нагрузочные числа лява для Венеры</h3>
+		<span class="talk-presenter">Менщикова Т.И.</span>
+		<span class="talk-coauthors">Гудкова Т.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1435 / time-1450;">
+    <div class="talk-details">
+    <h3 class="talk-title">Анализ морфологических особенностей кратеров Меркурия на основе новой базы данных</h3>
+		<span class="talk-presenter">Феоктистова Е.А.</span>
+		<span class="talk-coauthors">Родионова Ж.Ф.,Жаркова А.Ю. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1450 / time-1505;">
+    <div class="talk-details">
+    <h3 class="talk-title">Анализ цифровых моделей физической поверхности небесных тел, построенных на основе спутниковых альтиметрических измерений</h3>
+		<span class="talk-presenter">Нефедьев Ю.А.</span>
+		<span class="talk-coauthors">Андреев А.О.,Ахмедшина Е.Н.,Carlos De La Morena,Нефедьев Л.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1505 / time-1525;">
+    <div class="talk-details">
+    <h3 class="talk-title">Пылевые частицы безатмосферных тел: изучение in-situ и лабораторное моделирование</h3>
+		<span class="talk-presenter">Захаров А.В.</span>
+		<span class="talk-coauthors">Кузнецов И.А.,Бедняков С.А. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1525 / time-1540;">
+    <div class="talk-details">
+    <h3 class="talk-title">Анализ многопараметрической модели генетически связанных околоземных метеороидов</h3>
+		<span class="talk-presenter">Сергиенко М.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1540 / time-1555;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование метеоров с субсекундном временным разрешением в широкоугольном оптическом мониторинге небесной сферы</h3>
+		<span class="talk-presenter">Ляпсина Н.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-planets" style="grid-column: track-planets; grid-row: time-1600 / time-1630;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Микроволновая пространственно-разрешающая спектроскопия солнечных вспышек</h3>
+		<span class="talk-presenter">Флейшман Г.Д.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Радиоизлучение многокомпонентной мультитемпературной плазмы в атмосфере Солнца</h3>
+		<span class="talk-presenter">Кузнецов А.А.</span>
+		<span class="talk-coauthors">Флейшман Г.Д.,Landi E.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Моделирование теплового суб-ТГц излучения солнечных вспышек</h3>
+		<span class="talk-presenter">Моторина Г.Г.</span>
+		<span class="talk-coauthors">Цап Ю.Т.,Кашпарова Я.,Моргачев А.С.,Смирнова В.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">Осесимметричные колебания в корональных трубках с магнитно-закрученным слоем</h3>
+		<span class="talk-presenter">Лопин И.П.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;">
+    <div class="talk-details">
+    <h3 class="talk-title">Тепловая фрагментация токового слоя как триггер вспышек на Солнце</h3>
+		<span class="talk-presenter">Леденцов Л.С.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Выбор параметров и появление вспышечной ситуации при МГД моделировании над активной областью в реальном масштабе времени</h3>
+		<span class="talk-presenter">Подгорный А.И.</span>
+		<span class="talk-coauthors">Подгорный И.М.,Борисенко А.В.,Мешалкина Н.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Концентрация магнитного поля и скрученность солнечных корональных петель</h3>
+		<span class="talk-presenter">Цап Ю.Т.</span>
+		<span class="talk-coauthors">Степанов А.В.,Копылова Ю.Г.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-sun" style="grid-column: track-sun; grid-row: time-1600 / time-1620;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вспышечное энерговыделение и ионизация плазмы убегающими электронами в нижней атмосфере Солнца</h3>
+		<span class="talk-presenter">Цап Ю.Т.</span>
+		<span class="talk-coauthors">Степанов А.В.,Копылова Ю.Г.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Статистическое исследование "холодных" солнечных вспышек в микроволновом диапазоне</h3>
+		<span class="talk-presenter">Лысенко А.Л.</span>
+		<span class="talk-coauthors">Алтынцев А.Т.,Жданов,Д.А. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1650 / time-1705;">
+    <div class="talk-details">
+    <h3 class="talk-title">О микроволновых источниках шумовых бурь радиовсплесков III типа 10 апреля 2019 г.</h3>
+		<span class="talk-presenter">Куприянова Е.Г.</span>
+		<span class="talk-coauthors">Кашапова Л.К.,Reid H.A.S.,Zhang J.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1705 / time-1720;">
+    <div class="talk-details">
+    <h3 class="talk-title">О связи микроволнового излучения и метровых всплесков III типа в слабых транзиентных событиях</h3>
+		<span class="talk-presenter">Алтынцев А.Т.</span>
+		<span class="talk-coauthors">Жданов Д.А.,Мешалкина Н.С,,Мышьяков И.И.,Reid H.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1720 / time-1735;">
+    <div class="talk-details">
+    <h3 class="talk-title">Роль вистлеров в формировании энергетического спектра и питч-углового распределения электронов во вспышках</h3>
+		<span class="talk-presenter">Мельников В.Ф.</span>
+		<span class="talk-coauthors">Филатов Л.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-sun" style="grid-column: track-sun; grid-row: time-1735 / time-1745;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 5 минут)</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1425;">
+    <div class="talk-details">
+    <h3 class="talk-title">Результаты обзора активных ядер галактик на наземно-космическом интерферометре РадиоАстрон в 2012-2018 гг.</h3>
+		<span class="talk-presenter">Войцик П.А.</span>
+		<span class="talk-coauthors">Ковалев Ю.Ю.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1425 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Радиоизображение струи в галактике М87, полученное РадиоАстроном на 5ГГц</h3>
+		<span class="talk-presenter">Кравченко Е.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1445 / time-1505;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование быстрых радиовсплесков на радиотелескопе БСА/ФИАН</h3>
+		<span class="talk-presenter">Федорова В.А.</span>
+		<span class="talk-coauthors">Родин А.Е.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1505 / time-1525;">
+    <div class="talk-details">
+    <h3 class="talk-title">Радиосвойства квазаров на красных смещениях z>3</h3>
+		<span class="talk-presenter">Сотникова Ю.В.</span>
+		<span class="talk-coauthors">Муфахаров Т.В.,Михайлов А.Г.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1525 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Многочастотное исследование радиогалактик FR0 на РАТАН-600</h3>
+		<span class="talk-presenter">Михайлов А.Г.</span>
+		<span class="talk-coauthors">Сотникова Ю.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1545 / time-1605;">
+    <div class="talk-details">
+    <h3 class="talk-title">Радиосвойства галактик с источниками гидроксильного мегамазерного излучения</h3>
+		<span class="talk-presenter">Михайлов А.Г.</span>
+		<span class="talk-coauthors">Сотникова Ю.В.,Муфахаров Т.В.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1625;">
+    <div class="talk-details">
+    <h3 class="talk-title">Источники обзора на склонении RCR1915+10</h3>
+		<span class="talk-presenter">Бурсов Н.Н.</span>
+		<span class="talk-coauthors">Трушкин С.А.,Кудряшова А.А. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1625 / time-1645;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1645 / time-1705;">
+    <div class="talk-details">
+    <h3 class="talk-title">Определение величины и геометрии магнитного поля в аккреционных дисках АГЯ</h3>
+		<span class="talk-presenter">Пиотрович М.Ю.</span>
+		<span class="talk-coauthors">Булига С.Д.,Нацвлишвили Т.М.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1705 / time-1725;">
+    <div class="talk-details">
+    <h3 class="talk-title">Измерения масс сверхмассивных черных дыр в ядрах активных галактик методом фотометрического эхокартирования</h3>
+		<span class="talk-presenter">Малыгин Е.А.</span>
+		<span class="talk-coauthors">Шабловинская Е.С.,Уклеин Р.И.,Гроховская А.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1725 / time-1745;">
+    <div class="talk-details">
+    <h3 class="talk-title">Активные ядра галактик в поляризованном свете</h3>
+		<span class="talk-presenter">Шабловинская Е.С.</span>
+		<span class="talk-coauthors">Афанасьев В.Л.,Попович Лука</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1745 / time-1805;">
+    <div class="talk-details">
+    <h3 class="talk-title">Оптические наблюдения хост-галактик черных дыр промежуточных масс: дисперсии скоростей звезд, структурные характеристики</h3>
+		<span class="talk-presenter">Гораджанов В.С.</span>
+		<span class="talk-coauthors">Топтун В.А.,Чилингарян И.В.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1805 / time-1825;">
+    <div class="talk-details">
+    <h3 class="talk-title">Анализ оптических кривых блеска галактик, полученных из разностных снимков ZTF Froced- Photometry Service</h3>
+		<span class="talk-presenter">Демьяненко М.В.</span>
+		<span class="talk-coauthors">Чилингарян И.В.,Катков И.Ю.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1825 / time-1845;">
+    <div class="talk-details">
+    <h3 class="talk-title">Изучение физических свойств квазаров по данным среднеполосного фотометрического обзора</h3>
+		<span class="talk-presenter">Котов С.С.</span>
+		<span class="talk-coauthors">Додонов С.Н.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1845 / time-1905;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование корреляции оптического излучения с гамма-излучением в период многоволновой активности блазара 3C454.3 с 2012 по 2017 гг.</h3>
+		<span class="talk-presenter">Уголькова Л.С.</span>
+		<span class="talk-coauthors">Шимановская Е.В.,Ларионов В.М. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1905 / time-1935;">
+    <div class="event-details">
+    <h3 class="event-name">Дискуссия</h3>
+    </div>
+	</div>
+
 
     </div>
-  </div>
-  <div class="conference-day-3">
+    <div class="conference-day-3">
     <h2 class="conference-current-date">26.08.2021 (Четверг)</h2>
-    <div class="schedule" aria-labelledby="schedule-heading">
 
-      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">inst</span>
-      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">celm</span>
-      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">stars</span>
-      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">planets</span>
-      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">hea</span>
-      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">msa</span>
-      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">sun</span>
-      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">galaxies</span>
-   
-      <span class="time-slot" style="grid-row: time-0930;">09:30</span>
-      <span class="time-slot" style="grid-row: time-0935;">09:35</span>
-      <span class="time-slot" style="grid-row: time-0940;">09:40</span>
-      <span class="time-slot" style="grid-row: time-0945;">09:45</span>
-      <span class="time-slot" style="grid-row: time-0950;">09:50</span>
-      <span class="time-slot" style="grid-row: time-0955;">09:55</span>
+      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
+      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
+      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">ЗВ&МС</span>
+      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">ПЛАН</span>
+      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">РА&ГВ</span>
+      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">СЗА</span>
+      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">СОЛН</span>
+      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">ГА&КО</span>
+  
       <span class="time-slot" style="grid-row: time-1000;">10:00</span>
-      <span class="time-slot" style="grid-row: time-1005;">10:05</span>
-      <span class="time-slot" style="grid-row: time-1010;">10:10</span>
-      <span class="time-slot" style="grid-row: time-1015;">10:15</span>
-      <span class="time-slot" style="grid-row: time-1020;">10:20</span>
-      <span class="time-slot" style="grid-row: time-1025;">10:25</span>
-      <span class="time-slot" style="grid-row: time-1030;">10:30</span>
-      <span class="time-slot" style="grid-row: time-1035;">10:35</span>
+      <span class="time-rule" style="grid-row: time-1000;"></span>
       <span class="time-slot" style="grid-row: time-1040;">10:40</span>
-      <span class="time-slot" style="grid-row: time-1045;">10:45</span>
-      <span class="time-slot" style="grid-row: time-1050;">10:50</span>
-      <span class="time-slot" style="grid-row: time-1055;">10:55</span>
-      <span class="time-slot" style="grid-row: time-1100;">11:00</span>
-      <span class="time-slot" style="grid-row: time-1105;">11:05</span>
-      <span class="time-slot" style="grid-row: time-1110;">11:10</span>
-      <span class="time-slot" style="grid-row: time-1115;">11:15</span>
+      <span class="time-rule" style="grid-row: time-1040;"></span>
       <span class="time-slot" style="grid-row: time-1120;">11:20</span>
-      <span class="time-slot" style="grid-row: time-1125;">11:25</span>
-      <span class="time-slot" style="grid-row: time-1130;">11:30</span>
-      <span class="time-slot" style="grid-row: time-1135;">11:35</span>
+      <span class="time-rule" style="grid-row: time-1120;"></span>
       <span class="time-slot" style="grid-row: time-1140;">11:40</span>
-      <span class="time-slot" style="grid-row: time-1145;">11:45</span>
-      <span class="time-slot" style="grid-row: time-1150;">11:50</span>
-      <span class="time-slot" style="grid-row: time-1155;">11:55</span>
-      <span class="time-slot" style="grid-row: time-1200;">12:00</span>
-      <span class="time-slot" style="grid-row: time-1205;">12:05</span>
-      <span class="time-slot" style="grid-row: time-1210;">12:10</span>
-      <span class="time-slot" style="grid-row: time-1215;">12:15</span>
+      <span class="time-rule" style="grid-row: time-1140;"></span>
       <span class="time-slot" style="grid-row: time-1220;">12:20</span>
-      <span class="time-slot" style="grid-row: time-1225;">12:25</span>
-      <span class="time-slot" style="grid-row: time-1230;">12:30</span>
-      <span class="time-slot" style="grid-row: time-1235;">12:35</span>
-      <span class="time-slot" style="grid-row: time-1240;">12:40</span>
-      <span class="time-slot" style="grid-row: time-1245;">12:45</span>
-      <span class="time-slot" style="grid-row: time-1250;">12:50</span>
-      <span class="time-slot" style="grid-row: time-1255;">12:55</span>
+      <span class="time-rule" style="grid-row: time-1220;"></span>
       <span class="time-slot" style="grid-row: time-1300;">13:00</span>
-      <span class="time-slot" style="grid-row: time-1305;">13:05</span>
-      <span class="time-slot" style="grid-row: time-1310;">13:10</span>
-      <span class="time-slot" style="grid-row: time-1315;">13:15</span>
-      <span class="time-slot" style="grid-row: time-1320;">13:20</span>
-      <span class="time-slot" style="grid-row: time-1325;">13:25</span>
-      <span class="time-slot" style="grid-row: time-1330;">13:30</span>
-      <span class="time-slot" style="grid-row: time-1335;">13:35</span>
-      <span class="time-slot" style="grid-row: time-1340;">13:40</span>
-      <span class="time-slot" style="grid-row: time-1345;">13:45</span>
-      <span class="time-slot" style="grid-row: time-1350;">13:50</span>
-      <span class="time-slot" style="grid-row: time-1355;">13:55</span>
+      <span class="time-rule" style="grid-row: time-1300;"></span>
       <span class="time-slot" style="grid-row: time-1400;">14:00</span>
+      <span class="time-rule" style="grid-row: time-1400;"></span>
       <span class="time-slot" style="grid-row: time-1405;">14:05</span>
+      <span class="time-rule" style="grid-row: time-1405;"></span>
       <span class="time-slot" style="grid-row: time-1410;">14:10</span>
+      <span class="time-rule" style="grid-row: time-1410;"></span>
       <span class="time-slot" style="grid-row: time-1415;">14:15</span>
+      <span class="time-rule" style="grid-row: time-1415;"></span>
       <span class="time-slot" style="grid-row: time-1420;">14:20</span>
+      <span class="time-rule" style="grid-row: time-1420;"></span>
       <span class="time-slot" style="grid-row: time-1425;">14:25</span>
+      <span class="time-rule" style="grid-row: time-1425;"></span>
       <span class="time-slot" style="grid-row: time-1430;">14:30</span>
+      <span class="time-rule" style="grid-row: time-1430;"></span>
       <span class="time-slot" style="grid-row: time-1435;">14:35</span>
+      <span class="time-rule" style="grid-row: time-1435;"></span>
       <span class="time-slot" style="grid-row: time-1440;">14:40</span>
+      <span class="time-rule" style="grid-row: time-1440;"></span>
       <span class="time-slot" style="grid-row: time-1445;">14:45</span>
+      <span class="time-rule" style="grid-row: time-1445;"></span>
       <span class="time-slot" style="grid-row: time-1450;">14:50</span>
+      <span class="time-rule" style="grid-row: time-1450;"></span>
       <span class="time-slot" style="grid-row: time-1455;">14:55</span>
+      <span class="time-rule" style="grid-row: time-1455;"></span>
       <span class="time-slot" style="grid-row: time-1500;">15:00</span>
+      <span class="time-rule" style="grid-row: time-1500;"></span>
       <span class="time-slot" style="grid-row: time-1505;">15:05</span>
+      <span class="time-rule" style="grid-row: time-1505;"></span>
       <span class="time-slot" style="grid-row: time-1510;">15:10</span>
+      <span class="time-rule" style="grid-row: time-1510;"></span>
       <span class="time-slot" style="grid-row: time-1515;">15:15</span>
+      <span class="time-rule" style="grid-row: time-1515;"></span>
       <span class="time-slot" style="grid-row: time-1520;">15:20</span>
+      <span class="time-rule" style="grid-row: time-1520;"></span>
       <span class="time-slot" style="grid-row: time-1525;">15:25</span>
+      <span class="time-rule" style="grid-row: time-1525;"></span>
       <span class="time-slot" style="grid-row: time-1530;">15:30</span>
+      <span class="time-rule" style="grid-row: time-1530;"></span>
       <span class="time-slot" style="grid-row: time-1535;">15:35</span>
+      <span class="time-rule" style="grid-row: time-1535;"></span>
       <span class="time-slot" style="grid-row: time-1540;">15:40</span>
+      <span class="time-rule" style="grid-row: time-1540;"></span>
       <span class="time-slot" style="grid-row: time-1545;">15:45</span>
+      <span class="time-rule" style="grid-row: time-1545;"></span>
       <span class="time-slot" style="grid-row: time-1550;">15:50</span>
+      <span class="time-rule" style="grid-row: time-1550;"></span>
       <span class="time-slot" style="grid-row: time-1555;">15:55</span>
+      <span class="time-rule" style="grid-row: time-1555;"></span>
       <span class="time-slot" style="grid-row: time-1600;">16:00</span>
+      <span class="time-rule" style="grid-row: time-1600;"></span>
       <span class="time-slot" style="grid-row: time-1605;">16:05</span>
+      <span class="time-rule" style="grid-row: time-1605;"></span>
       <span class="time-slot" style="grid-row: time-1610;">16:10</span>
+      <span class="time-rule" style="grid-row: time-1610;"></span>
       <span class="time-slot" style="grid-row: time-1615;">16:15</span>
+      <span class="time-rule" style="grid-row: time-1615;"></span>
       <span class="time-slot" style="grid-row: time-1620;">16:20</span>
+      <span class="time-rule" style="grid-row: time-1620;"></span>
       <span class="time-slot" style="grid-row: time-1625;">16:25</span>
+      <span class="time-rule" style="grid-row: time-1625;"></span>
       <span class="time-slot" style="grid-row: time-1630;">16:30</span>
+      <span class="time-rule" style="grid-row: time-1630;"></span>
       <span class="time-slot" style="grid-row: time-1635;">16:35</span>
+      <span class="time-rule" style="grid-row: time-1635;"></span>
       <span class="time-slot" style="grid-row: time-1640;">16:40</span>
+      <span class="time-rule" style="grid-row: time-1640;"></span>
       <span class="time-slot" style="grid-row: time-1645;">16:45</span>
+      <span class="time-rule" style="grid-row: time-1645;"></span>
       <span class="time-slot" style="grid-row: time-1650;">16:50</span>
+      <span class="time-rule" style="grid-row: time-1650;"></span>
       <span class="time-slot" style="grid-row: time-1655;">16:55</span>
+      <span class="time-rule" style="grid-row: time-1655;"></span>
       <span class="time-slot" style="grid-row: time-1700;">17:00</span>
+      <span class="time-rule" style="grid-row: time-1700;"></span>
       <span class="time-slot" style="grid-row: time-1705;">17:05</span>
+      <span class="time-rule" style="grid-row: time-1705;"></span>
       <span class="time-slot" style="grid-row: time-1710;">17:10</span>
+      <span class="time-rule" style="grid-row: time-1710;"></span>
       <span class="time-slot" style="grid-row: time-1715;">17:15</span>
+      <span class="time-rule" style="grid-row: time-1715;"></span>
       <span class="time-slot" style="grid-row: time-1720;">17:20</span>
+      <span class="time-rule" style="grid-row: time-1720;"></span>
       <span class="time-slot" style="grid-row: time-1725;">17:25</span>
+      <span class="time-rule" style="grid-row: time-1725;"></span>
       <span class="time-slot" style="grid-row: time-1730;">17:30</span>
+      <span class="time-rule" style="grid-row: time-1730;"></span>
       <span class="time-slot" style="grid-row: time-1735;">17:35</span>
+      <span class="time-rule" style="grid-row: time-1735;"></span>
       <span class="time-slot" style="grid-row: time-1740;">17:40</span>
+      <span class="time-rule" style="grid-row: time-1740;"></span>
       <span class="time-slot" style="grid-row: time-1745;">17:45</span>
+      <span class="time-rule" style="grid-row: time-1745;"></span>
       <span class="time-slot" style="grid-row: time-1750;">17:50</span>
+      <span class="time-rule" style="grid-row: time-1750;"></span>
       <span class="time-slot" style="grid-row: time-1755;">17:55</span>
+      <span class="time-rule" style="grid-row: time-1755;"></span>
       <span class="time-slot" style="grid-row: time-1800;">18:00</span>
+      <span class="time-rule" style="grid-row: time-1800;"></span>
       <span class="time-slot" style="grid-row: time-1805;">18:05</span>
+      <span class="time-rule" style="grid-row: time-1805;"></span>
       <span class="time-slot" style="grid-row: time-1810;">18:10</span>
+      <span class="time-rule" style="grid-row: time-1810;"></span>
       <span class="time-slot" style="grid-row: time-1815;">18:15</span>
+      <span class="time-rule" style="grid-row: time-1815;"></span>
       <span class="time-slot" style="grid-row: time-1820;">18:20</span>
+      <span class="time-rule" style="grid-row: time-1820;"></span>
       <span class="time-slot" style="grid-row: time-1825;">18:25</span>
+      <span class="time-rule" style="grid-row: time-1825;"></span>
       <span class="time-slot" style="grid-row: time-1830;">18:30</span>
+      <span class="time-rule" style="grid-row: time-1830;"></span>
       <span class="time-slot" style="grid-row: time-1835;">18:35</span>
+      <span class="time-rule" style="grid-row: time-1835;"></span>
       <span class="time-slot" style="grid-row: time-1840;">18:40</span>
+      <span class="time-rule" style="grid-row: time-1840;"></span>
       <span class="time-slot" style="grid-row: time-1845;">18:45</span>
+      <span class="time-rule" style="grid-row: time-1845;"></span>
       <span class="time-slot" style="grid-row: time-1850;">18:50</span>
+      <span class="time-rule" style="grid-row: time-1850;"></span>
       <span class="time-slot" style="grid-row: time-1855;">18:55</span>
+      <span class="time-rule" style="grid-row: time-1855;"></span>
       <span class="time-slot" style="grid-row: time-1900;">19:00</span>
+      <span class="time-rule" style="grid-row: time-1900;"></span>
       <span class="time-slot" style="grid-row: time-1905;">19:05</span>
+      <span class="time-rule" style="grid-row: time-1905;"></span>
       <span class="time-slot" style="grid-row: time-1910;">19:10</span>
+      <span class="time-rule" style="grid-row: time-1910;"></span>
       <span class="time-slot" style="grid-row: time-1915;">19:15</span>
+      <span class="time-rule" style="grid-row: time-1915;"></span>
       <span class="time-slot" style="grid-row: time-1920;">19:20</span>
-      <span class="time-slot" style="grid-row: time-1925;">19:25</span>
-      <span class="time-slot" style="grid-row: time-1930;">19:30</span>
+      <span class="time-rule" style="grid-row: time-1920;"></span>
+    
+      
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+    <div class="talk-details">
+    <h3 class="talk-title">Успехи небесной механики: теория и практические результаты</h3>
+		<span class="talk-presenter">Емельянов Н.В. (ГАИШ МГУ)</span>
+		<span class="talk-coauthors">Кондратьев Б.П. (физический факультет МГУ)</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+    <div class="talk-details">
+    <h3 class="talk-title">Фундаментальная радиоастрометрия</h3>
+		<span class="talk-presenter">Иванов Д.В. (ИПА РАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-1120 / time-1140;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+    <div class="talk-details">
+    <h3 class="talk-title">Нейтринная астрофизика высоких энергий</h3>
+		<span class="talk-presenter">Домогацкий Г.В. (ИЯИ РАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+    <div class="talk-details">
+    <h3 class="talk-title">Наземные гравитационно- волновые детекторы: текущее состояние и перспективы развития</h3>
+		<span class="talk-presenter">Митрофанов В.П. (физический факультет МГУ)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-1300 / time-1400;">
+    <div class="event-details">
+    <h3 class="event-name">Обеденный перерыв</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1630 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование астроклимата: современные возможности и задачи</h3>
+		<span class="talk-presenter">Больбасова Л.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1650 / time-1705;">
+    <div class="talk-details">
+    <h3 class="talk-title">Универсальный редуктор для малых телескопов</h3>
+		<span class="talk-presenter">Уклеин Р.И.</span>
+		<span class="talk-coauthors">Малыгин Е.А.,Шабловинская Е.С. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1705 / time-1720;">
+    <div class="talk-details">
+    <h3 class="talk-title">Коррекции рабочей орбиты КА "Спектр-РГ" с целью обеспечения заданных условий радиовидимости с российских наземных станций</h3>
+		<span class="talk-presenter">Михайлов Е.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1720 / time-1735;">
+    <div class="talk-details">
+    <h3 class="talk-title">Машинное обучение в задачах рентгеновской астрономии</h3>
+		<span class="talk-presenter">Мещеряков А.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1400 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Перспективы ультрафиолетовой астрономии: проект "Спектр-УФ"</h3>
+		<span class="talk-presenter">Шустов Б.М.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1430 / time-1450;">
+    <div class="talk-details">
+    <h3 class="talk-title">Сибирский радиогелиограф: новые возможности исследования солнечной короны</h3>
+		<span class="talk-presenter">Лесовой С.В.</span>
+		<span class="talk-coauthors">Алтынцев А.Т.,Губин А.В.и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1450 / time-1505;">
+    <div class="talk-details">
+    <h3 class="talk-title">Методика обработки обзоров на РАТАН-600 при неподвижной антенне</h3>
+		<span class="talk-presenter">Кудряшова А.А.</span>
+		<span class="talk-coauthors">Бурсов Н. Н.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1505 / time-1525;">
+    <div class="talk-details">
+    <h3 class="talk-title">Проект «РадиоАстрон». Калибровка космического радиотелескопа в полете в 2011--2019 гг.</h3>
+		<span class="talk-presenter">Ковалев Ю.А.</span>
+		<span class="talk-coauthors">Васильков В.И.,Ермаков А.Н. и группа «Радиоастрон»</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1525 / time-1540;">
+    <div class="talk-details">
+    <h3 class="talk-title">Система адаптации главного зеркала космической обсерватории «Миллиметрон</h3>
+		<span class="talk-presenter">Архипов М.Ю.</span>
+		<span class="talk-coauthors">Голубев Е.С.,Ляховец А.О.,Смирнов А.В.,Федорчук С.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1540 / time-1555;">
+    <div class="talk-details">
+    <h3 class="talk-title">Статистика и особенности корреляционной обработки мазерных источников в проекте «Радиоастрон»</h3>
+		<span class="talk-presenter">Авдеев В.Ю.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1555 / time-1610;">
+    <div class="talk-details">
+    <h3 class="talk-title">AstroMagick -- программы для контроля и адаптации поверхности главного зеркала космической обсерватории «Миллиметрон</h3>
+		<span class="talk-presenter">Ляховец А.О.</span>
+		<span class="talk-coauthors">Андрианов А.С.,Архипов М.Ю.,Голубев Е.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-inst" style="grid-column: track-inst; grid-row: time-1610 / time-1630;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1735 / time-1750;">
+    <div class="talk-details">
+    <h3 class="talk-title">Проект "Лира" не на МКС</h3>
+		<span class="talk-presenter">Прохоров М.Е.</span>
+		<span class="talk-coauthors">Захаров А.И.,Стекольщиков О.Ю.,Тучин М.С.</span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1510 / time-1525;">
+    <div class="talk-details">
+    <h3 class="talk-title">О возможности разложения постоянной Тиссерана комет семейства Юпитера в биномиальный ряд</h3>
+		<span class="talk-presenter">Абдульмянов Т.Р. Соколова М.Г. Усанин В.С.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1525 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Сравнение динамики коорбитальных астероидов Юпитера и динамики тел в "дебрис" дисках формирующихся планетных систем</h3>
+		<span class="talk-presenter">Абдульмянов Т.Р.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1545 / time-1605;">
+    <div class="talk-details">
+    <h3 class="talk-title">Эффект Ярковского в динамике астероидов с малыми перигелийными расстояниями</h3>
+		<span class="talk-presenter">Галушина Т. Ю.</span>
+		<span class="talk-coauthors">Летнер О.Н.,Сюсина О.М.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1605 / time-1625;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вековая эволюция резонансных объектов пояса Койпера</h3>
+		<span class="talk-presenter">Ефимов С.С.</span>
+		<span class="talk-coauthors">Сидоренко В.В</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-celm" style="grid-column: track-celm; grid-row: time-1625 / time-1655;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1655 / time-1715;">
+    <div class="talk-details">
+    <h3 class="talk-title">О возможных соударениях и сближениях астероидов с планетами</h3>
+		<span class="talk-presenter">Баляев И. А.</span>
+		<span class="talk-coauthors">Петров Н. А.,Соколов Л. Л.,Эскин Б.Б.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1715 / time-1730;">
+    <div class="talk-details">
+    <h3 class="talk-title">Возможности астрофизических телескопов при исследованиях объектов космического мусора</h3>
+		<span class="talk-presenter">Кохирова Г.И.</span>
+		<span class="talk-coauthors">Левкина П.А.,Бахтигараев Н.С.,Хамроев У.Х.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;">
+    <div class="talk-details">
+    <h3 class="talk-title">Определение орбит околосолнечных комет</h3>
+		<span class="talk-presenter">Павлов С.Р.</span>
+		<span class="talk-coauthors">Медведев Ю.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;">
+    <div class="talk-details">
+    <h3 class="talk-title">Визуализация динамических характеристик орбитальной эволюции космического мусора и иные средства машинного анализа астрономических данных</h3>
+		<span class="talk-presenter">Кучерявченко Н.А.</span>
+		<span class="talk-coauthors">Александрова А.Г,Попандопуло Н.А.,Александров В.Б.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;">
+    <div class="talk-details">
+    <h3 class="talk-title">Физическая либрация Луны</h3>
+		<span class="talk-presenter">Загидуллин А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Метод кусочного переноса для стохастического моделирования орбитальной неопределенности</h3>
+		<span class="talk-presenter">Авдюшев В.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Коллокационный интегратор Lobbie в задачах орбитальной динамики</h3>
+		<span class="talk-presenter">Авдюшев В.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1430 / time-1450;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование резонансной структуры высокой орбитальной области ОКП методами численного моделирования</h3>
+		<span class="talk-presenter">Томилова И.В.</span>
+		<span class="talk-coauthors">Александрова А.Г.,Блинкова Е.В.,Бордовицына Т.В.,Попандопуло Н.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1450 / time-1510;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование совместного влияния светового давления и вековых резонансов, связанных со средним движением солнца, на движение низкоорбитальных объектов</h3>
+		<span class="talk-presenter">Блинкова Е.В.</span>
+		<span class="talk-coauthors">Бордовицына Т.В.</span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Особенности перетекания вещества в рентгеновской двойной Her Х-1</h3>
+		<span class="talk-presenter">Карицкая Е.А.</span>
+		<span class="talk-coauthors">Бочкарев Н.Г.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Параметры системы ScoX-1</h3>
+		<span class="talk-presenter">Черепащук А.М.</span>
+		<span class="talk-coauthors">Хрузина Т.С.,Богомазов А.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Массивная двойная система с большим эксцентриситетом орбиты WR22 (WN7h+O9): анализ кривой блеска в модели Роша с учетом звездного ветра</h3>
+		<span class="talk-presenter">Антохина Э.А.</span>
+		<span class="talk-coauthors">Антохин И.И.,Lenoir-Craig G.,St-Louis N.,Moffat A.F.J.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Наблюдения покрытий звезд астероидами как метод измерения угловых диаметров субмиллисекундного уровня</h3>
+		<span class="talk-presenter">Дьяченко В.</span>
+		<span class="talk-coauthors">Richichi A.,Оболенцева М. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">Предкатаклизмическая двойная система GPX-TF16E-48 с затменным белым карликом</h3>
+		<span class="talk-presenter">Крушинский В.</span>
+		<span class="talk-coauthors">Benni P.,Burdanov A.,Антохин И.,Антохина Э.,Бражко В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+    <div class="talk-details">
+    <h3 class="talk-title">Тесные двойные системы в «пробеле периодов</h3>
+		<span class="talk-presenter">Катышева Н.А.</span>
+		<span class="talk-coauthors">Павленко Е.П.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Определение закона распределения двойных звёзд по массам и разделению компонентов</h3>
+		<span class="talk-presenter">Чулков Д.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Поиск гигантских импульсов секундных пульсаров на частоте 111 МГц</h3>
+		<span class="talk-presenter">Казанцев А.Н.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+    <div class="talk-details">
+    <h3 class="talk-title">О гигантских импульсах радиопульсаров</h3>
+		<span class="talk-presenter">Малов И.Ф.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1630 / time-1645;">
+    <div class="talk-details">
+    <h3 class="talk-title">Об особенностях излучения пульсара B0950+08 на частоте 111 МГц</h3>
+		<span class="talk-presenter">Малофеев В.М.</span>
+		<span class="talk-coauthors">Малов И.Ф.,Малов О.И.,Теплых Д.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование радиоизлучения новых пущинских пульсаров</h3>
+		<span class="talk-presenter">Теплых Д.А.</span>
+		<span class="talk-coauthors">Малофеев В.М.,Тюльбашев С.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+    <div class="talk-details">
+    <h3 class="talk-title">Наблюдения гамма пульсара J1836 + 5925 на частоте 111 МГц</h3>
+		<span class="talk-presenter">Тимиркеева М.А.</span>
+		<span class="talk-coauthors">Малов И.Ф.,Малофеев В.М.,Малов О.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+    <div class="talk-details">
+    <h3 class="talk-title">Быстропеременные объекты: радиовсплески, магнетары, пульсары на РАТАН-600</h3>
+		<span class="talk-presenter">Трушкин С.А.</span>
+		<span class="talk-coauthors">Цыбулев П.Г.,Нижельский Н.А.,Бурсов Н.Н.,Шевченко А.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+    <div class="talk-details">
+    <h3 class="talk-title">Распределение энергии импульсов нескольких вращающихся транзиентов</h3>
+		<span class="talk-presenter">Тюльбашев С.А.</span>
+		<span class="talk-coauthors">Смирнова Т.В.,Брылякова Е.А.,Китаева М.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+    <div class="talk-details">
+    <h3 class="talk-title">Статистика импульсных явлений на основе многолетних наблюдений северной небесной полусферы радиотелескопом БСА ФИАН на частоте 109-111.5 МГц с 2013 по 2021 гг.</h3>
+		<span class="talk-presenter">Самодуров В.А.</span>
+		<span class="talk-coauthors">Долгушев А.В.,Позаненко А.С.,Исаев Е.А.,Думский Д.В.,Торопов М.О.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;">
+    <div class="talk-details">
+    <h3 class="talk-title">Фурье-образ северной небесной полусферы на основе многолетних наблюдений радиотелескопа БСА ФИАН на частоте 109-111.5 МГц</h3>
+		<span class="talk-presenter">Самодуров В.А.</span>
+		<span class="talk-coauthors">Торопов М.О.,Лукин И.В.,Логвиненко С.В.,Казанцев А.Н.,Жиляков М.М.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-stars" style="grid-column: track-stars; grid-row: time-1815 / time-1825;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 3 минуты)</h3>
+    </div>
+	</div>
+
 
       
       
@@ -1287,142 +3482,995 @@
 	</div>
 
 
+      
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Когда карликовые галактики оказываются спиральными</h3>
+		<span class="talk-presenter">Засов А.В.</span>
+		<span class="talk-coauthors">Хоперсков А.В.,Зайцева Н.А.,Храпов С.С.</span>
     </div>
-  </div>
-  <div class="conference-day-4">
-    <h2 class="conference-current-date">27.08.2021 (Пятница)</h2>
-    <div class="schedule" aria-labelledby="schedule-heading">
+	</div>
 
-      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">inst</span>
-      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">celm</span>
-      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">stars</span>
-      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">planets</span>
-      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">hea</span>
-      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">msa</span>
-      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">sun</span>
-      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">galaxies</span>
-   
-      <span class="time-slot" style="grid-row: time-0930;">09:30</span>
-      <span class="time-slot" style="grid-row: time-0935;">09:35</span>
-      <span class="time-slot" style="grid-row: time-0940;">09:40</span>
-      <span class="time-slot" style="grid-row: time-0945;">09:45</span>
-      <span class="time-slot" style="grid-row: time-0950;">09:50</span>
-      <span class="time-slot" style="grid-row: time-0955;">09:55</span>
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1430 / time-1450;">
+    <div class="talk-details">
+    <h3 class="talk-title">Вертикальная структура барлинз в N-body моделях</h3>
+		<span class="talk-presenter">Тихоненко И.С.</span>
+		<span class="talk-coauthors">Смирнов А.А.,Сотникова Н.Я.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1450 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">Кинематический анализ моделей галактик с барлинзами</h3>
+		<span class="talk-presenter">Захарова Д.А.</span>
+		<span class="talk-coauthors">Тихоненко И.С.,Сотникова Н.Я.,Смирнов А.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1515 / time-1540;">
+    <div class="talk-details">
+    <h3 class="talk-title">Анализ согласия методов определения радиусов коротации в галактиках</h3>
+		<span class="talk-presenter">Марчук А.А.</span>
+		<span class="talk-coauthors">Мосенков А.В.,Савченко С.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1540 / time-1605;">
+    <div class="talk-details">
+    <h3 class="talk-title">Дисковые галактики со звездным противовращением</h3>
+		<span class="talk-presenter">Гасымов Д.Ф.</span>
+		<span class="talk-coauthors">Катков И.Ю.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1630;">
+    <div class="talk-details">
+    <h3 class="talk-title">Гигант в профиль: толстый диск NGC 7572</h3>
+		<span class="talk-presenter">Каспарова А.В.</span>
+		<span class="talk-coauthors">Катков И.Ю.,Чилингарян И.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1630 / time-1650;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1650 / time-1720;">
+    <div class="talk-details">
+    <h3 class="talk-title">Некруговые движения газа в межзвездной среде близких карликовых галактик</h3>
+		<span class="talk-presenter">Егоров О.В.</span>
+		<span class="talk-coauthors">Лозинская Т.А.,Моисеев А.В.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1720 / time-1740;">
+    <div class="talk-details">
+    <h3 class="talk-title">Галактика Ark 18 как результат слияния двух карликов</h3>
+		<span class="talk-presenter">Егорова Е.С.</span>
+		<span class="talk-coauthors">Егоров О.В.,Моисеев А.В.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1740 / time-1805;">
+    <div class="talk-details">
+    <h3 class="talk-title">Как образовались гигантские галактики низкой яркости? Уроки, извлеченные из наблюдений</h3>
+		<span class="talk-presenter">Сабурова А.С.</span>
+		<span class="talk-coauthors">Чилингарян И.В.,Каспарова А.В.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1805 / time-1825;">
+    <div class="talk-details">
+    <h3 class="talk-title">Пылевые диски видимых с ребра галактик по данным КТ Гершель</h3>
+		<span class="talk-presenter">Усачев П.А.</span>
+		<span class="talk-coauthors">Мосенков А.В.,Савченко С.С.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1825 / time-1850;">
+    <div class="talk-details">
+    <h3 class="talk-title">Сверхтонкие галактики</h3>
+		<span class="talk-presenter">Бизяев Д.В.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1850 / time-1920;">
+    <div class="event-details">
+    <h3 class="event-name">Дискуссия</h3>
+    </div>
+	</div>
+
+
+    </div>
+    <div class="conference-day-4">
+    <h2 class="conference-current-date">27.08.2021 (Пятница)</h2>
+
+      <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
+      <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
+      <span class="track-slot" style="grid-column: track-stars; grid-row: tracks;">ЗВ&МС</span>
+      <span class="track-slot" style="grid-column: track-planets; grid-row: tracks;">ПЛАН</span>
+      <span class="track-slot" style="grid-column: track-hea; grid-row: tracks;">РА&ГВ</span>
+      <span class="track-slot" style="grid-column: track-msa; grid-row: tracks;">СЗА</span>
+      <span class="track-slot" style="grid-column: track-sun; grid-row: tracks;">СОЛН</span>
+      <span class="track-slot" style="grid-column: track-galaxies; grid-row: tracks;">ГА&КО</span>
+  
       <span class="time-slot" style="grid-row: time-1000;">10:00</span>
-      <span class="time-slot" style="grid-row: time-1005;">10:05</span>
-      <span class="time-slot" style="grid-row: time-1010;">10:10</span>
-      <span class="time-slot" style="grid-row: time-1015;">10:15</span>
-      <span class="time-slot" style="grid-row: time-1020;">10:20</span>
-      <span class="time-slot" style="grid-row: time-1025;">10:25</span>
-      <span class="time-slot" style="grid-row: time-1030;">10:30</span>
-      <span class="time-slot" style="grid-row: time-1035;">10:35</span>
+      <span class="time-rule" style="grid-row: time-1000;"></span>
       <span class="time-slot" style="grid-row: time-1040;">10:40</span>
-      <span class="time-slot" style="grid-row: time-1045;">10:45</span>
-      <span class="time-slot" style="grid-row: time-1050;">10:50</span>
-      <span class="time-slot" style="grid-row: time-1055;">10:55</span>
-      <span class="time-slot" style="grid-row: time-1100;">11:00</span>
-      <span class="time-slot" style="grid-row: time-1105;">11:05</span>
-      <span class="time-slot" style="grid-row: time-1110;">11:10</span>
-      <span class="time-slot" style="grid-row: time-1115;">11:15</span>
+      <span class="time-rule" style="grid-row: time-1040;"></span>
       <span class="time-slot" style="grid-row: time-1120;">11:20</span>
-      <span class="time-slot" style="grid-row: time-1125;">11:25</span>
-      <span class="time-slot" style="grid-row: time-1130;">11:30</span>
-      <span class="time-slot" style="grid-row: time-1135;">11:35</span>
+      <span class="time-rule" style="grid-row: time-1120;"></span>
       <span class="time-slot" style="grid-row: time-1140;">11:40</span>
-      <span class="time-slot" style="grid-row: time-1145;">11:45</span>
-      <span class="time-slot" style="grid-row: time-1150;">11:50</span>
-      <span class="time-slot" style="grid-row: time-1155;">11:55</span>
-      <span class="time-slot" style="grid-row: time-1200;">12:00</span>
-      <span class="time-slot" style="grid-row: time-1205;">12:05</span>
-      <span class="time-slot" style="grid-row: time-1210;">12:10</span>
-      <span class="time-slot" style="grid-row: time-1215;">12:15</span>
+      <span class="time-rule" style="grid-row: time-1140;"></span>
       <span class="time-slot" style="grid-row: time-1220;">12:20</span>
-      <span class="time-slot" style="grid-row: time-1225;">12:25</span>
-      <span class="time-slot" style="grid-row: time-1230;">12:30</span>
-      <span class="time-slot" style="grid-row: time-1235;">12:35</span>
-      <span class="time-slot" style="grid-row: time-1240;">12:40</span>
-      <span class="time-slot" style="grid-row: time-1245;">12:45</span>
-      <span class="time-slot" style="grid-row: time-1250;">12:50</span>
-      <span class="time-slot" style="grid-row: time-1255;">12:55</span>
+      <span class="time-rule" style="grid-row: time-1220;"></span>
       <span class="time-slot" style="grid-row: time-1300;">13:00</span>
-      <span class="time-slot" style="grid-row: time-1305;">13:05</span>
-      <span class="time-slot" style="grid-row: time-1310;">13:10</span>
-      <span class="time-slot" style="grid-row: time-1315;">13:15</span>
-      <span class="time-slot" style="grid-row: time-1320;">13:20</span>
-      <span class="time-slot" style="grid-row: time-1325;">13:25</span>
-      <span class="time-slot" style="grid-row: time-1330;">13:30</span>
-      <span class="time-slot" style="grid-row: time-1335;">13:35</span>
-      <span class="time-slot" style="grid-row: time-1340;">13:40</span>
-      <span class="time-slot" style="grid-row: time-1345;">13:45</span>
-      <span class="time-slot" style="grid-row: time-1350;">13:50</span>
-      <span class="time-slot" style="grid-row: time-1355;">13:55</span>
+      <span class="time-rule" style="grid-row: time-1300;"></span>
       <span class="time-slot" style="grid-row: time-1400;">14:00</span>
+      <span class="time-rule" style="grid-row: time-1400;"></span>
       <span class="time-slot" style="grid-row: time-1405;">14:05</span>
+      <span class="time-rule" style="grid-row: time-1405;"></span>
       <span class="time-slot" style="grid-row: time-1410;">14:10</span>
+      <span class="time-rule" style="grid-row: time-1410;"></span>
       <span class="time-slot" style="grid-row: time-1415;">14:15</span>
+      <span class="time-rule" style="grid-row: time-1415;"></span>
       <span class="time-slot" style="grid-row: time-1420;">14:20</span>
+      <span class="time-rule" style="grid-row: time-1420;"></span>
       <span class="time-slot" style="grid-row: time-1425;">14:25</span>
+      <span class="time-rule" style="grid-row: time-1425;"></span>
       <span class="time-slot" style="grid-row: time-1430;">14:30</span>
+      <span class="time-rule" style="grid-row: time-1430;"></span>
       <span class="time-slot" style="grid-row: time-1435;">14:35</span>
+      <span class="time-rule" style="grid-row: time-1435;"></span>
       <span class="time-slot" style="grid-row: time-1440;">14:40</span>
+      <span class="time-rule" style="grid-row: time-1440;"></span>
       <span class="time-slot" style="grid-row: time-1445;">14:45</span>
+      <span class="time-rule" style="grid-row: time-1445;"></span>
       <span class="time-slot" style="grid-row: time-1450;">14:50</span>
+      <span class="time-rule" style="grid-row: time-1450;"></span>
       <span class="time-slot" style="grid-row: time-1455;">14:55</span>
+      <span class="time-rule" style="grid-row: time-1455;"></span>
       <span class="time-slot" style="grid-row: time-1500;">15:00</span>
+      <span class="time-rule" style="grid-row: time-1500;"></span>
       <span class="time-slot" style="grid-row: time-1505;">15:05</span>
+      <span class="time-rule" style="grid-row: time-1505;"></span>
       <span class="time-slot" style="grid-row: time-1510;">15:10</span>
+      <span class="time-rule" style="grid-row: time-1510;"></span>
       <span class="time-slot" style="grid-row: time-1515;">15:15</span>
+      <span class="time-rule" style="grid-row: time-1515;"></span>
       <span class="time-slot" style="grid-row: time-1520;">15:20</span>
+      <span class="time-rule" style="grid-row: time-1520;"></span>
       <span class="time-slot" style="grid-row: time-1525;">15:25</span>
+      <span class="time-rule" style="grid-row: time-1525;"></span>
       <span class="time-slot" style="grid-row: time-1530;">15:30</span>
+      <span class="time-rule" style="grid-row: time-1530;"></span>
       <span class="time-slot" style="grid-row: time-1535;">15:35</span>
+      <span class="time-rule" style="grid-row: time-1535;"></span>
       <span class="time-slot" style="grid-row: time-1540;">15:40</span>
+      <span class="time-rule" style="grid-row: time-1540;"></span>
       <span class="time-slot" style="grid-row: time-1545;">15:45</span>
+      <span class="time-rule" style="grid-row: time-1545;"></span>
       <span class="time-slot" style="grid-row: time-1550;">15:50</span>
+      <span class="time-rule" style="grid-row: time-1550;"></span>
       <span class="time-slot" style="grid-row: time-1555;">15:55</span>
+      <span class="time-rule" style="grid-row: time-1555;"></span>
       <span class="time-slot" style="grid-row: time-1600;">16:00</span>
+      <span class="time-rule" style="grid-row: time-1600;"></span>
       <span class="time-slot" style="grid-row: time-1605;">16:05</span>
+      <span class="time-rule" style="grid-row: time-1605;"></span>
       <span class="time-slot" style="grid-row: time-1610;">16:10</span>
+      <span class="time-rule" style="grid-row: time-1610;"></span>
       <span class="time-slot" style="grid-row: time-1615;">16:15</span>
+      <span class="time-rule" style="grid-row: time-1615;"></span>
       <span class="time-slot" style="grid-row: time-1620;">16:20</span>
+      <span class="time-rule" style="grid-row: time-1620;"></span>
       <span class="time-slot" style="grid-row: time-1625;">16:25</span>
+      <span class="time-rule" style="grid-row: time-1625;"></span>
       <span class="time-slot" style="grid-row: time-1630;">16:30</span>
+      <span class="time-rule" style="grid-row: time-1630;"></span>
       <span class="time-slot" style="grid-row: time-1635;">16:35</span>
+      <span class="time-rule" style="grid-row: time-1635;"></span>
       <span class="time-slot" style="grid-row: time-1640;">16:40</span>
+      <span class="time-rule" style="grid-row: time-1640;"></span>
       <span class="time-slot" style="grid-row: time-1645;">16:45</span>
+      <span class="time-rule" style="grid-row: time-1645;"></span>
       <span class="time-slot" style="grid-row: time-1650;">16:50</span>
+      <span class="time-rule" style="grid-row: time-1650;"></span>
       <span class="time-slot" style="grid-row: time-1655;">16:55</span>
+      <span class="time-rule" style="grid-row: time-1655;"></span>
       <span class="time-slot" style="grid-row: time-1700;">17:00</span>
+      <span class="time-rule" style="grid-row: time-1700;"></span>
       <span class="time-slot" style="grid-row: time-1705;">17:05</span>
+      <span class="time-rule" style="grid-row: time-1705;"></span>
       <span class="time-slot" style="grid-row: time-1710;">17:10</span>
+      <span class="time-rule" style="grid-row: time-1710;"></span>
       <span class="time-slot" style="grid-row: time-1715;">17:15</span>
+      <span class="time-rule" style="grid-row: time-1715;"></span>
       <span class="time-slot" style="grid-row: time-1720;">17:20</span>
+      <span class="time-rule" style="grid-row: time-1720;"></span>
       <span class="time-slot" style="grid-row: time-1725;">17:25</span>
+      <span class="time-rule" style="grid-row: time-1725;"></span>
       <span class="time-slot" style="grid-row: time-1730;">17:30</span>
+      <span class="time-rule" style="grid-row: time-1730;"></span>
       <span class="time-slot" style="grid-row: time-1735;">17:35</span>
+      <span class="time-rule" style="grid-row: time-1735;"></span>
       <span class="time-slot" style="grid-row: time-1740;">17:40</span>
+      <span class="time-rule" style="grid-row: time-1740;"></span>
       <span class="time-slot" style="grid-row: time-1745;">17:45</span>
+      <span class="time-rule" style="grid-row: time-1745;"></span>
       <span class="time-slot" style="grid-row: time-1750;">17:50</span>
+      <span class="time-rule" style="grid-row: time-1750;"></span>
       <span class="time-slot" style="grid-row: time-1755;">17:55</span>
+      <span class="time-rule" style="grid-row: time-1755;"></span>
       <span class="time-slot" style="grid-row: time-1800;">18:00</span>
+      <span class="time-rule" style="grid-row: time-1800;"></span>
       <span class="time-slot" style="grid-row: time-1805;">18:05</span>
+      <span class="time-rule" style="grid-row: time-1805;"></span>
       <span class="time-slot" style="grid-row: time-1810;">18:10</span>
+      <span class="time-rule" style="grid-row: time-1810;"></span>
       <span class="time-slot" style="grid-row: time-1815;">18:15</span>
+      <span class="time-rule" style="grid-row: time-1815;"></span>
       <span class="time-slot" style="grid-row: time-1820;">18:20</span>
+      <span class="time-rule" style="grid-row: time-1820;"></span>
       <span class="time-slot" style="grid-row: time-1825;">18:25</span>
+      <span class="time-rule" style="grid-row: time-1825;"></span>
       <span class="time-slot" style="grid-row: time-1830;">18:30</span>
+      <span class="time-rule" style="grid-row: time-1830;"></span>
       <span class="time-slot" style="grid-row: time-1835;">18:35</span>
+      <span class="time-rule" style="grid-row: time-1835;"></span>
       <span class="time-slot" style="grid-row: time-1840;">18:40</span>
+      <span class="time-rule" style="grid-row: time-1840;"></span>
       <span class="time-slot" style="grid-row: time-1845;">18:45</span>
+      <span class="time-rule" style="grid-row: time-1845;"></span>
       <span class="time-slot" style="grid-row: time-1850;">18:50</span>
+      <span class="time-rule" style="grid-row: time-1850;"></span>
       <span class="time-slot" style="grid-row: time-1855;">18:55</span>
+      <span class="time-rule" style="grid-row: time-1855;"></span>
       <span class="time-slot" style="grid-row: time-1900;">19:00</span>
+      <span class="time-rule" style="grid-row: time-1900;"></span>
       <span class="time-slot" style="grid-row: time-1905;">19:05</span>
+      <span class="time-rule" style="grid-row: time-1905;"></span>
       <span class="time-slot" style="grid-row: time-1910;">19:10</span>
+      <span class="time-rule" style="grid-row: time-1910;"></span>
       <span class="time-slot" style="grid-row: time-1915;">19:15</span>
+      <span class="time-rule" style="grid-row: time-1915;"></span>
       <span class="time-slot" style="grid-row: time-1920;">19:20</span>
-      <span class="time-slot" style="grid-row: time-1925;">19:25</span>
-      <span class="time-slot" style="grid-row: time-1930;">19:30</span>
+      <span class="time-rule" style="grid-row: time-1920;"></span>
+    
+      
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+    <div class="talk-details">
+    <h3 class="talk-title">Планеты: современный взгляд</h3>
+		<span class="talk-presenter">Маров М.Я. (ГЕОХИ РАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+    <div class="talk-details">
+    <h3 class="talk-title">Достижения в исследовании экзопланет</h3>
+		<span class="talk-presenter">Зеленый Л.М. (ИКИ РАН)</span>
+		<span class="talk-coauthors">Бисикало Д.В. (ИНАСАН),Кораблев О.И. (ИКИ РАН)</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-1120 / time-1140;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+    <div class="talk-details">
+    <h3 class="talk-title">Радиотелескопы России – состояние и перспективы</h3>
+		<span class="talk-presenter">Ипатов А.В. (ИПА РАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+    <div class="talk-details">
+    <h3 class="talk-title">Оптические телескопы и приборы – статус и перспективы</h3>
+		<span class="talk-presenter">Балега Ю.Ю. (САО РАН)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="event track-plenary" style="grid-column: 2 / -1; grid-row: time-1300 / time-1400;">
+    <div class="event-details">
+    <h3 class="event-name">Обеденный перерыв</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1420 / time-1435;">
+    <div class="talk-details">
+    <h3 class="talk-title">Эшелле-спектроскопия. I. Геометрия изображения эшелле-спектра, выбор оптимальных параметров спектрографа высокого разрешения</h3>
+		<span class="talk-presenter">Юшкин М.В.</span>
+		<span class="talk-coauthors">Панчук В.Е.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1435 / time-1450;">
+    <div class="talk-details">
+    <h3 class="talk-title">Эшелле-спектроскопия. II. Эффективность, позиционная точность и методы стабилизации изображения</h3>
+		<span class="talk-presenter">Юшкин М.В.</span>
+		<span class="talk-coauthors">Панчук В.Е.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1450 / time-1510;">
+    <div class="talk-details">
+    <h3 class="talk-title">Оптоволоконный спектрограф высокого спектрального разрешения для БТА</h3>
+		<span class="talk-presenter">Валявин Г.Г.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1510 / time-1525;">
+    <div class="talk-details">
+    <h3 class="talk-title">Новые спектральные приборы ИНАСАН</h3>
+		<span class="talk-presenter">Наливкин М.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1525 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Мультиобъектная спектроскопия в наблюдательном комплексе РТТ150</h3>
+		<span class="talk-presenter">Хамитов И.М.</span>
+		<span class="talk-coauthors">Бикмаев И.Ф.,Буренин Р.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-inst" style="grid-column: track-inst; grid-row: time-1545 / time-1605;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1605 / time-1620;">
+    <div class="talk-details">
+    <h3 class="talk-title">Программа улучшения характеристик нэсмитовского эшелле спектрографа (НЭС) БТА</h3>
+		<span class="talk-presenter">Панчук В.Е.</span>
+		<span class="talk-coauthors">^Юшкин М.В.,Верич Ю.Б. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1620 / time-1635;">
+    <div class="talk-details">
+    <h3 class="talk-title">Системы компенсации наклонов и кривизны волнового фронта</h3>
+		<span class="talk-presenter">Верич Ю.Б.</span>
+		<span class="talk-coauthors">Якопов Г.В.,Панчук В.Е.,^Емельянов Э.В.,Юшкин М.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1635 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Быстродействующее фотоприемное устройство с широкоформатным малошумящим КМОП-фотоприемником</h3>
+		<span class="talk-presenter">Мурзин В.А.</span>
+		<span class="talk-coauthors">Афанасьева И.В.,Иващенко Н.Г.,Притыченко М.А.,Додонов С.Н.,^Ардиланов В.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1650 / time-1705;">
+    <div class="talk-details">
+    <h3 class="talk-title">Результаты наземной отработки фотоприемного устройства УФ диапазона на основе ПЗС для проекта «Спектр-УФ</h3>
+		<span class="talk-presenter">Шугаров А.С.</span>
+		<span class="talk-coauthors">Вишняков Е.А.,Кириченко А.С.,Кузин С.В.,Николенко А.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1705 / time-1720;">
+    <div class="talk-details">
+    <h3 class="talk-title">Центр коллективного пользования "Терскольская обсерватория" ИНАСАН: новые возможности и инструменты</h3>
+		<span class="talk-presenter">Нароенков С.А.</span>
+		<span class="talk-coauthors">Наливкин М.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-inst" style="grid-column: track-inst; grid-row: time-1720 / time-1740;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 5 минут)</h3>
+    </div>
+	</div>
+
+      
+  <div class="event track-inst" style="grid-column: track-inst; grid-row: time-1740 / time-1800;">
+    <div class="event-details">
+    <h3 class="event-name">Обсуждение</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1400 / time-1420;">
+    <div class="talk-details">
+    <h3 class="talk-title">Космическая система обнаружения декаметровых астероидов, летящих со стороны Солнца (проект СОДА)</h3>
+		<span class="talk-presenter">Шугаров А.С.</span>
+		<span class="talk-coauthors">Шустов Б.М.,Шмагин В.Е.,Буслаева А.И.</span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1420;">
+    <div class="talk-details">
+    <h3 class="talk-title">Оценка возраста двух молодых пар астероидов на близких орбитах</h3>
+		<span class="talk-presenter">Сафронова В.С.</span>
+		<span class="talk-coauthors">Кузнецов Э.Д.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1420 / time-1440;">
+    <div class="talk-details">
+    <h3 class="talk-title">Негравитационные эффекты в орбитальном движении объектов космического мусора</h3>
+		<span class="talk-presenter">Чувашов И.Н.</span>
+		<span class="talk-coauthors">Лёвкина П.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1440 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Сравнение дрейфа большой полуоси при учете эффекта Ярковского в двух орбитальных системах отсчета</h3>
+		<span class="talk-presenter">Санникова Т.Н.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1500 / time-1520;">
+    <div class="talk-details">
+    <h3 class="talk-title">Измерения вращения Луны с поверхности Луны: результаты компьютерного моделирования</h3>
+		<span class="talk-presenter">Петрова Н.К.</span>
+		<span class="talk-coauthors">Нефедьев Ю.А.,Андреев А.О.,Загидуллин А.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1520 / time-1540;">
+    <div class="talk-details">
+    <h3 class="talk-title">Состояние и планы работ по определению параметров вращения Земли в ГМЦ ГСВЧ</h3>
+		<span class="talk-presenter">Пасынок С.Л.</span>
+		<span class="talk-coauthors">Безменов И.В.,Игнатенко И.Ю. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1540 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Создание единой системы определения селеноцентрических координат с целью ее использования совместно с современными спутниковыми наблюдениями и методами космического позиционирования</h3>
+		<span class="talk-presenter">Андреев А.О.</span>
+		<span class="talk-coauthors">Нефедьев Ю.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-celm" style="grid-column: track-celm; grid-row: time-1600 / time-1630;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1630 / time-1650;">
+    <div class="talk-details">
+    <h3 class="talk-title">Астрометрия квазаров и их протяжённые джеты: систематические отличия РСДБ-Gaia</h3>
+		<span class="talk-presenter">Плавин А.В.</span>
+		<span class="talk-coauthors">Ковалев Ю.Ю.,Петров Л.Ю.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1650 / time-1710;">
+    <div class="talk-details">
+    <h3 class="talk-title">Применение прямых измерений плотности и численных моделей солнечного ветра к обработке наблюдений дальности космических аппаратов</h3>
+		<span class="talk-presenter">Аксим Д. А.</span>
+		<span class="talk-coauthors">Павлов Д. А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1710 / time-1730;">
+    <div class="talk-details">
+    <h3 class="talk-title">Гравитационный маневр в задаче расширения областей посадки на поверхности Венеры</h3>
+		<span class="talk-presenter">Эйсмонт Н.А.</span>
+		<span class="talk-coauthors">Назиров Р.Р.,Федяев К.С.,Засова Л.В.,Зубко В.А. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование динамики группы объектов ГСО по данным наблюдений, полученным на пике Терскол</h3>
+		<span class="talk-presenter">Томилова И.В.</span>
+		<span class="talk-coauthors">Попандопуло Н.А.,Левкина П.А.,Бордовицына Т.В.,Авдюшев В.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;">
+    <div class="talk-details">
+    <h3 class="talk-title">Анализ оптимальных схем перелета к Седне</h3>
+		<span class="talk-presenter">Зубко В.А.</span>
+		<span class="talk-coauthors">Суханов А.А.,Федяев К.С.,Корянов В.В.,Беляев А.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;">
+    <div class="talk-details">
+    <h3 class="talk-title">Мультиволновая астрометрия</h3>
+		<span class="talk-presenter">Рыхлова Л. В.</span>
+		<span class="talk-coauthors">Клюйков А. А.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-celm" style="grid-column: track-celm; grid-row: time-1830 / time-1845;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 5 минут)</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Анизотропное рассеяние радиоизлучения пульсаров</h3>
+		<span class="talk-presenter">Андрианов А.С.</span>
+		<span class="talk-coauthors">Бургин М.С.,Зуга В.А.,Рудницкий А.Г.,Попов М.В.,Смирнова Т.В.,Согласнов В.А.,^Фадеев Е.Н.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Молекула OH в диффузной фазе межзвёздной среды</h3>
+		<span class="talk-presenter">Балашев С.А.</span>
+		<span class="talk-coauthors">Нирадж Гупта,Косенко Д.Н.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Галактический ветер при низкой скорости звездообразования</h3>
+		<span class="talk-presenter">Васильев Е.О.</span>
+		<span class="talk-coauthors">Дроздов С.А.,Nath B.B.,Щекинов Ю.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Механизмы образования органических молекул в межзвездной среде</h3>
+		<span class="talk-presenter">Васюнин А.И.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">О спектре рассеянного излучения протопланетных дисков</h3>
+		<span class="talk-presenter">Гринин В.П.</span>
+		<span class="talk-coauthors">Тамбовцева Л.В.,Дмитриев Д.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+    <div class="talk-details">
+    <h3 class="talk-title">Полуаналитические модели испарения пыли в протозвёздах и их аккреционных дисках</h3>
+		<span class="talk-presenter">Замоздра С.Н.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование рассеивающих свойств Млечного Пути на основе многочастотных РСДБ- наблюдений активных ядер галактик</h3>
+		<span class="talk-presenter">Корюкова Т.А.</span>
+		<span class="talk-coauthors">Пушкарев А.Б.,Плавин А.В.,Ковалев Ю.Ю.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование эволюции ПАУ в ФДО Orion Bar</h3>
+		<span class="talk-presenter">Мурга М.С.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;">
+    <div class="talk-details">
+    <h3 class="talk-title">Кинематика газа в облаке L1287</h3>
+		<span class="talk-presenter">Пирогов Л.Е.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+    <div class="talk-details">
+    <h3 class="talk-title">Изучение обновленной схемы формирования метанола на поверхности пылевых частиц</h3>
+		<span class="talk-presenter">Соколова В.А.</span>
+		<span class="talk-coauthors">Федосеев Г.С.,Васюнин А.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-stars" style="grid-column: track-stars; grid-row: time-1630 / time-1645;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+    <div class="talk-details">
+    <h3 class="talk-title">Спектроскопия планетарных туманностей с высоким разрешением. I. Скорости расширения, измеренные по линиям разных элементов</h3>
+		<span class="talk-presenter">Панчук В.Е.</span>
+		<span class="talk-coauthors">Юшкин М.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+    <div class="talk-details">
+    <h3 class="talk-title">Двухмерная МГД-модель динамики потоков газа около молодой звезды с джетом и протопланетным диском</h3>
+		<span class="talk-presenter">Григорьев В.В.</span>
+		<span class="talk-coauthors">Демидова Т.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+    <div class="talk-details">
+    <h3 class="talk-title">Геометрические свойства Галактических циррусов в оптике</h3>
+		<span class="talk-presenter">Марчук А.А.</span>
+		<span class="talk-coauthors">Смирнов А.А.,Мосенков А.В. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследование галактических циррусов по данным обзора Stripe82 SDSS</h3>
+		<span class="talk-presenter">Савченко С.С.</span>
+		<span class="talk-coauthors">Мосенков А.В.,Марчук А.А. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+    <div class="talk-details">
+    <h3 class="talk-title">Разрушение пыли на больших галактических высотах</h3>
+		<span class="talk-presenter">Сивкова Е.Э.</span>
+		<span class="talk-coauthors">Вибе Д.З.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 3 минуты)</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1400 / time-1415;">
+    <div class="talk-details">
+    <h3 class="talk-title">Связь между экстремальной яркостью квазаров и их вспышками в радиодиапазоне</h3>
+		<span class="talk-presenter">Попков А.В. (от группы обзора активных ядер галактик проекта «Радиоастрон»)</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1415 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Наблюдательные свидетельства рождения нейтрино высоких энергий в блазарах</h3>
+		<span class="talk-presenter">Плавин А.В.</span>
+		<span class="talk-coauthors">Ковалев Ю.Ю.,Ковалев Ю.А.,Троицкий С.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1430 / time-1445;">
+    <div class="talk-details">
+    <h3 class="talk-title">Формы релятивистских струй активных ядер галактик: от параболы к конусу</h3>
+		<span class="talk-presenter">Пушкарев А.Б.</span>
+		<span class="talk-coauthors">^Ковалев Ю.Ю.,Листер М.Л.,Нохрина Е.Е.,Плавин А.В,Савалайнен Т.,Бескин В.С.,Черноглазов А.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1445 / time-1500;">
+    <div class="talk-details">
+    <h3 class="talk-title">Связь переменности и усредненных по эпохам свойств линейной поляризации парсековых радиоджетов активных ядер галактик</h3>
+		<span class="talk-presenter">Зобнина Д.</span>
+		<span class="talk-coauthors">Пушкарев А.Б.,Пащенко И.Н. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1500 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">Локализация области генерации гамма-излучения в активных ядрах галактик по данным многолетних наблюдений РСДБ и Fermi</h3>
+		<span class="talk-presenter">Крамаренко И.Г.</span>
+		<span class="talk-coauthors">Пушкарев А.Б.,Ковалев Ю.Ю. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1515 / time-1530;">
+    <div class="talk-details">
+    <h3 class="talk-title">Моделирование вспышек вязких аккреционных дисков вокруг компактных объектов</h3>
+		<span class="talk-presenter">Липунова Г.</span>
+		<span class="talk-coauthors">Маланчев К.,Авакян А.,Шакура Н.,Цыганков С.,Тавлеев А.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-hea" style="grid-column: track-hea; grid-row: time-1530 / time-1540;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1540 / time-1555;">
+    <div class="talk-details">
+    <h3 class="talk-title">Магнитные поля аккреционных дисков и их вертикальная структура</h3>
+		<span class="talk-presenter">Пашенцева М.В.</span>
+		<span class="talk-coauthors">Михайлов Е.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1555 / time-1610;">
+    <div class="talk-details">
+    <h3 class="talk-title">Двухчастотное изучение джета галактики М87 с суб-парсековым разрешением в радио диапазоне</h3>
+		<span class="talk-presenter">Никонов А.С.</span>
+		<span class="talk-coauthors">Ковалев Ю.Ю.,Кравченко Е.В.,Лобанов А.П.,Kellermann K.I.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1610 / time-1625;">
+    <div class="talk-details">
+    <h3 class="talk-title">Указания на параболическую форму выбросов в области ядер по кинематике</h3>
+		<span class="talk-presenter">Нохрина Е.Е.</span>
+		<span class="talk-coauthors">Пащенко И.Н.,Кутькин А.М.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1625 / time-1640;">
+    <div class="talk-details">
+    <h3 class="talk-title">Мера вращения и вертикальная структура аккреционных дисков</h3>
+		<span class="talk-presenter">Булдаков М.А.</span>
+		<span class="talk-coauthors">Васильев Е.О.,Андрианов А.С.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1640 / time-1655;">
+    <div class="talk-details">
+    <h3 class="talk-title">Глобальная конфигурация магнитного поля в джетах активных ядер галактик</h3>
+		<span class="talk-presenter">Бутузова М.С.</span>
+		<span class="talk-coauthors">Пушкарев А.Б.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1655 / time-1710;">
+    <div class="talk-details">
+    <h3 class="talk-title">Космическая гравитационно-волновая обсерватория TianQin: концепция и современное состояние реализации проекта</h3>
+		<span class="talk-presenter">Милюков В.К.</span>
+		<span class="talk-coauthors">международная коллаборация TianQi</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-hea" style="grid-column: track-hea; grid-row: time-1710 / time-1720;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1720 / time-1735;">
+    <div class="talk-details">
+    <h3 class="talk-title">Рентгеновская морфология пульсарных туманностей: влияние движения локальной среды</h3>
+		<span class="talk-presenter">Левенфиш К.П.</span>
+		<span class="talk-coauthors">Пономарёв Г.А.,Петров А.Е.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1735 / time-1750;">
+    <div class="talk-details">
+    <h3 class="talk-title">Ограничения на природу оптической излучающей области блазара S5 0716+714 из долговременной переменности</h3>
+		<span class="talk-presenter">Горбачев М.А.</span>
+		<span class="talk-coauthors">Бутузова М.С.,Сергеев С.Г.,Назаров С.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1750 / time-1805;">
+    <div class="talk-details">
+    <h3 class="talk-title">Тени черных дыр и кротовых нор на фоне стандартного экрана: сходства и отличия</h3>
+		<span class="talk-presenter">Бугаев М.А.</span>
+		<span class="talk-coauthors">Новиков И.Д.,Репин С.В.,Шелковникова А.А.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1805 / time-1820;">
+    <div class="talk-details">
+    <h3 class="talk-title">Моделирование наблюдений теней черных дыр с помощью наземно-космических интерферометров</h3>
+		<span class="talk-presenter">Михеева Е.В.</span>
+		<span class="talk-coauthors">Репин С.В.,Лукаш В.Н.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1820 / time-1835;">
+    <div class="talk-details">
+    <h3 class="talk-title">Слияния первичных черных дыр в компактных кластерах</h3>
+		<span class="talk-presenter">Ерошенко Ю.Н.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1835 / time-1850;">
+    <div class="talk-details">
+    <h3 class="talk-title">Подтверждение кандидатов в черные дыры промежуточной массы при помощи рентгеновских наблюдений</h3>
+		<span class="talk-presenter">Топтун В.А.</span>
+		<span class="talk-coauthors">Чилингарян И.В.,Гришин К.А. и др.</span>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1635 / time-1655;">
+    <div class="talk-details">
+    <h3 class="talk-title">Нелинейная космогония балджа спиральных галактик</h3>
+		<span class="talk-presenter">Ботиров Ф.У.</span>
+		<span class="talk-coauthors">Нуритдинов С.Н.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1700 / time-1825;">
+    <div class="event-details">
+    <h3 class="event-name">Стендовые доклады (по 5 минут)</h3>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1825 / time-1920;">
+    <div class="event-details">
+    <h3 class="event-name">Общая дискуссия</h3>
+    </div>
+	</div>
+
+
+      
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1430;">
+    <div class="talk-details">
+    <h3 class="talk-title">Очаги звездообразования в приливных структурах</h3>
+		<span class="talk-presenter">Засов А.В.</span>
+		<span class="talk-coauthors">Сабурова А.С.,Егоров О.В.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1430 / time-1455;">
+    <div class="talk-details">
+    <h3 class="talk-title">Оптические наблюдения массивных скоплений галактик из обзора всего неба СРГ/eROSITA</h3>
+		<span class="talk-presenter">Буренин Р.А.</span>
+		<span class="talk-coauthors"></span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1455 / time-1515;">
+    <div class="talk-details">
+    <h3 class="talk-title">Исследования скоплений галактик по архивным данным SDSS каталога</h3>
+		<span class="talk-presenter">Копылова Ф.Г.</span>
+		<span class="talk-coauthors">Копылов А.И.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1515 / time-1535;">
+    <div class="talk-details">
+    <h3 class="talk-title">Формирование UDG в скоплениях путем обдирания лобовым давлением богатых газом карликовых галактик</h3>
+		<span class="talk-presenter">Гришин К.А.</span>
+		<span class="talk-coauthors">Чилингарян И.В.,Афанасьев А.В.,Катков И.Ю.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1535 / time-1555;">
+    <div class="talk-details">
+    <h3 class="talk-title">ККН22 – первый dSph спутник IC 342</h3>
+		<span class="talk-presenter">Макарова Л.Н.</span>
+		<span class="talk-coauthors">Караченцев И.Д.,и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1555 / time-1615;">
+    <div class="talk-details">
+    <h3 class="talk-title">Свойства диффузного света в компактных группах галактик</h3>
+		<span class="talk-presenter">Поляков Д.М.</span>
+		<span class="talk-coauthors">Мосенков А.В. и др.</span>
+    </div>
+	</div>
+
+      
+  <div class="event track-galaxies" style="grid-column: track-galaxies; grid-row: time-1615 / time-1635;">
+    <div class="event-details">
+    <h3 class="event-name">Перерыв</h3>
+    </div>
+	</div>
+
 
     </div>
   </div>

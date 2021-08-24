@@ -1,64 +1,200 @@
 
-@media screen and (min-width:700px) {
-  .schedule {
-    display: grid;
-    grid-gap: 1em;
+
+.days-button-list {
+  display: grid;
+  grid-gap: 0.5ex;
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
+}
+
+
+.schedule .conference-day-0 {
+    display: inherit;
+    grid-gap: inherit;
     grid-template-rows:
-      [tracks] auto
-      [time-0930] 1fr
-      [time-0935] 1fr
-      [time-0940] 1fr
-      [time-0945] 1fr
-      [time-0950] 1fr
-      [time-0955] 1fr
-      [time-1000] 1fr
-      [time-1005] 1fr
-      [time-1010] 1fr
-      [time-1015] 1fr
-      [time-1020] 1fr
-      [time-1025] 1fr
-      [time-1030] 1fr
-      [time-1035] 1fr
-      [time-1040] 1fr
-      [time-1045] 1fr
-      [time-1050] 1fr
-      [time-1055] 1fr
-      [time-1100] 1fr
-      [time-1105] 1fr
-      [time-1110] 1fr
-      [time-1115] 1fr
-      [time-1120] 1fr
-      [time-1125] 1fr
-      [time-1130] 1fr
-      [time-1135] 1fr
-      [time-1140] 1fr
-      [time-1145] 1fr
-      [time-1150] 1fr
-      [time-1155] 1fr
-      [time-1200] 1fr
-      [time-1205] 1fr
-      [time-1210] 1fr
-      [time-1215] 1fr
-      [time-1220] 1fr
-      [time-1225] 1fr
-      [time-1230] 1fr
-      [time-1235] 1fr
-      [time-1240] 1fr
-      [time-1245] 1fr
-      [time-1250] 1fr
-      [time-1255] 1fr
-      [time-1300] 1fr
-      [time-1305] 1fr
-      [time-1310] 1fr
-      [time-1315] 1fr
-      [time-1320] 1fr
-      [time-1325] 1fr
-      [time-1330] 1fr
-      [time-1335] 1fr
-      [time-1340] 1fr
-      [time-1345] 1fr
-      [time-1350] 1fr
-      [time-1355] 1fr
+      [tracks] auto 
+      [time-0930] auto
+      [time-1000] auto
+      [time-1040] auto
+      [time-1120] auto
+      [time-1140] auto
+      [time-1220] auto
+      [time-1300] auto
+      [time-1400] 1fr
+      [time-1405] 1fr
+      [time-1410] 1fr
+      [time-1415] 1fr
+      [time-1420] 1fr
+      [time-1425] 1fr
+      [time-1430] 1fr
+      [time-1435] 1fr
+      [time-1440] 1fr
+      [time-1445] 1fr
+      [time-1450] 1fr
+      [time-1455] 1fr
+      [time-1500] 1fr
+      [time-1505] 1fr
+      [time-1510] 1fr
+      [time-1515] 1fr
+      [time-1520] 1fr
+      [time-1525] 1fr
+      [time-1530] 1fr
+      [time-1535] 1fr
+      [time-1540] 1fr
+      [time-1545] 1fr
+      [time-1550] 1fr
+      [time-1555] 1fr
+      [time-1600] 1fr
+      [time-1605] 1fr
+      [time-1610] 1fr
+      [time-1615] 1fr
+      [time-1620] 1fr
+      [time-1625] 1fr
+      [time-1630] 1fr
+      [time-1635] 1fr
+      [time-1640] 1fr
+      [time-1645] 1fr
+      [time-1650] 1fr
+      [time-1655] 1fr
+      [time-1700] 1fr
+      [time-1705] 1fr
+      [time-1710] 1fr
+      [time-1715] 1fr
+      [time-1720] 1fr
+      [time-1725] 1fr
+      [time-1730] 1fr
+      [time-1735] 1fr
+      [time-1740] 1fr
+      [time-1745] 1fr
+      [time-1750] 1fr
+      [time-1755] 1fr
+      [time-1800] 1fr
+      [time-1805] 1fr
+      [time-1810] 1fr
+      [time-1815] 1fr
+      [time-1820] 1fr
+      [time-1825] 1fr
+      [time-1830] 1fr
+      [time-1835] 1fr
+      [time-1840] 1fr
+      [time-1845] 1fr
+      [time-1850] 1fr
+      [time-1855] 1fr
+      [time-1900] 1fr
+      [time-1905] 1fr
+      [time-1910];
+    grid-template-columns:
+      [times] 4em
+      [track-inst-start] 1fr
+      [track-inst-end track-celm-start] 1fr
+      [track-celm-end track-stars-start] 1fr
+      [track-stars-end track-planets-start] 1fr
+      [track-planets-end track-hea-start] 1fr
+      [track-hea-end track-msa-start] 1fr
+      [track-msa-end track-sun-start] 1fr
+      [track-sun-end track-galaxies-start] 1fr
+      [track-galaxies-end];
+}
+
+.schedule .conference-day-1 {
+    display: inherit;
+    grid-gap: inherit;
+    grid-template-rows:
+      [tracks] auto 
+      [time-1000] auto
+      [time-1040] auto
+      [time-1120] auto
+      [time-1140] auto
+      [time-1220] auto
+      [time-1300] auto
+      [time-1400] 1fr
+      [time-1405] 1fr
+      [time-1410] 1fr
+      [time-1415] 1fr
+      [time-1420] 1fr
+      [time-1425] 1fr
+      [time-1430] 1fr
+      [time-1435] 1fr
+      [time-1440] 1fr
+      [time-1445] 1fr
+      [time-1450] 1fr
+      [time-1455] 1fr
+      [time-1500] 1fr
+      [time-1505] 1fr
+      [time-1510] 1fr
+      [time-1515] 1fr
+      [time-1520] 1fr
+      [time-1525] 1fr
+      [time-1530] 1fr
+      [time-1535] 1fr
+      [time-1540] 1fr
+      [time-1545] 1fr
+      [time-1550] 1fr
+      [time-1555] 1fr
+      [time-1600] 1fr
+      [time-1605] 1fr
+      [time-1610] 1fr
+      [time-1615] 1fr
+      [time-1620] 1fr
+      [time-1625] 1fr
+      [time-1630] 1fr
+      [time-1635] 1fr
+      [time-1640] 1fr
+      [time-1645] 1fr
+      [time-1650] 1fr
+      [time-1655] 1fr
+      [time-1700] 1fr
+      [time-1705] 1fr
+      [time-1710] 1fr
+      [time-1715] 1fr
+      [time-1720] 1fr
+      [time-1725] 1fr
+      [time-1730] 1fr
+      [time-1735] 1fr
+      [time-1740] 1fr
+      [time-1745] 1fr
+      [time-1750] 1fr
+      [time-1755] 1fr
+      [time-1800] 1fr
+      [time-1805] 1fr
+      [time-1810] 1fr
+      [time-1815] 1fr
+      [time-1820] 1fr
+      [time-1825] 1fr
+      [time-1830] 1fr
+      [time-1835] 1fr
+      [time-1840] 1fr
+      [time-1845] 1fr
+      [time-1850] 1fr
+      [time-1855] 1fr
+      [time-1900] 1fr
+      [time-1905] 1fr
+      [time-1910] 1fr
+      [time-1915] 1fr
+      [time-1920];
+    grid-template-columns:
+      [times] 4em
+      [track-inst-start] 1fr
+      [track-inst-end track-celm-start] 1fr
+      [track-celm-end track-stars-start] 1fr
+      [track-stars-end track-planets-start] 1fr
+      [track-planets-end track-hea-start] 1fr
+      [track-hea-end track-msa-start] 1fr
+      [track-msa-end track-sun-start] 1fr
+      [track-sun-end track-galaxies-start] 1fr
+      [track-galaxies-end];
+}
+
+.schedule .conference-day-2 {
+    display: inherit;
+    grid-gap: inherit;
+    grid-template-rows:
+      [tracks] auto 
+      [time-1000] auto
+      [time-1040] auto
+      [time-1120] auto
+      [time-1140] auto
+      [time-1220] auto
+      [time-1300] auto
       [time-1400] 1fr
       [time-1405] 1fr
       [time-1410] 1fr
@@ -126,14 +262,8 @@
       [time-1920] 1fr
       [time-1925] 1fr
       [time-1930] 1fr
-      ;
-			/* Note 1:
-			Use 24hr time for gridline names for simplicity
-
-			Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
-			Try 0.5fr for more compact equal rows. I don't quite understand how that works :)
-			*/
-		
+      [time-1935] auto
+      [time-2100];
     grid-template-columns:
       [times] 4em
       [track-inst-start] 1fr
@@ -145,11 +275,202 @@
       [track-msa-end track-sun-start] 1fr
       [track-sun-end track-galaxies-start] 1fr
       [track-galaxies-end];
+}
+
+.schedule .conference-day-3 {
+    display: inherit;
+    grid-gap: inherit;
+    grid-template-rows:
+      [tracks] auto 
+      [time-1000] auto
+      [time-1040] auto
+      [time-1120] auto
+      [time-1140] auto
+      [time-1220] auto
+      [time-1300] auto
+      [time-1400] 1fr
+      [time-1405] 1fr
+      [time-1410] 1fr
+      [time-1415] 1fr
+      [time-1420] 1fr
+      [time-1425] 1fr
+      [time-1430] 1fr
+      [time-1435] 1fr
+      [time-1440] 1fr
+      [time-1445] 1fr
+      [time-1450] 1fr
+      [time-1455] 1fr
+      [time-1500] 1fr
+      [time-1505] 1fr
+      [time-1510] 1fr
+      [time-1515] 1fr
+      [time-1520] 1fr
+      [time-1525] 1fr
+      [time-1530] 1fr
+      [time-1535] 1fr
+      [time-1540] 1fr
+      [time-1545] 1fr
+      [time-1550] 1fr
+      [time-1555] 1fr
+      [time-1600] 1fr
+      [time-1605] 1fr
+      [time-1610] 1fr
+      [time-1615] 1fr
+      [time-1620] 1fr
+      [time-1625] 1fr
+      [time-1630] 1fr
+      [time-1635] 1fr
+      [time-1640] 1fr
+      [time-1645] 1fr
+      [time-1650] 1fr
+      [time-1655] 1fr
+      [time-1700] 1fr
+      [time-1705] 1fr
+      [time-1710] 1fr
+      [time-1715] 1fr
+      [time-1720] 1fr
+      [time-1725] 1fr
+      [time-1730] 1fr
+      [time-1735] 1fr
+      [time-1740] 1fr
+      [time-1745] 1fr
+      [time-1750] 1fr
+      [time-1755] 1fr
+      [time-1800] 1fr
+      [time-1805] 1fr
+      [time-1810] 1fr
+      [time-1815] 1fr
+      [time-1820] 1fr
+      [time-1825] 1fr
+      [time-1830] 1fr
+      [time-1835] 1fr
+      [time-1840] 1fr
+      [time-1845] 1fr
+      [time-1850] 1fr
+      [time-1855] 1fr
+      [time-1900] 1fr
+      [time-1905] 1fr
+      [time-1910] 1fr
+      [time-1915] 1fr
+      [time-1920];
+    grid-template-columns:
+      [times] 4em
+      [track-inst-start] 1fr
+      [track-inst-end track-celm-start] 1fr
+      [track-celm-end track-stars-start] 1fr
+      [track-stars-end track-planets-start] 1fr
+      [track-planets-end track-hea-start] 1fr
+      [track-hea-end track-msa-start] 1fr
+      [track-msa-end track-sun-start] 1fr
+      [track-sun-end track-galaxies-start] 1fr
+      [track-galaxies-end];
+}
+
+.schedule .conference-day-4 {
+    display: inherit;
+    grid-gap: inherit;
+    grid-template-rows:
+      [tracks] auto 
+      [time-1000] auto
+      [time-1040] auto
+      [time-1120] auto
+      [time-1140] auto
+      [time-1220] auto
+      [time-1300] auto
+      [time-1400] 1fr
+      [time-1405] 1fr
+      [time-1410] 1fr
+      [time-1415] 1fr
+      [time-1420] 1fr
+      [time-1425] 1fr
+      [time-1430] 1fr
+      [time-1435] 1fr
+      [time-1440] 1fr
+      [time-1445] 1fr
+      [time-1450] 1fr
+      [time-1455] 1fr
+      [time-1500] 1fr
+      [time-1505] 1fr
+      [time-1510] 1fr
+      [time-1515] 1fr
+      [time-1520] 1fr
+      [time-1525] 1fr
+      [time-1530] 1fr
+      [time-1535] 1fr
+      [time-1540] 1fr
+      [time-1545] 1fr
+      [time-1550] 1fr
+      [time-1555] 1fr
+      [time-1600] 1fr
+      [time-1605] 1fr
+      [time-1610] 1fr
+      [time-1615] 1fr
+      [time-1620] 1fr
+      [time-1625] 1fr
+      [time-1630] 1fr
+      [time-1635] 1fr
+      [time-1640] 1fr
+      [time-1645] 1fr
+      [time-1650] 1fr
+      [time-1655] 1fr
+      [time-1700] 1fr
+      [time-1705] 1fr
+      [time-1710] 1fr
+      [time-1715] 1fr
+      [time-1720] 1fr
+      [time-1725] 1fr
+      [time-1730] 1fr
+      [time-1735] 1fr
+      [time-1740] 1fr
+      [time-1745] 1fr
+      [time-1750] 1fr
+      [time-1755] 1fr
+      [time-1800] 1fr
+      [time-1805] 1fr
+      [time-1810] 1fr
+      [time-1815] 1fr
+      [time-1820] 1fr
+      [time-1825] 1fr
+      [time-1830] 1fr
+      [time-1835] 1fr
+      [time-1840] 1fr
+      [time-1845] 1fr
+      [time-1850] 1fr
+      [time-1855] 1fr
+      [time-1900] 1fr
+      [time-1905] 1fr
+      [time-1910] 1fr
+      [time-1915] 1fr
+      [time-1920];
+    grid-template-columns:
+      [times] 4em
+      [track-inst-start] 1fr
+      [track-inst-end track-celm-start] 1fr
+      [track-celm-end track-stars-start] 1fr
+      [track-stars-end track-planets-start] 1fr
+      [track-planets-end track-hea-start] 1fr
+      [track-hea-end track-msa-start] 1fr
+      [track-msa-end track-sun-start] 1fr
+      [track-sun-end track-galaxies-start] 1fr
+      [track-galaxies-end];
+}
+
+
+@media screen and (min-width:700px) {
+  .schedule {
+    display: grid;
+    grid-gap: 0.5ex;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
 	}
 }
 
 .time-slot {
 	grid-column: times;
+}
+
+.time-rule {
+	grid-column: 1 / -1;
 }
 
 .track-slot {
@@ -169,7 +490,7 @@
 	}
 }
 
-/* Small-screen & fallback styles */
+/* Small-screen & fallback styles 
 .session {
 	margin-bottom:  1em;
 }
@@ -180,4 +501,4 @@
 			margin: 0;
 		}	
 	}
-}
+}*/
