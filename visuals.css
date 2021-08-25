@@ -1,0 +1,125 @@
+:root {
+    --selection-color: 135, 175, 175;
+    --nice-sans-font: "Nunito Sans", "Lato";
+    --crispy-sans-font: "Open Sans";
+    --half-grid-gap: 0.5ex;
+}
+
+
+body {
+	padding: 1em;
+	max-width: 1100px;
+	margin: 0 auto;
+	line-height: 1.25;
+}
+
+h1,h2,h3,h4 {
+    font-family: var(--nice-sans-font), sans-serif;
+}
+
+.schedule {
+    grid-gap: var(--half-grid-gap);
+}
+
+.talk, .event {
+	margin-top: var(--half-grid-gap);
+    padding: 1ex;
+    vertical-align: text-top;
+	border-radius: 10px;
+    text-align: center;
+    border: 3px solid lightgray;
+    font-size: 10pt;
+}
+.talk {
+    background-color: rgba(150, 215, 253, 0.8);
+}
+
+.event {
+    background-color: rgba(182, 253, 150, 0.8);
+}
+
+.talk-title,
+.talk-presenter,
+.talk-coauthors {
+    font-family: var(--nice-sans-font);
+	display: block;
+}
+
+h3.talk-title {
+    font-weight: bold;
+    margin-top: 0ex;
+    margin-bottom: 1.2ex;
+    display: inline-block;
+    border-bottom: 1pt dashed;
+    padding-bottom: 0.7ex;
+}
+.talk-presenter {
+    font-weight: bold;
+}
+
+.time-rule {
+    border-top: 2px solid rgba(220,220,220,1);
+    height: 0pt;
+}
+
+.days-button-list {
+    display: none; /* shown by js */
+    margin-bottom: 1.5em;
+    margin-left: 3em;
+}
+
+.days-button-list[enabled] {
+    display: grid; /* shown by js */
+}
+
+.days-button-list button {
+    font-family: var(--nice-sans-font), sans-serif;
+    text-align: center;
+    border: 0pt;
+    padding: 1ex;
+    font-size: 12pt;
+    border-radius: 2pt;
+    background-color: rgba(var(--selection-color), 0);
+}
+.days-button-list button:hover {
+    background-color: rgba(var(--selection-color), 0.1);
+}
+
+.button-label-date {
+    display: inline-block;
+    border-bottom: solid lightgray;
+    padding-bottom: 2pt;
+    margin-bottom: 3pt;
+}
+.button-label-weekday {
+    display: block;
+}
+.days-button-list button[selected] {
+    background-color: rgba(var(--selection-color), 0.2);
+}
+
+
+.talk-details {
+    text-align: left;
+}
+
+.event-details {
+}
+
+.time-slot {
+	margin: 0;
+	font-size: 8pt;
+    padding-top: 4px;
+    font-family: var(--crispy-sans-font), sans-serif;
+}
+.track-slot {
+    font-size: 10pt;
+    text-align: center;
+    font-family: var(--crispy-sans-font), sans-serif;
+	background-color: rgba(255,255,255,.9);
+}
+
+.conference-anyday {
+/*     overflow: scroll; */
+    max-width: 100%;
+}
