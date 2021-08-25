@@ -2,43 +2,27 @@
 
 import datetime
 import yaml
-from typing import Optional
+from typing import Optional, Any
 import re
 import csv
 from pathlib import Path
 from collections import OrderedDict
 from utils import timerange
+from dataclasses import dataclass, field
 
 
-def simplekvrepr(o):
-    classmodule = o.__module__
-    classname = o.__class__.__name__
-    s = classmodule + '.' + classname
-    s += '('
-    for k, v in vars(o).items():
-        s += f"{k} = {repr(v)}, "
-    s = s[:-2]  # remove last comma
-    s += ')'
-    return s
-
-
+@dataclass
 class Track:
-    def __init__(
-        self,
-        name: str,
-        key: str,
-        location: Optional[str] = None,
-        coordinators: list[str] = [],
-        description: str = "",
-        shortname: Optional[str] = None,
-    ):
-        for k, v in vars().items():
-            if k != 'self':
-                setattr(self, k, v)
-        if shortname is None:
-            self.shortname = key
+    name: str
+    key: str
+    shortname: Optional[str] = None
+    description: str = ""
+    location: Optional[str] = None
+    coordinators: list[str] = field(default_factory=list)
 
-    __repr__ = simplekvrepr
+    def __post_init__(self):
+        if self.shortname is None:
+            self.shortname = self.key
 
 
 def read_tracks(fd):
@@ -49,19 +33,12 @@ def read_tracks(fd):
     return tracks
 
 
+@dataclass
 class Event:
-    def __init__(
-        self,
-        track: Track,
-        begin: datetime.time,
-        end: datetime.time,
-        name: str,
-    ):
-        for k, v in vars().items():
-            if k != 'self':
-                setattr(self, k, v)
-
-    __repr__ = simplekvrepr
+    track: Track
+    begin: datetime.time
+    end: datetime.time
+    name: str
 
     def __str__(self):
         return (
@@ -70,21 +47,15 @@ class Event:
         )
 
 
+@dataclass
 class Talk(Event):
-    def __init__(
-        self,
-        track: Track,
-        begin: datetime.time,
-        end: datetime.time,
-        title: str,
-        presenter: str,
-        coauthors: list[str] = []
-    ):
-        for k, v in vars().items():
-            if k != 'self':
-                setattr(self, k, v)
-
-    __repr__ = simplekvrepr
+    track: Track
+    begin: datetime.time
+    end: datetime.time
+    title: str
+    presenter: str
+    coauthors: list[str] = field(default_factory=list)
+    name: str = field(init=False)  # a hack around dataclass inheritance
 
     def __str__(self):
         return (
@@ -114,7 +85,8 @@ def read_events(fd, track: Track):
         # giving up
         if len(times) != 2:
             raise csv.Error(f"malformed time range, parsed {times} from {row}, check your dashes")
-        event_type = Event
+
+        event_type: Any = Event
         kwargs = dict(
             track = track,
             begin = datetime.datetime.strptime(times[0].strip(), "%H:%M").time(),
@@ -139,20 +111,13 @@ def read_events(fd, track: Track):
     return events
 
 
+@dataclass
 class Session:
-    def __init__(
-        self,
-        chair: str,
-        date: datetime.date,
-        events: list[Event] = [],
-        moderator: Optional[str] = None,
-        title: str = ""
-    ):
-        for k, v in vars().items():
-            if k != 'self':
-                setattr(self, k, v)
-
-    __repr__ = simplekvrepr
+    chair: str
+    date: datetime.date
+    events: list[Event] = field(default_factory=list)
+    moderator: Optional[str] = None
+    title: str = ""
 
     def __str__(self):
         r = (
@@ -183,27 +148,23 @@ def read_session(folder: Path, track: Track):
     )
 
 
+@dataclass
 class Conference:
-    plenaryname = "Пленарные доклады"
+    name: str
+    tracks: list[Track]
+    begin: datetime.date
+    end: datetime.date
+    place: str
+    plenaryname: str = "Plenary"
 
-    def __init__(
-        self,
-        name: str,
-        tracks: list[Track],
-        begin: datetime.date,
-        end: datetime.date,
-        place: str,
-    ):
-        for k, v in vars().items():
-            if k != 'self':
-                setattr(self, k, v)
+    def __post_init__(self):
         self._days = OrderedDict.fromkeys(
             (self.begin + datetime.timedelta(days=i) for i in range(0, (self.end-self.begin).days))
         )
 
         # make them different empty lists (not the same!)
         for k in self._days:
-            self._days[k] = []
+            self._days[k] = list()
 
     def insert_session(self, s: Session):
         self._days[s.date].append(s)
@@ -242,7 +203,7 @@ class Conference:
         return c
 
 
-def _insertintimes(times, t, gridspec):
+def _insertintimes(times, t: datetime.time, gridspec: str):
     i = 0
     while i < len(times) and t > times[i][0]:
         i += 1
@@ -265,7 +226,7 @@ def maketimes(
     sessions: list[Session],
     dt: datetime.timedelta = datetime.timedelta(minutes=5)
 ):
-    times = []
+    times: list[tuple[datetime.time, str]] = []
     for s in sessions:
         for e in s.events:
             if e.track.key == 'plenary':
