@@ -39,7 +39,7 @@
       [tracks] auto ${render_gridtime(times)};
     ## remember, labels are for grid lines, not for cells
     grid-template-columns:
-      [times] 4em
+      [times] 3em
       [${track2cssgrid(conference.tracks[0])}-start] 1fr
       % for i in range(len(conference.tracks)-1):
       [${track2cssgrid(conference.tracks[i])}-end ${track2cssgrid(conference.tracks[i+1])}-start] 1fr
