@@ -17,7 +17,7 @@
     <div class="talk-details">
     <h3 class="talk-title">${t.title}</h3>
 		<span class="talk-presenter">${t.presenter}</span>
-		<span class="talk-coauthors">${",".join(t.coauthors)}</span>
+		<span class="talk-coauthors">${", ".join(t.coauthors)}</span>
     </div>
 	</div>
 </%def>

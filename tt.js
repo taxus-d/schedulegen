@@ -38,3 +38,4 @@ pressDayButton(btnlist[0]);
 btnlist.forEach(
     (b) => b.addEventListener("click", function () {pressDayButton(b)})
 );
+
