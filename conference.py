@@ -55,7 +55,7 @@ class Talk(Event):
     title: str
     presenter: str
     coauthors: list[str] = field(default_factory=list)
-    name: str = field(init=False)  # a hack around dataclass inheritance
+    name: str = field(init=False, repr=False)  # a hack around dataclass inheritance
 
     def __str__(self):
         return (
@@ -96,12 +96,28 @@ def read_events(fd, track: Track):
         # guessing talks or events (lunch)
         if row['people'] != "":
             event_type = Talk
-            people = []
+
+            presenter = None
+            coauthors = []
             for p in row['people'].split(","):
-                people.append(re.sub(r"\s{2,}", " ", p.strip()))
+                cleaned = re.sub(r"\s{2,}", " ", p.strip())
+                if cleaned != '':
+                    if cleaned[0] == '^':
+                        if presenter is None:
+                            presenter = cleaned[1:]
+                        else:
+                            raise csv.Error(f"multiple presenters detectedon {row}, please select a signle one")
+
+                    else:
+                        coauthors.append(cleaned)
+
+            if presenter is None:
+                presenter = coauthors[0]
+                coauthors = coauthors[1:]
+
             kwargs.update(
-                presenter = people[0],
-                coauthors = people[1:],
+                presenter = presenter,
+                coauthors = coauthors,
                 title = name_cleaned,
             )
         else:
