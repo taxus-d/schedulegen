@@ -39,3 +39,13 @@ btnlist.forEach(
     (b) => b.addEventListener("click", function () {pressDayButton(b)})
 );
 
+const talklist = Array.from(document.getElementsByClassName("talk"));
+talklist.forEach(
+    (t) => t.addEventListener("click", function () {
+        if (t.getAttribute("active") == 1) {
+            t.removeAttribute("active")
+        } else {
+            t.setAttribute("active", "1")
+        }
+    })
+);

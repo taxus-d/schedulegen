@@ -21,6 +21,31 @@ h1,h2,h3,h4 {
     grid-gap: var(--half-grid-gap);
 }
 
+.conference-session {
+    z-index: 100;
+}
+
+.conference-session:hover {
+    background-color: rgba(255, 187, 92, 0.1);
+}
+
+/*
+.conference-session[title]:hover:after {
+    visibility: visible;
+}
+
+.conference-session[title]:after {
+    content: attr(title);
+    background-color: #4b9c2c;    
+    color: #ffffff;
+    font-size: 150%;
+    position: absolute;
+    padding: 4px 8px 4px 8px;
+    visibility: hidden;
+}
+*/
+
+
 .talk, .event {
 	margin-top: var(--half-grid-gap);
     padding: 1ex;
@@ -32,6 +57,10 @@ h1,h2,h3,h4 {
 }
 .talk {
     background-color: rgba(150, 215, 253, 0.8);
+}
+
+.talk[active] {
+    background-color: rgba(200, 200, 253, 1);
 }
 
 .event {
