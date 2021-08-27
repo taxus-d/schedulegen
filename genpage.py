@@ -10,8 +10,8 @@ locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
 
 
 dt = datetime.timedelta(minutes=5)
+Conference.plenaryname = "Пленарные доклады"
 vak = Conference.read(Path('vak'))
-vak.plenaryname = "Пленарные доклады"
 
 csstemplate = Template(filename="tt.css.mako", input_encoding='utf-8')
 with open("tt.css", 'w') as page:

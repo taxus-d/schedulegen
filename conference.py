@@ -67,63 +67,69 @@ class Talk(Event):
         )
 
 
+def _preprocess_row(row):
+    pprow = dict()
+
+    if row['name'] is None:
+        raise csv.Error(f"malformed tsv row: {row}")
+
+    name_stripped = re.sub(r"^\s*«\s*|\s*»\s*$", "", row['name'])
+    name_cleaned = re.sub(r"\s{2,}", " ", name_stripped)
+
+    times = row['time'].split("-")   # THIS IS hypen
+    if len(times) == 1:
+        times = times[0].split('–')  # THIS IS N-dash
+
+    # giving up
+    if len(times) != 2:
+        raise csv.Error(f"malformed time range, parsed {times} from {row}, check your dashes")
+
+    pprow.update(
+        begin = datetime.datetime.strptime(times[0].strip(), "%H:%M").time(),
+        end = datetime.datetime.strptime(times[1].strip(), "%H:%M").time(),
+    )
+
+    # guessing talks or events (lunch)
+    if row['people'] != "":
+        pprow['event_type'] = Talk
+
+        presenter = None
+        coauthors = []
+        for p in row['people'].split(","):
+            cleaned = re.sub(r"\s{2,}", " ", p.strip())
+            if cleaned != '':
+                if cleaned[0] == '^':
+                    if presenter is None:
+                        presenter = cleaned[1:]
+                    else:
+                        raise csv.Error(f"multiple presenters detectedon {row}, please select a signle one")
+
+                else:
+                    coauthors.append(cleaned)
+
+        if presenter is None:
+            presenter = coauthors[0]
+            coauthors = coauthors[1:]
+
+        pprow.update(
+            presenter = presenter,
+            coauthors = coauthors,
+            title = name_cleaned,
+        )
+    else:
+        pprow.update(name = name_cleaned)
+        pprow['event_type'] = Event
+
+    return pprow
+
+
 def read_events(fd, track: Track):
     lines = csv.DictReader(fd, delimiter="\t", fieldnames=["time", "people", "name"])
     events = []
     for row in lines:
-        # check name before further parsing
-        if row['name'] is None:
-            raise csv.Error(f"malformed tsv row: {row}")
-
-        name_stripped = re.sub(r"^\s*«\s*|\s*»\s*$", "", row['name'])
-        name_cleaned = re.sub(r"\s{2,}", " ", name_stripped)
-
-        times = row['time'].split("-")   # THIS IS hypen
-        if len(times) == 1:
-            times = times[0].split('–')  # THIS IS N-dash
-
-        # giving up
-        if len(times) != 2:
-            raise csv.Error(f"malformed time range, parsed {times} from {row}, check your dashes")
-
-        event_type: Any = Event
-        kwargs = dict(
-            track = track,
-            begin = datetime.datetime.strptime(times[0].strip(), "%H:%M").time(),
-            end = datetime.datetime.strptime(times[1].strip(), "%H:%M").time(),
-        )
-
-        # guessing talks or events (lunch)
-        if row['people'] != "":
-            event_type = Talk
-
-            presenter = None
-            coauthors = []
-            for p in row['people'].split(","):
-                cleaned = re.sub(r"\s{2,}", " ", p.strip())
-                if cleaned != '':
-                    if cleaned[0] == '^':
-                        if presenter is None:
-                            presenter = cleaned[1:]
-                        else:
-                            raise csv.Error(f"multiple presenters detectedon {row}, please select a signle one")
-
-                    else:
-                        coauthors.append(cleaned)
-
-            if presenter is None:
-                presenter = coauthors[0]
-                coauthors = coauthors[1:]
-
-            kwargs.update(
-                presenter = presenter,
-                coauthors = coauthors,
-                title = name_cleaned,
-            )
-        else:
-            kwargs.update(name = name_cleaned)
-
-        events.append(event_type(**kwargs))
+        pprow = _preprocess_row(row)
+        event_type = pprow.pop('event_type')
+        events.append(event_type(track = track, **pprow))
     return events
 
 
@@ -131,9 +137,23 @@ def read_events(fd, track: Track):
 class Session:
     chair: str
     date: datetime.date
+    begin: Optional[datetime.time] = field(init=False, default=None)
+    end: Optional[datetime.time] = field(init=False, default=None)
+    track: Optional[Track] = field(init=False, default=None)
     events: list[Event] = field(default_factory=list)
     moderator: Optional[str] = None
     title: str = ""
+
+    def __post_init__(self):
+        for ev in self.events:
+            if self.track is None:
+                self.track = ev.track
+            elif ev.track != self.track:
+                raise NotImplementedError(f"multi-track drift: {ev.track} != {self.track} for {repr(self)}")
+            if self.begin is None or self.begin > ev.begin:
+                self.begin = ev.begin
+            if self.end is None or self.end < ev.end:
+                self.end = ev.end
 
     def __str__(self):
         r = (

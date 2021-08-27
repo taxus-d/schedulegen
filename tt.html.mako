@@ -3,17 +3,17 @@
   from conference import Talk, maketimes
 %>
 <%
-  def get_colspec(e):
-    if e.track.key == 'plenary':
+  def get_colspec(track):
+    if track.key == 'plenary':
         return '2 / -1'
     else:
-        return track2cssgrid(e.track)
+        return track2cssgrid(track)
 
   def get_rowspec(e):
     return f"{time2cssgrid(e.begin)} / {time2cssgrid(e.end)}"
 %>
 <%def name="render_talk(t)">
-  <div class="talk track-${t.track.key}" style="grid-column: ${get_colspec(t)}; grid-row: ${get_rowspec(t)};">
+  <div class="talk track-${t.track.key}" style="grid-column: ${get_colspec(t.track)}; grid-row: ${get_rowspec(t)};">
     <div class="talk-details">
     <h3 class="talk-title">${t.title}</h3>
 		<span class="talk-presenter">${t.presenter}</span>
@@ -22,13 +22,14 @@
 	</div>
 </%def>
 <%def name="render_event(e)">
-  <div class="event track-${e.track.key}" style="grid-column: ${get_colspec(e)}; grid-row: ${get_rowspec(e)};">
+  <div class="event track-${e.track.key}" style="grid-column: ${get_colspec(e.track)}; grid-row: ${get_rowspec(e)};">
     <div class="event-details">
     <h3 class="event-name">${e.name}</h3>
     </div>
 	</div>
 </%def>
 <%def name="render_session(s)">
+##   <div class="conference-session" title="${s.title}&#10;(${s.chair})" style="grid-column: ${get_colspec(s.track)}; grid-row: ${time2cssgrid(s.begin)} / ${time2cssgrid(s.end)}"></div>
   % for e in s.events:
     % if isinstance(e, Talk):
       ${render_talk(e)}
