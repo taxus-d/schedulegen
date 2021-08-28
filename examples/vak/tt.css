@@ -2,14 +2,14 @@
 
 
 
-.days-button-list {
+#days-links-list {
   display: grid;
   grid-gap: 0.5ex;
   grid-template-columns:1fr 1fr 1fr 1fr 1fr ;
 }
 
 
-.schedule .conference-day-0 {
+.schedule #conference-day-0 {
     display: inherit;
     grid-gap: inherit;
     grid-template-rows:
@@ -97,7 +97,7 @@
       [track-galaxies-end];
 }
 
-.schedule .conference-day-1 {
+.schedule #conference-day-1 {
     display: inherit;
     grid-gap: inherit;
     grid-template-rows:
@@ -186,7 +186,7 @@
       [track-galaxies-end];
 }
 
-.schedule .conference-day-2 {
+.schedule #conference-day-2 {
     display: inherit;
     grid-gap: inherit;
     grid-template-rows:
@@ -279,7 +279,7 @@
       [track-galaxies-end];
 }
 
-.schedule .conference-day-3 {
+.schedule #conference-day-3 {
     display: inherit;
     grid-gap: inherit;
     grid-template-rows:
@@ -368,7 +368,7 @@
       [track-galaxies-end];
 }
 
-.schedule .conference-day-4 {
+.schedule #conference-day-4 {
     display: inherit;
     grid-gap: inherit;
     grid-template-rows:

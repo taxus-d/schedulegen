@@ -17,6 +17,10 @@ h1,h2,h3,h4 {
     font-family: var(--nice-sans-font), sans-serif;
 }
 
+h2.conference-current-date {
+    margin-top: 2em;
+    margin-bottom: 1ex;
+}
 .schedule {
     grid-gap: var(--half-grid-gap);
 }
@@ -91,40 +95,42 @@ h3.talk-title {
     height: 0pt;
 }
 
-.days-button-list {
-    display: none; /* shown by js */
+#days-links-list {
+    display: grid;
     margin-bottom: 1.5em;
     margin-left: 3em;
 }
 
-.days-button-list[enabled] {
-    display: grid; /* shown by js */
-}
 
-.days-button-list button {
+#days-links-list a:link, a:visited, a:active {
     font-family: var(--nice-sans-font), sans-serif;
     text-align: center;
     border: 0pt;
     padding: 1ex;
     font-size: 12pt;
     border-radius: 2pt;
+    color: inherit;
+    text-decoration: inherit;
     background-color: rgba(var(--selection-color), 0);
 }
-.days-button-list button:hover {
+
+#days-links-list a:hover {
     background-color: rgba(var(--selection-color), 0.1);
 }
 
-.button-label-date {
+#days-links-list a[selected] {
+    background-color: rgba(var(--selection-color), 0.2);
+}
+
+
+.link-day-label-date {
     display: inline-block;
     border-bottom: solid lightgray;
     padding-bottom: 2pt;
     margin-bottom: 3pt;
 }
-.button-label-weekday {
+.link-day-label-weekday {
     display: block;
-}
-.days-button-list button[selected] {
-    background-color: rgba(var(--selection-color), 0.2);
 }
 
 

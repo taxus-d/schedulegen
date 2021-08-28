@@ -14,32 +14,32 @@
     <title>расписание</title>
   </head>
   <body>
-  <div class="days-button-list">
-    <button type="button" id="button-day-0" style="grid-column: 1">
-      <span class="button-label-date">23.08.2021</span>
-      <span class="button-label-weekday">Понедельник</span>
-    </button>
-    <button type="button" id="button-day-1" style="grid-column: 2">
-      <span class="button-label-date">24.08.2021</span>
-      <span class="button-label-weekday">Вторник</span>
-    </button>
-    <button type="button" id="button-day-2" style="grid-column: 3">
-      <span class="button-label-date">25.08.2021</span>
-      <span class="button-label-weekday">Среда</span>
-    </button>
-    <button type="button" id="button-day-3" style="grid-column: 4">
-      <span class="button-label-date">26.08.2021</span>
-      <span class="button-label-weekday">Четверг</span>
-    </button>
-    <button type="button" id="button-day-4" style="grid-column: 5">
-      <span class="button-label-date">27.08.2021</span>
-      <span class="button-label-weekday">Пятница</span>
-    </button>
+  <div id="days-links-list">
+    <a id="link-day-0" href="#day-0" style="grid-column: 1">
+      <span class="link-day-label-date">23.08.2021</span>
+      <span class="link-day-label-weekday">Понедельник</span>
+    </a>
+    <a id="link-day-1" href="#day-1" style="grid-column: 2">
+      <span class="link-day-label-date">24.08.2021</span>
+      <span class="link-day-label-weekday">Вторник</span>
+    </a>
+    <a id="link-day-2" href="#day-2" style="grid-column: 3">
+      <span class="link-day-label-date">25.08.2021</span>
+      <span class="link-day-label-weekday">Среда</span>
+    </a>
+    <a id="link-day-3" href="#day-3" style="grid-column: 4">
+      <span class="link-day-label-date">26.08.2021</span>
+      <span class="link-day-label-weekday">Четверг</span>
+    </a>
+    <a id="link-day-4" href="#day-4" style="grid-column: 5">
+      <span class="link-day-label-date">27.08.2021</span>
+      <span class="link-day-label-weekday">Пятница</span>
+    </a>
   </div>
 
   <div class="schedule" aria-labelledby="schedule-heading">
-    <div class="conference-anyday conference-day-0">
-    <h2 class="conference-current-date">23.08.2021 (Понедельник)</h2>
+    <h2 class="conference-current-date" id="day-0">23.08.2021 (Понедельник)</h2>
+    <div class="conference-anyday" id="conference-day-0">
 
       <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
       <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
@@ -200,7 +200,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;" id="t1">
     <div class="talk-details">
     <h3 class="talk-title">Научные результаты миссии СРГ/eROSITA</h3>
 		<span class="talk-presenter">Сюняев Р.А. (ИКИ РАН)</span>
@@ -209,7 +209,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;" id="t2">
     <div class="talk-details">
     <h3 class="talk-title">Телескоп ART-XC имени М.Н.Павлинского обсерватории СРГ: научные результаты и перспективы</h3>
 		<span class="talk-presenter">Лутовинов А.А. (ИКИ РАН)</span>
@@ -225,7 +225,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;" id="t3">
     <div class="talk-details">
     <h3 class="talk-title">Текущие и перспективные российские космические проекты</h3>
 		<span class="talk-presenter">Петрукович А.А. (ИКИ РАН)</span>
@@ -234,7 +234,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;" id="t4">
     <div class="talk-details">
     <h3 class="talk-title">Венера-Д: миссия для комплексного исследования Венеры</h3>
 		<span class="talk-presenter">Засова Л.В. (ИКИ РАН)</span>
@@ -252,7 +252,7 @@
 
       
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;" id="t5">
     <div class="talk-details">
     <h3 class="talk-title">Происхождение эмиссионных линий в спектрах В-карликов</h3>
 		<span class="talk-presenter">Машонкина Л.Н.</span>
@@ -261,7 +261,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;" id="t6">
     <div class="talk-details">
     <h3 class="talk-title">Рентгеновское излучение неоднородных звездных ветров ОВ звезд</h3>
 		<span class="talk-presenter">Рыспаева Е.Б.</span>
@@ -270,7 +270,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;" id="t7">
     <div class="talk-details">
     <h3 class="talk-title">Исследование возможного нетеплового рентгеновского излучения звезд – аналогов γ Cas</h3>
 		<span class="talk-presenter">Рыспаева Е.Б.</span>
@@ -279,7 +279,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;" id="t8">
     <div class="talk-details">
     <h3 class="talk-title">Ионизационная структура аккреционных дисков молодых звёзд</h3>
 		<span class="talk-presenter">Вахитов Р.Ф.</span>
@@ -288,7 +288,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;" id="t9">
     <div class="talk-details">
     <h3 class="talk-title">Эволюция возмущений в протопланетных и их наблюдательные проявления</h3>
 		<span class="talk-presenter">Демидова Т.В.</span>
@@ -297,7 +297,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;" id="t10">
     <div class="talk-details">
     <h3 class="talk-title">Лабораторное моделирование джетов молодых звездных объектов</h3>
 		<span class="talk-presenter">Крауз В.И.</span>
@@ -306,7 +306,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;" id="t11">
     <div class="talk-details">
     <h3 class="talk-title">Wray15-906 - объект, связывающий голубые переменные высокой светимости и красные сверхгиганты</h3>
 		<span class="talk-presenter">Марьева О.В.</span>
@@ -315,7 +315,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;" id="t12">
     <div class="talk-details">
     <h3 class="talk-title">Сравнение фундаментальных параметров Ар-звезд, полученных по спектроскопии и интерферометрии</h3>
 		<span class="talk-presenter">Романовская А.М.</span>
@@ -324,7 +324,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;" id="t13">
     <div class="talk-details">
     <h3 class="talk-title">Околозвездный диск UX Ori</h3>
 		<span class="talk-presenter">Ростопчина-Шаховская А.Н.</span>
@@ -333,7 +333,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;" id="t14">
     <div class="talk-details">
     <h3 class="talk-title">Затмения звёзд типа UX Ori крупномасштабными возмущениями диска</h3>
 		<span class="talk-presenter">Шульман С.Г.</span>
@@ -349,7 +349,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;" id="t15">
     <div class="talk-details">
     <h3 class="talk-title">К вопросу о точности определения физических параметров молодых запятненных звезд</h3>
 		<span class="talk-presenter">Гранкин К.Н.</span>
@@ -358,7 +358,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;" id="t16">
     <div class="talk-details">
     <h3 class="talk-title">Транзиенты экзопланет: изменения коэффициентов потемнения к краю затмеваемых звезд на коротких интервалах</h3>
 		<span class="talk-presenter">Абубекеров М.К.</span>
@@ -367,7 +367,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;" id="t17">
     <div class="talk-details">
     <h3 class="talk-title">Динамика магнитных силовых трубок в аккреционных дисках Ae/Be звезд Хербига</h3>
 		<span class="talk-presenter">Хайбрахманов С.А.</span>
@@ -376,7 +376,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;" id="t18">
     <div class="talk-details">
     <h3 class="talk-title">Физические характеристики В звезд в молодых звездных скоплениях IC 1805 и NGC 581</h3>
 		<span class="talk-presenter">Тарасов А.Е.</span>
@@ -385,7 +385,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;" id="t19">
     <div class="talk-details">
     <h3 class="talk-title">Функция масс молодых звезд</h3>
 		<span class="talk-presenter">Еретнова О.В.</span>
@@ -394,7 +394,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;" id="t20">
     <div class="talk-details">
     <h3 class="talk-title">Результаты избранных программ спектроскопии звёзд, выполняемых на НЭС БТА</h3>
 		<span class="talk-presenter">Панчук В.Е.</span>
@@ -412,7 +412,7 @@
 
       
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1400 / time-1420;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1400 / time-1420;" id="t21">
     <div class="talk-details">
     <h3 class="talk-title">Распределение RV- и транзитных экзопланет по массам и орбитальным периодам с учетом наблюдательной селекции</h3>
 		<span class="talk-presenter">Ананьева В.И.</span>
@@ -421,7 +421,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1420 / time-1435;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1420 / time-1435;" id="t22">
     <div class="talk-details">
     <h3 class="talk-title">Алгоритм поиска событий покрытия пятен и факелов в экзопланетных прохождениях</h3>
 		<span class="talk-presenter">Балуев Р.В.</span>
@@ -430,7 +430,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1435 / time-1450;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1435 / time-1450;" id="t23">
     <div class="talk-details">
     <h3 class="talk-title">Поиск неоднородностей профилей блеска экзопланет в инфракрасном спектре на основе анализа вторичных затмений</h3>
 		<span class="talk-presenter">Федотов А.А.</span>
@@ -439,7 +439,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1450 / time-1505;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1450 / time-1505;" id="t24">
     <div class="talk-details">
     <h3 class="talk-title">Обнаружение молодого маломассивного бурого карлика GPX-1b транзитным методом</h3>
 		<span class="talk-presenter">Соков Е.Н.</span>
@@ -448,7 +448,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1505 / time-1520;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1505 / time-1520;" id="t25">
     <div class="talk-details">
     <h3 class="talk-title">Поляриметрия KIC8462852, звезды с аномальными непериодическими затмениями: обнаружение рассеянного излучения околозвездного вещества</h3>
 		<span class="talk-presenter">Шаховской Д.Н.</span>
@@ -457,7 +457,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1520 / time-1535;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1520 / time-1535;" id="t26">
     <div class="talk-details">
     <h3 class="talk-title">К вопросу о влиянии формирования планетных систем на химический состав атмосфер родительских звезд</h3>
 		<span class="talk-presenter">Рябчикова Т.А.</span>
@@ -466,7 +466,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1535 / time-1550;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1535 / time-1550;" id="t27">
     <div class="talk-details">
     <h3 class="talk-title">Импактные вспышки экзоастероидов в оптике звезд</h3>
 		<span class="talk-presenter">Ибрагимов М.А.</span>
@@ -484,7 +484,7 @@
 
       
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1630 / time-1650;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1630 / time-1650;" id="t28">
     <div class="talk-details">
     <h3 class="talk-title">Формирование и особенности первичных пылевых кольцевых структур в протопланетных дисках</h3>
 		<span class="talk-presenter">Скляревский А.М.</span>
@@ -493,7 +493,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1650 / time-1705;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1650 / time-1705;" id="t29">
     <div class="talk-details">
     <h3 class="talk-title">Эволюция пыли в гравитовязких протопланетных дисках</h3>
 		<span class="talk-presenter">Элбакян В.Г.</span>
@@ -502,7 +502,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1705 / time-1720;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1705 / time-1720;" id="t30">
     <div class="talk-details">
     <h3 class="talk-title">Эволюция холодных аккреционных дисков и миграция планет в двойных системах</h3>
 		<span class="talk-presenter">Некрасов А.Д.</span>
@@ -511,7 +511,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1720 / time-1735;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1720 / time-1735;" id="t31">
     <div class="talk-details">
     <h3 class="talk-title">Выпадение горячих юпитеров под действием приливной диссипации</h3>
 		<span class="talk-presenter">Лазовик Я.А.</span>
@@ -520,7 +520,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1735 / time-1750;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1735 / time-1750;" id="t32">
     <div class="talk-details">
     <h3 class="talk-title">Роль планет-гигантов родительских звезд в генерации свободных планет</h3>
 		<span class="talk-presenter">Дремова Г.Н.</span>
@@ -538,7 +538,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1410 / time-1430;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1410 / time-1430;" id="t33">
     <div class="talk-details">
     <h3 class="talk-title">О двух формах аккреции межзведного газа при формировании одиночных звезд</h3>
 		<span class="talk-presenter">Абдульмянов Т.Р.</span>
@@ -547,7 +547,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1430 / time-1450;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1430 / time-1450;" id="t34">
     <div class="talk-details">
     <h3 class="talk-title">Подтверждение симбиотической природы звезды CSS1102 на основании спектральных и фотометрических наблюдений, проведенных в КГО ГАИШ</h3>
 		<span class="talk-presenter">Масленникова Н.А.</span>
@@ -556,7 +556,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1450 / time-1510;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1450 / time-1510;" id="t35">
     <div class="talk-details">
     <h3 class="talk-title">Батарея Бирмана как источник космических магнитных полей</h3>
 		<span class="talk-presenter">Михайлов Е.А.</span>
@@ -565,7 +565,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1510 / time-1530;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1510 / time-1530;" id="t36">
     <div class="talk-details">
     <h3 class="talk-title">Магнитные поля химически пекулярных звезд в ассоциации Orion OB1</h3>
 		<span class="talk-presenter">Романюк И.И.</span>
@@ -574,7 +574,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1530 / time-1550;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1530 / time-1550;" id="t37">
     <div class="talk-details">
     <h3 class="talk-title">NY Ser: Вспышечная активность и мультипериодические процессы на разных её стадиях в 2014 и 2016 гг.</h3>
 		<span class="talk-presenter">Склянов А.С.</span>
@@ -583,7 +583,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1550 / time-1610;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1550 / time-1610;" id="t38">
     <div class="talk-details">
     <h3 class="talk-title">Многолетние многочастотные исследования вспышечной активности микроквазаров</h3>
 		<span class="talk-presenter">Трушкин С.А.</span>
@@ -601,7 +601,7 @@
 
       
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1630 / time-1650;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1630 / time-1650;" id="t39">
     <div class="talk-details">
     <h3 class="talk-title">Поиск широких двойных систем с разновозрастными компонентами</h3>
 		<span class="talk-presenter">Малков О.Ю.</span>
@@ -610,7 +610,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1650 / time-1710;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1650 / time-1710;" id="t40">
     <div class="talk-details">
     <h3 class="talk-title">Визуальные двойные звёзды с известными орбитами в Gaia eDR3</h3>
 		<span class="talk-presenter">Чулков Д.А.</span>
@@ -619,7 +619,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1710 / time-1730;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1710 / time-1730;" id="t41">
     <div class="talk-details">
     <h3 class="talk-title">Проект VOXastro Stellar Libraries: от оптики до ИК</h3>
 		<span class="talk-presenter">Рубцов Е.В.</span>
@@ -628,7 +628,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1730 / time-1750;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1730 / time-1750;" id="t42">
     <div class="talk-details">
     <h3 class="talk-title">Параметризация долгопериодических затменных двойных систем</h3>
 		<span class="talk-presenter">Пахомова П.В.</span>
@@ -637,7 +637,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1750 / time-1810;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1750 / time-1810;" id="t43">
     <div class="talk-details">
     <h3 class="talk-title">Приливная эволюция наклона оси вращения звезды в двойной системе</h3>
 		<span class="talk-presenter">Иванов П.Б.</span>
@@ -646,7 +646,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1810 / time-1830;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1810 / time-1830;" id="t44">
     <div class="talk-details">
     <h3 class="talk-title">Влияние бара на кинематику звезд диска Галактики вблизи внешнего линдбладовского резонанса бара. Сравнение с данными Gaia EDR3</h3>
 		<span class="talk-presenter">Мельник А.М.</span>
@@ -655,7 +655,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1830 / time-1850;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1830 / time-1850;" id="t45">
     <div class="talk-details">
     <h3 class="talk-title">Специальный класс потенциалов, вращающихся звездных систем, близких к сферической симметрии</h3>
 		<span class="talk-presenter">Шамшиев Ф.Т.</span>
@@ -666,7 +666,7 @@
 
       
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1415;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1415;" id="t46">
     <div class="talk-details">
     <h3 class="talk-title">Циклические вариации активных областей разных магнито-морфологических классов в 23-м и 24-м циклах</h3>
 		<span class="talk-presenter">Жукова А.В.</span>
@@ -675,7 +675,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1415 / time-1430;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1415 / time-1430;" id="t47">
     <div class="talk-details">
     <h3 class="talk-title">Синтетическая широтно-временная диаграмма для групп солнечных пятен, нарушающих правило полярности Хейла, и работа мелкомасштабного динамо на Солнце</h3>
 		<span class="talk-presenter">Соколов Д.Д.</span>
@@ -684,7 +684,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;" id="t48">
     <div class="talk-details">
     <h3 class="talk-title">Особенности эволюции солнечных магнитных полей разного масштаба в 21-24 циклах</h3>
 		<span class="talk-presenter">Биленко И.А.</span>
@@ -693,7 +693,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;" id="t49">
     <div class="talk-details">
     <h3 class="talk-title">11-летняя динамика площадей корональных дыр и солнечных пятен</h3>
 		<span class="talk-presenter">Андреева О.А.</span>
@@ -702,7 +702,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;" id="t50">
     <div class="talk-details">
     <h3 class="talk-title">Солнечная активность и эволюция магнитных полей пятен по измерениям максимальных напряженностей в КрАО РАН: циклы 22-24</h3>
 		<span class="talk-presenter">Ахтемов З.С.</span>
@@ -711,7 +711,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;" id="t51">
     <div class="talk-details">
     <h3 class="talk-title">Дифференциальное вращение Солнца по движению активных и эфемерных областей</h3>
 		<span class="talk-presenter">Куценко А.С.</span>
@@ -720,7 +720,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;" id="t52">
     <div class="talk-details">
     <h3 class="talk-title">Визуализация распределения микротурбулентных скоростей по поверхности Солнца</h3>
 		<span class="talk-presenter">Можаровский С.Г.</span>
@@ -729,7 +729,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;" id="t53">
     <div class="talk-details">
     <h3 class="talk-title">Статистический анализ затухания магнитного потока активных областей</h3>
 		<span class="talk-presenter">Плотников А.А.</span>
@@ -745,7 +745,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;" id="t54">
     <div class="talk-details">
     <h3 class="talk-title">Комплексы активности на Солнце в 24 цикле солнечной активности</h3>
 		<span class="talk-presenter">Язев С.А.</span>
@@ -754,7 +754,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;" id="t55">
     <div class="talk-details">
     <h3 class="talk-title">Поперечные колебания солнечных волокон по наблюдениям в линии 304 А</h3>
 		<span class="talk-presenter">Смирнова В.В.</span>
@@ -763,7 +763,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1650 / time-1705;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1650 / time-1705;" id="t56">
     <div class="talk-details">
     <h3 class="talk-title">Распределенный электрический ток и его связь со вспышечной продуктивностью активной области</h3>
 		<span class="talk-presenter">Фурсяк Ю.А.</span>
@@ -772,7 +772,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1705 / time-1720;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1705 / time-1720;" id="t57">
     <div class="talk-details">
     <h3 class="talk-title">Ускорение корональных выбросов массы в солнечных вспашках: импульсной ( Х6.9 09.08.2011) и постепенной (M3.7 07.03.2011)</h3>
 		<span class="talk-presenter">Струминский А.Б.</span>
@@ -781,7 +781,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1720 / time-1735;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1720 / time-1735;" id="t58">
     <div class="talk-details">
     <h3 class="talk-title">Наблюдение кривых блеска солнечных вспышек и сравнение их со звезднами вспышками</h3>
 		<span class="talk-presenter">Купряков Ю.А.</span>
@@ -790,7 +790,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1735 / time-1750;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1735 / time-1750;" id="t59">
     <div class="talk-details">
     <h3 class="talk-title">Сравнение разных способов оценки продольного магнитного поля извлекаемой из данных HINODE SOT/SP</h3>
 		<span class="talk-presenter">Можаровский С.Г.</span>
@@ -808,7 +808,7 @@
 
       
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1435;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1435;" id="t60">
     <div class="talk-details">
     <h3 class="talk-title">Обзор всего неба телескопом ART-XC имени М.Н. Павлинского</h3>
 		<span class="talk-presenter">Филиппова Е.В.</span>
@@ -817,7 +817,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1435 / time-1510;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1435 / time-1510;" id="t61">
     <div class="talk-details">
     <h3 class="talk-title">Результаты телескопа СРГ/eROSITA: карты неба, далекие квазары и внегалактические транзиенты</h3>
 		<span class="talk-presenter">Гильфанов М.Р.</span>
@@ -826,7 +826,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1510 / time-1545;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1510 / time-1545;" id="t62">
     <div class="talk-details">
     <h3 class="talk-title">Результаты исследований ядер активных галактик на наземно-космическом интерферометре РадиоАстрон</h3>
 		<span class="talk-presenter">Ковалев Ю.Ю.</span>
@@ -835,7 +835,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1545 / time-1605;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1545 / time-1605;" id="t63">
     <div class="talk-details">
     <h3 class="talk-title">Каталог сверхмассивных черных дыр для наблюдения теней на космической обсерватории Миллиметрон</h3>
 		<span class="talk-presenter">Малиновский А.М.</span>
@@ -844,7 +844,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1625;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1625;" id="t64">
     <div class="talk-details">
     <h3 class="talk-title">Поиск и отождествление далеких квазаров в обзоре СРГ/eROSITA</h3>
 		<span class="talk-presenter">Хорунжев Г.А.</span>
@@ -860,7 +860,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1645 / time-1705;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1645 / time-1705;" id="t65">
     <div class="talk-details">
     <h3 class="talk-title">Поиск галактик, видимых с ребра, в обзоре Pan-STARRS1</h3>
 		<span class="talk-presenter">Савченко С.С.</span>
@@ -869,7 +869,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1705 / time-1725;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1705 / time-1725;" id="t66">
     <div class="talk-details">
     <h3 class="talk-title">Каталог галактик, видимых с ребра, по данным обзора Pan-STARRS1</h3>
 		<span class="talk-presenter">Макаров Д.И.</span>
@@ -878,7 +878,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1725 / time-1745;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1725 / time-1745;" id="t67">
     <div class="talk-details">
     <h3 class="talk-title">База данных для изучения галактик, видимых с ребра</h3>
 		<span class="talk-presenter">Антипова А.В.</span>
@@ -887,7 +887,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1745 / time-1815;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1745 / time-1815;" id="t68">
     <div class="talk-details">
     <h3 class="talk-title">RCSEDv2: крупнейшая база данных свойств галактик в диапазонах от УФ до ИК</h3>
 		<span class="talk-presenter">Чилингарян И.В.</span>
@@ -896,7 +896,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1815 / time-1845;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1815 / time-1845;" id="t69">
     <div class="talk-details">
     <h3 class="talk-title">gMOSS и cMOSS: каталоги галактик поля и их групп и скоплений в площадке 2.386 кв. градуса HS47.5- 22</h3>
 		<span class="talk-presenter">Гроховская А.А.</span>
@@ -913,8 +913,8 @@
 
 
     </div>
-    <div class="conference-anyday conference-day-1">
-    <h2 class="conference-current-date">24.08.2021 (Вторник)</h2>
+    <h2 class="conference-current-date" id="day-1">24.08.2021 (Вторник)</h2>
+    <div class="conference-anyday" id="conference-day-1">
 
       <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
       <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
@@ -1070,7 +1070,7 @@
     
       
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;" id="t70">
     <div class="talk-details">
     <h3 class="talk-title">Современные наблюдения электрических токов в активных областях Солнца и их связь со вспышками</h3>
 		<span class="talk-presenter">Зимовец И.В.</span>
@@ -1079,7 +1079,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;" id="t71">
     <div class="talk-details">
     <h3 class="talk-title">Проблема солнечного и звездного динамо</h3>
 		<span class="talk-presenter">Кичатинов Л.Л. (ИСЗФ СО РАН)</span>
@@ -1095,7 +1095,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;" id="t72">
     <div class="talk-details">
     <h3 class="talk-title">Нагрев короны и современные проблемы физики солнечного ветра</h3>
 		<span class="talk-presenter">Зайцев В.В. (ИПФ РАН)</span>
@@ -1104,7 +1104,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;" id="t73">
     <div class="talk-details">
     <h3 class="talk-title">Молодые звезды</h3>
 		<span class="talk-presenter">Ламзин С.А. (ГАИШ МГУ)</span>
@@ -1122,7 +1122,7 @@
 
       
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;" id="t74">
     <div class="talk-details">
     <h3 class="talk-title">Эмиссия пыли в областях звёздообразования</h3>
 		<span class="talk-presenter">Дроздов С.А.</span>
@@ -1131,7 +1131,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;" id="t75">
     <div class="talk-details">
     <h3 class="talk-title">Диски и истечения вокруг массивных протозвезд</h3>
 		<span class="talk-presenter">Зинченко И.И.</span>
@@ -1140,7 +1140,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;" id="t76">
     <div class="talk-details">
     <h3 class="talk-title">Дейтерированные молекулы в областях образования массивных звезд</h3>
 		<span class="talk-presenter">Зинченко И.И.</span>
@@ -1149,7 +1149,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;" id="t77">
     <div class="talk-details">
     <h3 class="talk-title">Влияние магнитного поля на образование протозвездных дисков</h3>
 		<span class="talk-presenter">Каргальцева Н.С.</span>
@@ -1158,7 +1158,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;" id="t78">
     <div class="talk-details">
     <h3 class="talk-title">PRESTALINE: инструмент для моделирования молекулярных спектров в областях звездообразования</h3>
 		<span class="talk-presenter">Кочина О.В.</span>
@@ -1167,7 +1167,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;" id="t79">
     <div class="talk-details">
     <h3 class="talk-title">Мультиволновой анализ областей звёздообразования с помощью онлайн базы данных мазерных источников MaserDB.net</h3>
 		<span class="talk-presenter">Ладейщиков Д.А.</span>
@@ -1176,7 +1176,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;" id="t80">
     <div class="talk-details">
     <h3 class="talk-title">Коллимированные потоки молекулярного водорода в ассоциации Mon R1</h3>
 		<span class="talk-presenter">Магакян Т.Ю.</span>
@@ -1185,7 +1185,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;" id="t81">
     <div class="talk-details">
     <h3 class="talk-title">Цепочка холодного образования метанола: проверка химической модели</h3>
 		<span class="talk-presenter">Пунанова А.Ф.</span>
@@ -1194,7 +1194,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;" id="t82">
     <div class="talk-details">
     <h3 class="talk-title">Исследование волокнообразного инфракрасного темного облака G351.78-0.54</h3>
 		<span class="talk-presenter">Рябухина О.Л.</span>
@@ -1203,7 +1203,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;" id="t83">
     <div class="talk-details">
     <h3 class="talk-title">Астрохимическое исследование плотных сгустков волокна WB 673</h3>
 		<span class="talk-presenter">Рябухина О.Л.</span>
@@ -1219,7 +1219,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;" id="t84">
     <div class="talk-details">
     <h3 class="talk-title">Наблюдения метанольных мазеров I класса в темных инфракрасных облаках на 20-метровом радиотелескопе в Онсале</h3>
 		<span class="talk-presenter">Шахворостова Н.Н.</span>
@@ -1228,7 +1228,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;" id="t85">
     <div class="talk-details">
     <h3 class="talk-title">Сверхкомпактные мазеры Н2О в области звездообразования W49N</h3>
 		<span class="talk-presenter">Шахворостова Н.Н.</span>
@@ -1237,7 +1237,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;" id="t86">
     <div class="talk-details">
     <h3 class="talk-title">Фотометрия и кинематика внегалактических комплексов звездообразования</h3>
 		<span class="talk-presenter">Кузин А.В.</span>
@@ -1246,7 +1246,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;" id="t87">
     <div class="talk-details">
     <h3 class="talk-title">Исследование молекулярного и атомарного газа в звездообразования галактик: NGC 5194, NGC 5457, NGC 628 и NGC 6946</h3>
 		<span class="talk-presenter">Смирнова К.И.</span>
@@ -1255,7 +1255,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;" id="t88">
     <div class="talk-details">
     <h3 class="talk-title">Наблюдение и моделирование сверхновой SN 2012aw. Определение параметров</h3>
 		<span class="talk-presenter">Никифорова А.А.</span>
@@ -1264,7 +1264,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;" id="t89">
     <div class="talk-details">
     <h3 class="talk-title">Исследование сверхновых, найденных в базе данных Zwicky Transient Facility</h3>
 		<span class="talk-presenter">Новинская А.К. Пружинская М.В.</span>
@@ -1273,7 +1273,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1815 / time-1830;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1815 / time-1830;" id="t90">
     <div class="talk-details">
     <h3 class="talk-title">Поиск аномальных объектов в Zwicky Transient Facility</h3>
 		<span class="talk-presenter">Маланчев К.Л.</span>
@@ -1291,7 +1291,7 @@
 
       
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1400 / time-1420;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1400 / time-1420;" id="t91">
     <div class="talk-details">
     <h3 class="talk-title">Аэрономия верхних атмосфер горячих экзопланет» (приглашенный)</h3>
 		<span class="talk-presenter">Шематович В.И.</span>
@@ -1300,7 +1300,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1420 / time-1435;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1420 / time-1435;" id="t92">
     <div class="talk-details">
     <h3 class="talk-title">Сравнение нетепловых атмосферных потерь для горячих экзопланет</h3>
 		<span class="talk-presenter">Автаева А.А.</span>
@@ -1309,7 +1309,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1435 / time-1450;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1435 / time-1450;" id="t93">
     <div class="talk-details">
     <h3 class="talk-title">Об убегании атмосферы экзопланеты Pi Men c</h3>
 		<span class="talk-presenter">Калиничева Е.С.</span>
@@ -1318,7 +1318,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1450 / time-1505;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1450 / time-1505;" id="t94">
     <div class="talk-details">
     <h3 class="talk-title">Исследование возможных сценариев вековой эволюции орбитальных движений в системе, состоящей из звезды и двух планет</h3>
 		<span class="talk-presenter">Сидоренко В.В.</span>
@@ -1327,7 +1327,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1505 / time-1520;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1505 / time-1520;" id="t95">
     <div class="talk-details">
     <h3 class="talk-title">Исследование орбитальной эволюции компактной трехпланетной системы GJ 357 на длительных интервалах времени</h3>
 		<span class="talk-presenter">Перминов А.С.</span>
@@ -1336,7 +1336,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1520 / time-1535;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1520 / time-1535;" id="t96">
     <div class="talk-details">
     <h3 class="talk-title">Миграция планетезималей к планетам в зоне обитаемости в Солнечной системе и системе Проксима Центавра</h3>
 		<span class="talk-presenter">Ипатов С.И.</span>
@@ -1345,7 +1345,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1535 / time-1550;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1535 / time-1550;" id="t97">
     <div class="talk-details">
     <h3 class="talk-title">Формирование планет земной группы и Луны</h3>
 		<span class="talk-presenter">Ипатов С.И.</span>
@@ -1363,7 +1363,7 @@
 
       
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1630 / time-1650;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1630 / time-1650;" id="t98">
     <div class="talk-details">
     <h3 class="talk-title">Активные астероиды Главного пояса как реликты процессов формирования планет-гигантов</h3>
 		<span class="talk-presenter">Бусарев В.В.</span>
@@ -1372,7 +1372,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1650 / time-1705;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1650 / time-1705;" id="t99">
     <div class="talk-details">
     <h3 class="talk-title">Новые спектры отражения астероидов Главного пояса: уточнение таксономических типов и состава вещества</h3>
 		<span class="talk-presenter">Щербина М.П.</span>
@@ -1381,7 +1381,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1705 / time-1720;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1705 / time-1720;" id="t100">
     <div class="talk-details">
     <h3 class="talk-title">Орбитальная эволюция системы Солнце – Юпитер – Сатурн – Уран – Нептун на космогонических интервалах времени</h3>
 		<span class="talk-presenter">Перминов А.С.</span>
@@ -1390,7 +1390,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1720 / time-1735;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1720 / time-1735;" id="t101">
     <div class="talk-details">
     <h3 class="talk-title">Оценка возраста пар транснептуновых объектов на близких орбитах</h3>
 		<span class="talk-presenter">Кузнецов Э.Д.</span>
@@ -1399,7 +1399,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1735 / time-1750;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1735 / time-1750;" id="t102">
     <div class="talk-details">
     <h3 class="talk-title">О негравитационном эффекте в движении астероидов Главного пояса</h3>
 		<span class="talk-presenter">Кузнецов В.Б.</span>
@@ -1408,7 +1408,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1750 / time-1805;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1750 / time-1805;" id="t103">
     <div class="talk-details">
     <h3 class="talk-title">Определение орбит спутников и параметров вращения Нептуна</h3>
 		<span class="talk-presenter">Долгаков И.А.</span>
@@ -1419,7 +1419,7 @@
 
       
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1400 / time-1420;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1400 / time-1420;" id="t104">
     <div class="talk-details">
     <h3 class="talk-title">О масштабе возможных отклонений сверхмассивной черной дыры от барицентра Галактики при движении в поле регулярных сил</h3>
 		<span class="talk-presenter">Никифоров И.И.</span>
@@ -1428,7 +1428,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1420 / time-1440;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1420 / time-1440;" id="t105">
     <div class="talk-details">
     <h3 class="talk-title">Межзвёздное поглощение в высоких галактических широтах сквозь весь слой пыли в Галактике</h3>
 		<span class="talk-presenter">Гончаров Г.А.</span>
@@ -1437,7 +1437,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1440 / time-1500;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1440 / time-1500;" id="t106">
     <div class="talk-details">
     <h3 class="talk-title">Определение параметров межзвездного поглощения в высоких галактических широтах</h3>
 		<span class="talk-presenter">Авдеева А.С.</span>
@@ -1446,7 +1446,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1500 / time-1520;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1500 / time-1520;" id="t107">
     <div class="talk-details">
     <h3 class="talk-title">Исследование пространственного распределения молодых звезд Галактики методами кластерного анализа</h3>
 		<span class="talk-presenter">Чемель А.А.</span>
@@ -1455,7 +1455,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1520 / time-1540;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1520 / time-1540;" id="t108">
     <div class="talk-details">
     <h3 class="talk-title">Пространственные детали спирального узора Галактики по мазерным источникам</h3>
 		<span class="talk-presenter">Веселова А.В.</span>
@@ -1464,7 +1464,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1540 / time-1600;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1540 / time-1600;" id="t109">
     <div class="talk-details">
     <h3 class="talk-title">Поиск протяженных звёздных структур методом кластеризации пар в данных Gaia</h3>
 		<span class="talk-presenter">Сапожников С.А.</span>
@@ -1482,7 +1482,7 @@
 
       
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1620 / time-1640;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1620 / time-1640;" id="t110">
     <div class="talk-details">
     <h3 class="talk-title">Свойства галактических шаровых скоплений по Gaia EDR3 и другим данным, сопоставленным с теоретическими изохронами</h3>
 		<span class="talk-presenter">Гончаров Г.А.</span>
@@ -1491,7 +1491,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1640 / time-1700;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1640 / time-1700;" id="t111">
     <div class="talk-details">
     <h3 class="talk-title">Многоканальное изучение рассеянного звездного скопления NGC 225</h3>
 		<span class="talk-presenter">Ялялиева Л.Н.</span>
@@ -1500,7 +1500,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1700 / time-1720;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1700 / time-1720;" id="t112">
     <div class="talk-details">
     <h3 class="talk-title">Изучение кинематики потока Большая Медведица</h3>
 		<span class="talk-presenter">Сизова М.Д.</span>
@@ -1509,7 +1509,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1720 / time-1740;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1720 / time-1740;" id="t113">
     <div class="talk-details">
     <h3 class="talk-title">Определение степени концентрации звезд в шаровых скоплениях на основе данных космических наблюдений</h3>
 		<span class="talk-presenter">Нуритдинов С.Н.</span>
@@ -1518,7 +1518,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1740 / time-1800;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1740 / time-1800;" id="t114">
     <div class="talk-details">
     <h3 class="talk-title">Система рассеянных звездных скоплений Collinder 135 и UBC 7</h3>
 		<span class="talk-presenter">Ковалева Д.А.</span>
@@ -1527,7 +1527,7 @@
 	</div>
 
       
-  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1800 / time-1820;">
+  <div class="talk track-msa" style="grid-column: track-msa; grid-row: time-1800 / time-1820;" id="t115">
     <div class="talk-details">
     <h3 class="talk-title">Поиск неразрешенных двойных систем в рассеянных скоплениях на основе данных фотометрии в видимом и инфракрасном диапазоне</h3>
 		<span class="talk-presenter">Селезнев А.Ф.</span>
@@ -1552,7 +1552,7 @@
 
       
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1415;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1415;" id="t116">
     <div class="talk-details">
     <h3 class="talk-title">Проявление цикличности в процессах солнечного динамо и вариации солнечной активности промежуточного масштаба</h3>
 		<span class="talk-presenter">Обридко В.Н.</span>
@@ -1561,7 +1561,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1415 / time-1430;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1415 / time-1430;" id="t117">
     <div class="talk-details">
     <h3 class="talk-title">Гелиосейсмологические свидетельства существования крупномасштабных ячеек поля скоростей в конвективной зоне Солнца</h3>
 		<span class="talk-presenter">Гетлинг А.В.</span>
@@ -1570,7 +1570,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;" id="t118">
     <div class="talk-details">
     <h3 class="talk-title">Вариации подфотосферных зональных и меридиональных течений в 24 цикле солнечной активности</h3>
 		<span class="talk-presenter">Гетлинг А.В.</span>
@@ -1579,7 +1579,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;" id="t119">
     <div class="talk-details">
     <h3 class="talk-title">Возможности диагностики динамо по наблюдениям морфологии активных областей с сильными вспышками</h3>
 		<span class="talk-presenter">Абраменко В.И.</span>
@@ -1588,7 +1588,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;" id="t120">
     <div class="talk-details">
     <h3 class="talk-title">Тонкая структура периодов вращения общего магнитного поля Солнца</h3>
 		<span class="talk-presenter">Ханейчук В.И.</span>
@@ -1597,7 +1597,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;" id="t121">
     <div class="talk-details">
     <h3 class="talk-title">Токовая структура полоидального магнитного поля Солнца</h3>
 		<span class="talk-presenter">Мерзляков В.Л.</span>
@@ -1606,7 +1606,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;" id="t122">
     <div class="talk-details">
     <h3 class="talk-title">Взаимодействие вращательного разрыва с головной ударной волной Земли</h3>
 		<span class="talk-presenter">Кропотина Ю.А.</span>
@@ -1615,7 +1615,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;" id="t123">
     <div class="talk-details">
     <h3 class="talk-title">Об ориентации флуктуаций скорости в спокойном солнечном ветре</h3>
 		<span class="talk-presenter">Ерофеев Д.В.</span>
@@ -1631,7 +1631,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;" id="t124">
     <div class="talk-details">
     <h3 class="talk-title">Сравнение оценок скоростей солнечного ветра по однопунктовым и трехпунктовым наблюдениям мерцаний компактного и протяженного радиоисточников</h3>
 		<span class="talk-presenter">Чашей И.В.</span>
@@ -1640,7 +1640,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;" id="t125">
     <div class="talk-details">
     <h3 class="talk-title">Солнечно-земные связи: солнечная активность и пандемия COVID-19</h3>
 		<span class="talk-presenter">Рагульская М.В.</span>
@@ -1658,7 +1658,7 @@
 
       
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1420;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1420;" id="t126">
     <div class="talk-details">
     <h3 class="talk-title">Спектр реликтовых нейтрино в области малых координатных импульсов</h3>
 		<span class="talk-presenter">Юрченко В.Ю.</span>
@@ -1667,7 +1667,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1420 / time-1440;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1420 / time-1440;" id="t127">
     <div class="talk-details">
     <h3 class="talk-title">Молекулы HD на больших красных смещениях: оценка скорости ионизации космическими лучами в диффузной фазе межзвездной среды</h3>
 		<span class="talk-presenter">Косенко Д.Н.</span>
@@ -1676,7 +1676,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1440 / time-1500;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1440 / time-1500;" id="t128">
     <div class="talk-details">
     <h3 class="talk-title">Фрактальная размерность космического микроволнового фона по данным Planck</h3>
 		<span class="talk-presenter">Тараканов П.А.</span>
@@ -1685,7 +1685,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1500 / time-1520;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1500 / time-1520;" id="t129">
     <div class="talk-details">
     <h3 class="talk-title">Вклад в шум путаницы от различных источников</h3>
 		<span class="talk-presenter">Ермаш А.А.</span>
@@ -1694,7 +1694,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1520 / time-1545;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1520 / time-1545;" id="t130">
     <div class="talk-details">
     <h3 class="talk-title">Истечение из квазаров первого типа на больших красных смещениях</h3>
 		<span class="talk-presenter">Балашев С.А.</span>
@@ -1703,7 +1703,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1545 / time-1605;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1545 / time-1605;" id="t131">
     <div class="talk-details">
     <h3 class="talk-title">Образование и излучение H2 в оттоках ярких ИК- галактик</h3>
 		<span class="talk-presenter">Новиков Игорь мл.</span>
@@ -1712,7 +1712,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1625;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1625;" id="t132">
     <div class="talk-details">
     <h3 class="talk-title">Распространенность первичного He-4: систематические эффекты и новые определения</h3>
 		<span class="talk-presenter">Куричин О.А.</span>
@@ -1728,7 +1728,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1645 / time-1710;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1645 / time-1710;" id="t133">
     <div class="talk-details">
     <h3 class="talk-title">Межзвездное вещество в галактиках на больших красных смещениях: темп остывания газа в линии [CII]</h3>
 		<span class="talk-presenter">Теликова К.Н.</span>
@@ -1737,7 +1737,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1710 / time-1730;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1710 / time-1730;" id="t134">
     <div class="talk-details">
     <h3 class="talk-title">Исследование структуры скоплений на z=1.5-2</h3>
 		<span class="talk-presenter">Афанасьев А.В.</span>
@@ -1746,7 +1746,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1730 / time-1750;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1730 / time-1750;" id="t135">
     <div class="talk-details">
     <h3 class="talk-title">Пекулярные скорости SNIa в скоплениях галактик</h3>
 		<span class="talk-presenter">Балакина Е.А.</span>
@@ -1755,7 +1755,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1750 / time-1810;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1750 / time-1810;" id="t136">
     <div class="talk-details">
     <h3 class="talk-title">Спектроскопические определения красных смещений выборки далеких квазаров обсерватории СРГ по наблюдениям на РТТ-150</h3>
 		<span class="talk-presenter">Бикмаев И.Ф.</span>
@@ -1764,7 +1764,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1810 / time-1830;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1810 / time-1830;" id="t137">
     <div class="talk-details">
     <h3 class="talk-title">Возможное объяснение проблемы с постоянной Хаббла серой межгалактической пылью</h3>
 		<span class="talk-presenter">Ершов В.Н.</span>
@@ -1773,7 +1773,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1830 / time-1850;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1830 / time-1850;" id="t138">
     <div class="talk-details">
     <h3 class="talk-title">Квазары со сверхвысокими светимостями и мезолинзирование</h3>
 		<span class="talk-presenter">Райков А.А.</span>
@@ -1790,8 +1790,8 @@
 
 
     </div>
-    <div class="conference-anyday conference-day-2">
-    <h2 class="conference-current-date">25.08.2021 (Среда)</h2>
+    <h2 class="conference-current-date" id="day-2">25.08.2021 (Среда)</h2>
+    <div class="conference-anyday" id="conference-day-2">
 
       <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
       <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
@@ -1955,7 +1955,7 @@
     
       
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;" id="t139">
     <div class="talk-details">
     <h3 class="talk-title">Результаты космического телескопа Gaia</h3>
 		<span class="talk-presenter">Клионер С.А. (Обсерватория института Лормана</span>
@@ -1964,7 +1964,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;" id="t140">
     <div class="talk-details">
     <h3 class="talk-title">Изменения периодов цефеид и звездная эволюция</h3>
 		<span class="talk-presenter">Бердников Л.Н. (ГАИШ МГУ)</span>
@@ -1980,7 +1980,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;" id="t141">
     <div class="talk-details">
     <h3 class="talk-title">Аккреция газа на галактики</h3>
 		<span class="talk-presenter">Моисеев А.В. (САО РАН)</span>
@@ -1989,7 +1989,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;" id="t142">
     <div class="talk-details">
     <h3 class="talk-title">Современные методы исследования устойчивости звездных систем</h3>
 		<span class="talk-presenter">Поляченко Е.В. (ИНАСАН)</span>
@@ -2005,7 +2005,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1930 / time-2100;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1930 / time-2100;" id="t143">
     <div class="talk-details">
     <h3 class="talk-title">Прорывные научные проекты космической миссии Миллиметрон</h3>
 		<span class="talk-presenter">Новиков И.Д. (АКЦ ФИАН)</span>
@@ -2016,7 +2016,7 @@
 
       
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1615 / time-1635;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1615 / time-1635;" id="t144">
     <div class="talk-details">
     <h3 class="talk-title">Анализ фотоэлектрических покрытий и построение цифровой модели лунной либрационной зоны</h3>
 		<span class="talk-presenter">Чуркин К.О.</span>
@@ -2025,7 +2025,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1635 / time-1650;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1635 / time-1650;" id="t145">
     <div class="talk-details">
     <h3 class="talk-title">Численное моделирование динамики окололунных объектов</h3>
 		<span class="talk-presenter">Попандопуло Н.А.</span>
@@ -2036,7 +2036,7 @@
 
       
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1415;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1415;" id="t146">
     <div class="talk-details">
     <h3 class="talk-title">Производящая функция компонент тензора Эйлера-Пуансо малых небесных тел</h3>
 		<span class="talk-presenter">Буров А.А.</span>
@@ -2045,7 +2045,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1415 / time-1430;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1415 / time-1430;" id="t147">
     <div class="talk-details">
     <h3 class="talk-title">О точках либрации равномерно вращающихся небесных тел с полостями</h3>
 		<span class="talk-presenter">Буров А.А.</span>
@@ -2054,7 +2054,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1430 / time-1450;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1430 / time-1450;" id="t148">
     <div class="talk-details">
     <h3 class="talk-title">Метрики в пространстве кеплеровых орбит и семействе его фактор-пространств</h3>
 		<span class="talk-presenter">Щепалова А.С.</span>
@@ -2063,7 +2063,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1450 / time-1505;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1450 / time-1505;" id="t149">
     <div class="talk-details">
     <h3 class="talk-title">Исследование прецессии экзо-планеты в планетной задаче четырех тел с учетом эволюции орбиты спутника планеты</h3>
 		<span class="talk-presenter">Красильников П.С.</span>
@@ -2074,7 +2074,7 @@
 
       
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1505 / time-1525;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1505 / time-1525;" id="t150">
     <div class="talk-details">
     <h3 class="talk-title">Уточнение массы Главного пояса астероидов и индивидуальных масс астероидов в динамической модели эфемерид EPM с использованием данных инфракрасных наблюдений</h3>
 		<span class="talk-presenter">Кан М.О.</span>
@@ -2083,7 +2083,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1525 / time-1545;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1525 / time-1545;" id="t151">
     <div class="talk-details">
     <h3 class="talk-title">Обновленная версия эфемерид EPM2021 ИПА РАН</h3>
 		<span class="talk-presenter">Павлов Д.А.</span>
@@ -2101,7 +2101,7 @@
 
       
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1650 / time-1710;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1650 / time-1710;" id="t152">
     <div class="talk-details">
     <h3 class="talk-title">Нелинейность в обратных задачах динамики внешних спутников Юпитера</h3>
 		<span class="talk-presenter">Баньщикова М.А.</span>
@@ -2110,7 +2110,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1710 / time-1730;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1710 / time-1730;" id="t153">
     <div class="talk-details">
     <h3 class="talk-title">Исследование резонансных структур околопланетных орбитальных пространств методами численного моделирования</h3>
 		<span class="talk-presenter">Александрова А.Г.</span>
@@ -2119,7 +2119,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;" id="t154">
     <div class="talk-details">
     <h3 class="talk-title">Численные исследования регулярной и хаотической динамики АСЗ, находящихся вблизи некоторых резонансов с Венерой, Землей и Юпитером</h3>
 		<span class="talk-presenter">Ниганова Е.Н.</span>
@@ -2128,7 +2128,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;" id="t155">
     <div class="talk-details">
     <h3 class="talk-title">Нелинейность в разных орбитальных параметрах в обратных задачах астероидной динамики</h3>
 		<span class="talk-presenter">Сюсина О.М.</span>
@@ -2137,7 +2137,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;" id="t156">
     <div class="talk-details">
     <h3 class="talk-title">Вероятностная орбитальная эволюция астероида 2015 HG</h3>
 		<span class="talk-presenter">Летнер О.Н.</span>
@@ -2148,7 +2148,7 @@
 
       
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;" id="t157">
     <div class="talk-details">
     <h3 class="talk-title">Зависимость спектральной переменности звезд типа FK Com от вращения звезды</h3>
 		<span class="talk-presenter">Алексеев И.Ю.</span>
@@ -2157,7 +2157,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;" id="t158">
     <div class="talk-details">
     <h3 class="talk-title">Модуляция аккреции и ветра звезды типа Т Тельца RY Tau – планета на расстоянии 0.2 а.е.?</h3>
 		<span class="talk-presenter">Артеменко С.А.</span>
@@ -2166,7 +2166,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;" id="t159">
     <div class="talk-details">
     <h3 class="talk-title">Динамика аккреции и ветра как показатель магнитной активности RY Tельца</h3>
 		<span class="talk-presenter">Бабина Е.В.</span>
@@ -2175,7 +2175,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;" id="t160">
     <div class="talk-details">
     <h3 class="talk-title">Периодические изменения блеска красного карлика V647 Her</h3>
 		<span class="talk-presenter">Бондарь Н.И.</span>
@@ -2184,7 +2184,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;" id="t161">
     <div class="talk-details">
     <h3 class="talk-title">Применение машинного обучения для обнаружения нестандартных кривых блеска</h3>
 		<span class="talk-presenter">Вольнова А.А.</span>
@@ -2193,7 +2193,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;" id="t162">
     <div class="talk-details">
     <h3 class="talk-title">Вспышки светимости у звезд до главной последовательности. Можно ли определить их спусковой механизм?</h3>
 		<span class="talk-presenter">Воробьев Э.И.</span>
@@ -2202,7 +2202,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;" id="t163">
     <div class="talk-details">
     <h3 class="talk-title">Определение характеристик предкатаклизмических переменных по моделированию их оптического излучения</h3>
 		<span class="talk-presenter">Дёминова Н.Р.</span>
@@ -2211,7 +2211,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;" id="t164">
     <div class="talk-details">
     <h3 class="talk-title">Нестационарность ионизации в магнитосферах молодых звезд RZ Psc</h3>
 		<span class="talk-presenter">Дмитриев Д.В.</span>
@@ -2220,7 +2220,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;" id="t165">
     <div class="talk-details">
     <h3 class="talk-title">IRAS 02143+5852: цефеида типа W Девы с пылевой оболочкой</h3>
 		<span class="talk-presenter">Иконникова Н.П.</span>
@@ -2229,7 +2229,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;" id="t166">
     <div class="talk-details">
     <h3 class="talk-title">Спектральная переменность Ae звезды Хербига AB Aur и ее связь с процессом планетообразования</h3>
 		<span class="talk-presenter">Козлова О.В.</span>
@@ -2245,7 +2245,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;" id="t167">
     <div class="talk-details">
     <h3 class="talk-title">Звёздная активность в системе AT Mic по данным многоволновых наблюдений обсерватории AstroSat</h3>
 		<span class="talk-presenter">Кузнецов А.А.</span>
@@ -2254,7 +2254,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;" id="t168">
     <div class="talk-details">
     <h3 class="talk-title">Вспышки и корональные выбросы массы на звездах разных классов</h3>
 		<span class="talk-presenter">Садовский А.М.</span>
@@ -2263,7 +2263,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;" id="t169">
     <div class="talk-details">
     <h3 class="talk-title">MASTER OT J172758.09+380021.5: необычная активная карликовая новая, возможно, пропущенная классическая Новая в недавнем прошлом</h3>
 		<span class="talk-presenter">Павленко Е.П.</span>
@@ -2272,7 +2272,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;" id="t170">
     <div class="talk-details">
     <h3 class="talk-title">EZ Lyn: быстрое остывание белого карлика после вспышки 2010 года</h3>
 		<span class="talk-presenter">Сосновский А.А.</span>
@@ -2281,7 +2281,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;" id="t171">
     <div class="talk-details">
     <h3 class="talk-title">Быстрая и cверхбыстрая переменность профилей линий в спектрах звезд ранних спектральных классов</h3>
 		<span class="talk-presenter">Холтыгин А.Ф.</span>
@@ -2290,7 +2290,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;" id="t172">
     <div class="talk-details">
     <h3 class="talk-title">Параметры SS433 по наблюдениям на Кавказской горной обсерватории ГАИШ МГУ</h3>
 		<span class="talk-presenter">Черепащук А.М.</span>
@@ -2299,7 +2299,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1815 / time-1830;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1815 / time-1830;" id="t173">
     <div class="talk-details">
     <h3 class="talk-title">Исследование V3101 Cyg – звезды типа WZ Sge</h3>
 		<span class="talk-presenter">Шугаров С.Ю.</span>
@@ -2308,7 +2308,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1830 / time-1845;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1830 / time-1845;" id="t174">
     <div class="talk-details">
     <h3 class="talk-title">Новые списки обозначений переменных звезд и перспективы ОКПЗ</h3>
 		<span class="talk-presenter">Самусь Н.Н.</span>
@@ -2326,7 +2326,7 @@
 
       
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1630 / time-1650;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1630 / time-1650;" id="t175">
     <div class="talk-details">
     <h3 class="talk-title">Поиск метана в атмосфере Марса и другие чувствительные измерения TGO ExoMars</h3>
 		<span class="talk-presenter">Трохимовский А.Ю.</span>
@@ -2335,7 +2335,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1650 / time-1705;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1650 / time-1705;" id="t176">
     <div class="talk-details">
     <h3 class="talk-title">Вертикальное распределение водяного пара на Марса, насыщение и потеря воды по данным затменных экспериментов на орбите Марса</h3>
 		<span class="talk-presenter">Федорова А.А.</span>
@@ -2344,7 +2344,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1705 / time-1720;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1705 / time-1720;" id="t177">
     <div class="talk-details">
     <h3 class="talk-title">Циркуляция облачного слоя Венеры по многолетним наблюдениям дневной стороны планеты камерой VMC/Venus Express в ультрафиолетовом, видимом и инфракрасном диапазонах</h3>
 		<span class="talk-presenter">Хатунцев И.В.</span>
@@ -2353,7 +2353,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1720 / time-1735;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1720 / time-1735;" id="t178">
     <div class="talk-details">
     <h3 class="talk-title">Изменение скорости ветра на верхней границе облачного слоя в экваториальных широтах по результатам многолетних наблюдений VMC (Венера Экспресс) и UVI (Акацуки)</h3>
 		<span class="talk-presenter">Пацаева М.В.</span>
@@ -2378,7 +2378,7 @@
 
       
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1400 / time-1420;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1400 / time-1420;" id="t179">
     <div class="talk-details">
     <h3 class="talk-title">Тепловая эволюция ядер ледяных спутников планет-гигантов</h3>
 		<span class="talk-presenter">Кронрод Е.В.</span>
@@ -2387,7 +2387,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1420 / time-1435;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1420 / time-1435;" id="t180">
     <div class="talk-details">
     <h3 class="talk-title">Модельные нагрузочные числа лява для Венеры</h3>
 		<span class="talk-presenter">Менщикова Т.И.</span>
@@ -2396,7 +2396,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1435 / time-1450;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1435 / time-1450;" id="t181">
     <div class="talk-details">
     <h3 class="talk-title">Анализ морфологических особенностей кратеров Меркурия на основе новой базы данных</h3>
 		<span class="talk-presenter">Феоктистова Е.А.</span>
@@ -2405,7 +2405,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1450 / time-1505;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1450 / time-1505;" id="t182">
     <div class="talk-details">
     <h3 class="talk-title">Анализ цифровых моделей физической поверхности небесных тел, построенных на основе спутниковых альтиметрических измерений</h3>
 		<span class="talk-presenter">Нефедьев Ю.А.</span>
@@ -2414,7 +2414,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1505 / time-1525;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1505 / time-1525;" id="t183">
     <div class="talk-details">
     <h3 class="talk-title">Пылевые частицы безатмосферных тел: изучение in-situ и лабораторное моделирование</h3>
 		<span class="talk-presenter">Захаров А.В.</span>
@@ -2423,7 +2423,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1525 / time-1540;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1525 / time-1540;" id="t184">
     <div class="talk-details">
     <h3 class="talk-title">Анализ многопараметрической модели генетически связанных околоземных метеороидов</h3>
 		<span class="talk-presenter">Сергиенко М.В.</span>
@@ -2432,7 +2432,7 @@
 	</div>
 
       
-  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1540 / time-1555;">
+  <div class="talk track-planets" style="grid-column: track-planets; grid-row: time-1540 / time-1555;" id="t185">
     <div class="talk-details">
     <h3 class="talk-title">Исследование метеоров с субсекундном временным разрешением в широкоугольном оптическом мониторинге небесной сферы</h3>
 		<span class="talk-presenter">Ляпсина Н.В.</span>
@@ -2450,7 +2450,7 @@
 
       
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1430;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1400 / time-1430;" id="t186">
     <div class="talk-details">
     <h3 class="talk-title">Микроволновая пространственно-разрешающая спектроскопия солнечных вспышек</h3>
 		<span class="talk-presenter">Флейшман Г.Д.</span>
@@ -2459,7 +2459,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1430 / time-1445;" id="t187">
     <div class="talk-details">
     <h3 class="talk-title">Радиоизлучение многокомпонентной мультитемпературной плазмы в атмосфере Солнца</h3>
 		<span class="talk-presenter">Кузнецов А.А.</span>
@@ -2468,7 +2468,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1445 / time-1500;" id="t188">
     <div class="talk-details">
     <h3 class="talk-title">Моделирование теплового суб-ТГц излучения солнечных вспышек</h3>
 		<span class="talk-presenter">Моторина Г.Г.</span>
@@ -2477,7 +2477,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1500 / time-1515;" id="t189">
     <div class="talk-details">
     <h3 class="talk-title">Осесимметричные колебания в корональных трубках с магнитно-закрученным слоем</h3>
 		<span class="talk-presenter">Лопин И.П.</span>
@@ -2486,7 +2486,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1515 / time-1530;" id="t190">
     <div class="talk-details">
     <h3 class="talk-title">Тепловая фрагментация токового слоя как триггер вспышек на Солнце</h3>
 		<span class="talk-presenter">Леденцов Л.С.</span>
@@ -2495,7 +2495,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1530 / time-1545;" id="t191">
     <div class="talk-details">
     <h3 class="talk-title">Выбор параметров и появление вспышечной ситуации при МГД моделировании над активной областью в реальном масштабе времени</h3>
 		<span class="talk-presenter">Подгорный А.И.</span>
@@ -2504,7 +2504,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1545 / time-1600;" id="t192">
     <div class="talk-details">
     <h3 class="talk-title">Концентрация магнитного поля и скрученность солнечных корональных петель</h3>
 		<span class="talk-presenter">Цап Ю.Т.</span>
@@ -2520,7 +2520,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1620 / time-1635;" id="t193">
     <div class="talk-details">
     <h3 class="talk-title">Вспышечное энерговыделение и ионизация плазмы убегающими электронами в нижней атмосфере Солнца</h3>
 		<span class="talk-presenter">Цап Ю.Т.</span>
@@ -2529,7 +2529,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1635 / time-1650;" id="t194">
     <div class="talk-details">
     <h3 class="talk-title">Статистическое исследование "холодных" солнечных вспышек в микроволновом диапазоне</h3>
 		<span class="talk-presenter">Лысенко А.Л.</span>
@@ -2538,7 +2538,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1650 / time-1705;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1650 / time-1705;" id="t195">
     <div class="talk-details">
     <h3 class="talk-title">О микроволновых источниках шумовых бурь радиовсплесков III типа 10 апреля 2019 г.</h3>
 		<span class="talk-presenter">Куприянова Е.Г.</span>
@@ -2547,7 +2547,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1705 / time-1720;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1705 / time-1720;" id="t196">
     <div class="talk-details">
     <h3 class="talk-title">О связи микроволнового излучения и метровых всплесков III типа в слабых транзиентных событиях</h3>
 		<span class="talk-presenter">Алтынцев А.Т.</span>
@@ -2556,7 +2556,7 @@
 	</div>
 
       
-  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1720 / time-1735;">
+  <div class="talk track-sun" style="grid-column: track-sun; grid-row: time-1720 / time-1735;" id="t197">
     <div class="talk-details">
     <h3 class="talk-title">Роль вистлеров в формировании энергетического спектра и питч-углового распределения электронов во вспышках</h3>
 		<span class="talk-presenter">Мельников В.Ф.</span>
@@ -2574,7 +2574,7 @@
 
       
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1425;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1425;" id="t198">
     <div class="talk-details">
     <h3 class="talk-title">Результаты обзора активных ядер галактик на наземно-космическом интерферометре РадиоАстрон в 2012-2018 гг.</h3>
 		<span class="talk-presenter">Войцик П.А.</span>
@@ -2583,7 +2583,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1425 / time-1445;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1425 / time-1445;" id="t199">
     <div class="talk-details">
     <h3 class="talk-title">Радиоизображение струи в галактике М87, полученное РадиоАстроном на 5ГГц</h3>
 		<span class="talk-presenter">Кравченко Е.В.</span>
@@ -2592,7 +2592,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1445 / time-1505;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1445 / time-1505;" id="t200">
     <div class="talk-details">
     <h3 class="talk-title">Исследование быстрых радиовсплесков на радиотелескопе БСА/ФИАН</h3>
 		<span class="talk-presenter">Федорова В.А.</span>
@@ -2601,7 +2601,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1505 / time-1525;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1505 / time-1525;" id="t201">
     <div class="talk-details">
     <h3 class="talk-title">Радиосвойства квазаров на красных смещениях z>3</h3>
 		<span class="talk-presenter">Сотникова Ю.В.</span>
@@ -2610,7 +2610,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1525 / time-1545;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1525 / time-1545;" id="t202">
     <div class="talk-details">
     <h3 class="talk-title">Многочастотное исследование радиогалактик FR0 на РАТАН-600</h3>
 		<span class="talk-presenter">Михайлов А.Г.</span>
@@ -2619,7 +2619,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1545 / time-1605;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1545 / time-1605;" id="t203">
     <div class="talk-details">
     <h3 class="talk-title">Радиосвойства галактик с источниками гидроксильного мегамазерного излучения</h3>
 		<span class="talk-presenter">Михайлов А.Г.</span>
@@ -2628,7 +2628,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1625;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1625;" id="t204">
     <div class="talk-details">
     <h3 class="talk-title">Источники обзора на склонении RCR1915+10</h3>
 		<span class="talk-presenter">Бурсов Н.Н.</span>
@@ -2644,7 +2644,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1645 / time-1705;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1645 / time-1705;" id="t205">
     <div class="talk-details">
     <h3 class="talk-title">Определение величины и геометрии магнитного поля в аккреционных дисках АГЯ</h3>
 		<span class="talk-presenter">Пиотрович М.Ю.</span>
@@ -2653,7 +2653,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1705 / time-1725;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1705 / time-1725;" id="t206">
     <div class="talk-details">
     <h3 class="talk-title">Измерения масс сверхмассивных черных дыр в ядрах активных галактик методом фотометрического эхокартирования</h3>
 		<span class="talk-presenter">Малыгин Е.А.</span>
@@ -2662,7 +2662,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1725 / time-1745;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1725 / time-1745;" id="t207">
     <div class="talk-details">
     <h3 class="talk-title">Активные ядра галактик в поляризованном свете</h3>
 		<span class="talk-presenter">Шабловинская Е.С.</span>
@@ -2671,7 +2671,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1745 / time-1805;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1745 / time-1805;" id="t208">
     <div class="talk-details">
     <h3 class="talk-title">Оптические наблюдения хост-галактик черных дыр промежуточных масс: дисперсии скоростей звезд, структурные характеристики</h3>
 		<span class="talk-presenter">Гораджанов В.С.</span>
@@ -2680,7 +2680,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1805 / time-1825;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1805 / time-1825;" id="t209">
     <div class="talk-details">
     <h3 class="talk-title">Анализ оптических кривых блеска галактик, полученных из разностных снимков ZTF Froced- Photometry Service</h3>
 		<span class="talk-presenter">Демьяненко М.В.</span>
@@ -2689,7 +2689,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1825 / time-1845;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1825 / time-1845;" id="t210">
     <div class="talk-details">
     <h3 class="talk-title">Изучение физических свойств квазаров по данным среднеполосного фотометрического обзора</h3>
 		<span class="talk-presenter">Котов С.С.</span>
@@ -2698,7 +2698,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1845 / time-1905;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1845 / time-1905;" id="t211">
     <div class="talk-details">
     <h3 class="talk-title">Исследование корреляции оптического излучения с гамма-излучением в период многоволновой активности блазара 3C454.3 с 2012 по 2017 гг.</h3>
 		<span class="talk-presenter">Уголькова Л.С.</span>
@@ -2715,8 +2715,8 @@
 
 
     </div>
-    <div class="conference-anyday conference-day-3">
-    <h2 class="conference-current-date">26.08.2021 (Четверг)</h2>
+    <h2 class="conference-current-date" id="day-3">26.08.2021 (Четверг)</h2>
+    <div class="conference-anyday" id="conference-day-3">
 
       <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
       <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
@@ -2872,7 +2872,7 @@
     
       
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;" id="t212">
     <div class="talk-details">
     <h3 class="talk-title">Успехи небесной механики: теория и практические результаты</h3>
 		<span class="talk-presenter">Емельянов Н.В. (ГАИШ МГУ)</span>
@@ -2881,7 +2881,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;" id="t213">
     <div class="talk-details">
     <h3 class="talk-title">Фундаментальная радиоастрометрия</h3>
 		<span class="talk-presenter">Иванов Д.В. (ИПА РАН)</span>
@@ -2897,7 +2897,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;" id="t214">
     <div class="talk-details">
     <h3 class="talk-title">Нейтринная астрофизика высоких энергий</h3>
 		<span class="talk-presenter">Домогацкий Г.В. (ИЯИ РАН)</span>
@@ -2906,7 +2906,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;" id="t215">
     <div class="talk-details">
     <h3 class="talk-title">Наземные гравитационно- волновые детекторы: текущее состояние и перспективы развития</h3>
 		<span class="talk-presenter">Митрофанов В.П. (физический факультет МГУ)</span>
@@ -2924,7 +2924,7 @@
 
       
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1630 / time-1650;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1630 / time-1650;" id="t216">
     <div class="talk-details">
     <h3 class="talk-title">Исследование астроклимата: современные возможности и задачи</h3>
 		<span class="talk-presenter">Больбасова Л.А.</span>
@@ -2933,7 +2933,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1650 / time-1705;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1650 / time-1705;" id="t217">
     <div class="talk-details">
     <h3 class="talk-title">Универсальный редуктор для малых телескопов</h3>
 		<span class="talk-presenter">Уклеин Р.И.</span>
@@ -2942,7 +2942,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1705 / time-1720;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1705 / time-1720;" id="t218">
     <div class="talk-details">
     <h3 class="talk-title">Коррекции рабочей орбиты КА "Спектр-РГ" с целью обеспечения заданных условий радиовидимости с российских наземных станций</h3>
 		<span class="talk-presenter">Михайлов Е.А.</span>
@@ -2951,7 +2951,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1720 / time-1735;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1720 / time-1735;" id="t219">
     <div class="talk-details">
     <h3 class="talk-title">Машинное обучение в задачах рентгеновской астрономии</h3>
 		<span class="talk-presenter">Мещеряков А.В.</span>
@@ -2962,7 +2962,7 @@
 
       
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1400 / time-1430;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1400 / time-1430;" id="t220">
     <div class="talk-details">
     <h3 class="talk-title">Перспективы ультрафиолетовой астрономии: проект "Спектр-УФ"</h3>
 		<span class="talk-presenter">Шустов Б.М.</span>
@@ -2973,7 +2973,7 @@
 
       
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1430 / time-1450;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1430 / time-1450;" id="t221">
     <div class="talk-details">
     <h3 class="talk-title">Сибирский радиогелиограф: новые возможности исследования солнечной короны</h3>
 		<span class="talk-presenter">Лесовой С.В.</span>
@@ -2982,7 +2982,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1450 / time-1505;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1450 / time-1505;" id="t222">
     <div class="talk-details">
     <h3 class="talk-title">Методика обработки обзоров на РАТАН-600 при неподвижной антенне</h3>
 		<span class="talk-presenter">Кудряшова А.А.</span>
@@ -2991,7 +2991,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1505 / time-1525;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1505 / time-1525;" id="t223">
     <div class="talk-details">
     <h3 class="talk-title">Проект «РадиоАстрон». Калибровка космического радиотелескопа в полете в 2011--2019 гг.</h3>
 		<span class="talk-presenter">Ковалев Ю.А.</span>
@@ -3000,7 +3000,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1525 / time-1540;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1525 / time-1540;" id="t224">
     <div class="talk-details">
     <h3 class="talk-title">Система адаптации главного зеркала космической обсерватории «Миллиметрон</h3>
 		<span class="talk-presenter">Архипов М.Ю.</span>
@@ -3009,7 +3009,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1540 / time-1555;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1540 / time-1555;" id="t225">
     <div class="talk-details">
     <h3 class="talk-title">Статистика и особенности корреляционной обработки мазерных источников в проекте «Радиоастрон»</h3>
 		<span class="talk-presenter">Авдеев В.Ю.</span>
@@ -3018,7 +3018,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1555 / time-1610;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1555 / time-1610;" id="t226">
     <div class="talk-details">
     <h3 class="talk-title">AstroMagick -- программы для контроля и адаптации поверхности главного зеркала космической обсерватории «Миллиметрон</h3>
 		<span class="talk-presenter">Ляховец А.О.</span>
@@ -3036,7 +3036,7 @@
 
       
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1735 / time-1750;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1735 / time-1750;" id="t227">
     <div class="talk-details">
     <h3 class="talk-title">Проект "Лира" не на МКС</h3>
 		<span class="talk-presenter">Прохоров М.Е.</span>
@@ -3047,7 +3047,7 @@
 
       
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1510 / time-1525;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1510 / time-1525;" id="t228">
     <div class="talk-details">
     <h3 class="talk-title">О возможности разложения постоянной Тиссерана комет семейства Юпитера в биномиальный ряд</h3>
 		<span class="talk-presenter">Абдульмянов Т.Р. Соколова М.Г. Усанин В.С.</span>
@@ -3056,7 +3056,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1525 / time-1545;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1525 / time-1545;" id="t229">
     <div class="talk-details">
     <h3 class="talk-title">Сравнение динамики коорбитальных астероидов Юпитера и динамики тел в "дебрис" дисках формирующихся планетных систем</h3>
 		<span class="talk-presenter">Абдульмянов Т.Р.</span>
@@ -3065,7 +3065,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1545 / time-1605;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1545 / time-1605;" id="t230">
     <div class="talk-details">
     <h3 class="talk-title">Эффект Ярковского в динамике астероидов с малыми перигелийными расстояниями</h3>
 		<span class="talk-presenter">Галушина Т. Ю.</span>
@@ -3074,7 +3074,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1605 / time-1625;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1605 / time-1625;" id="t231">
     <div class="talk-details">
     <h3 class="talk-title">Вековая эволюция резонансных объектов пояса Койпера</h3>
 		<span class="talk-presenter">Ефимов С.С.</span>
@@ -3090,7 +3090,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1655 / time-1715;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1655 / time-1715;" id="t232">
     <div class="talk-details">
     <h3 class="talk-title">О возможных соударениях и сближениях астероидов с планетами</h3>
 		<span class="talk-presenter">Баляев И. А.</span>
@@ -3099,7 +3099,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1715 / time-1730;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1715 / time-1730;" id="t233">
     <div class="talk-details">
     <h3 class="talk-title">Возможности астрофизических телескопов при исследованиях объектов космического мусора</h3>
 		<span class="talk-presenter">Кохирова Г.И.</span>
@@ -3108,7 +3108,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;" id="t234">
     <div class="talk-details">
     <h3 class="talk-title">Определение орбит околосолнечных комет</h3>
 		<span class="talk-presenter">Павлов С.Р.</span>
@@ -3117,7 +3117,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;" id="t235">
     <div class="talk-details">
     <h3 class="talk-title">Визуализация динамических характеристик орбитальной эволюции космического мусора и иные средства машинного анализа астрономических данных</h3>
 		<span class="talk-presenter">Кучерявченко Н.А.</span>
@@ -3126,7 +3126,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;" id="t236">
     <div class="talk-details">
     <h3 class="talk-title">Физическая либрация Луны</h3>
 		<span class="talk-presenter">Загидуллин А.</span>
@@ -3137,7 +3137,7 @@
 
       
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1415;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1415;" id="t237">
     <div class="talk-details">
     <h3 class="talk-title">Метод кусочного переноса для стохастического моделирования орбитальной неопределенности</h3>
 		<span class="talk-presenter">Авдюшев В.А.</span>
@@ -3146,7 +3146,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1415 / time-1430;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1415 / time-1430;" id="t238">
     <div class="talk-details">
     <h3 class="talk-title">Коллокационный интегратор Lobbie в задачах орбитальной динамики</h3>
 		<span class="talk-presenter">Авдюшев В.А.</span>
@@ -3155,7 +3155,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1430 / time-1450;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1430 / time-1450;" id="t239">
     <div class="talk-details">
     <h3 class="talk-title">Исследование резонансной структуры высокой орбитальной области ОКП методами численного моделирования</h3>
 		<span class="talk-presenter">Томилова И.В.</span>
@@ -3164,7 +3164,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1450 / time-1510;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1450 / time-1510;" id="t240">
     <div class="talk-details">
     <h3 class="talk-title">Исследование совместного влияния светового давления и вековых резонансов, связанных со средним движением солнца, на движение низкоорбитальных объектов</h3>
 		<span class="talk-presenter">Блинкова Е.В.</span>
@@ -3175,7 +3175,7 @@
 
       
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;" id="t241">
     <div class="talk-details">
     <h3 class="talk-title">Особенности перетекания вещества в рентгеновской двойной Her Х-1</h3>
 		<span class="talk-presenter">Карицкая Е.А.</span>
@@ -3184,7 +3184,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;" id="t242">
     <div class="talk-details">
     <h3 class="talk-title">Параметры системы ScoX-1</h3>
 		<span class="talk-presenter">Черепащук А.М.</span>
@@ -3193,7 +3193,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;" id="t243">
     <div class="talk-details">
     <h3 class="talk-title">Массивная двойная система с большим эксцентриситетом орбиты WR22 (WN7h+O9): анализ кривой блеска в модели Роша с учетом звездного ветра</h3>
 		<span class="talk-presenter">Антохина Э.А.</span>
@@ -3202,7 +3202,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;" id="t244">
     <div class="talk-details">
     <h3 class="talk-title">Наблюдения покрытий звезд астероидами как метод измерения угловых диаметров субмиллисекундного уровня</h3>
 		<span class="talk-presenter">Дьяченко В.</span>
@@ -3211,7 +3211,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;" id="t245">
     <div class="talk-details">
     <h3 class="talk-title">Предкатаклизмическая двойная система GPX-TF16E-48 с затменным белым карликом</h3>
 		<span class="talk-presenter">Крушинский В.</span>
@@ -3220,7 +3220,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;" id="t246">
     <div class="talk-details">
     <h3 class="talk-title">Тесные двойные системы в «пробеле периодов</h3>
 		<span class="talk-presenter">Катышева Н.А.</span>
@@ -3229,7 +3229,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;" id="t247">
     <div class="talk-details">
     <h3 class="talk-title">Определение закона распределения двойных звёзд по массам и разделению компонентов</h3>
 		<span class="talk-presenter">Чулков Д.А.</span>
@@ -3238,7 +3238,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;" id="t248">
     <div class="talk-details">
     <h3 class="talk-title">Поиск гигантских импульсов секундных пульсаров на частоте 111 МГц</h3>
 		<span class="talk-presenter">Казанцев А.Н.</span>
@@ -3254,7 +3254,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;" id="t249">
     <div class="talk-details">
     <h3 class="talk-title">О гигантских импульсах радиопульсаров</h3>
 		<span class="talk-presenter">Малов И.Ф.</span>
@@ -3263,7 +3263,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1630 / time-1645;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1630 / time-1645;" id="t250">
     <div class="talk-details">
     <h3 class="talk-title">Об особенностях излучения пульсара B0950+08 на частоте 111 МГц</h3>
 		<span class="talk-presenter">Малофеев В.М.</span>
@@ -3272,7 +3272,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;" id="t251">
     <div class="talk-details">
     <h3 class="talk-title">Исследование радиоизлучения новых пущинских пульсаров</h3>
 		<span class="talk-presenter">Теплых Д.А.</span>
@@ -3281,7 +3281,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;" id="t252">
     <div class="talk-details">
     <h3 class="talk-title">Наблюдения гамма пульсара J1836 + 5925 на частоте 111 МГц</h3>
 		<span class="talk-presenter">Тимиркеева М.А.</span>
@@ -3290,7 +3290,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;" id="t253">
     <div class="talk-details">
     <h3 class="talk-title">Быстропеременные объекты: радиовсплески, магнетары, пульсары на РАТАН-600</h3>
 		<span class="talk-presenter">Трушкин С.А.</span>
@@ -3299,7 +3299,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;" id="t254">
     <div class="talk-details">
     <h3 class="talk-title">Распределение энергии импульсов нескольких вращающихся транзиентов</h3>
 		<span class="talk-presenter">Тюльбашев С.А.</span>
@@ -3308,7 +3308,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;" id="t255">
     <div class="talk-details">
     <h3 class="talk-title">Статистика импульсных явлений на основе многолетних наблюдений северной небесной полусферы радиотелескопом БСА ФИАН на частоте 109-111.5 МГц с 2013 по 2021 гг.</h3>
 		<span class="talk-presenter">Самодуров В.А.</span>
@@ -3317,7 +3317,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1800 / time-1815;" id="t256">
     <div class="talk-details">
     <h3 class="talk-title">Фурье-образ северной небесной полусферы на основе многолетних наблюдений радиотелескопа БСА ФИАН на частоте 109-111.5 МГц</h3>
 		<span class="talk-presenter">Самодуров В.А.</span>
@@ -3335,7 +3335,7 @@
 
       
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1400 / time-1430;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1400 / time-1430;" id="t257">
     <div class="talk-details">
     <h3 class="talk-title">Радиопульсары</h3>
 		<span class="talk-presenter">Бескин В.С.</span>
@@ -3344,7 +3344,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1430 / time-1445;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1430 / time-1445;" id="t258">
     <div class="talk-details">
     <h3 class="talk-title">Средние профили радиопульсаров, генерируемых необыкновенной модой</h3>
 		<span class="talk-presenter">Бескин В.С.</span>
@@ -3353,7 +3353,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1445 / time-1500;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1445 / time-1500;" id="t259">
     <div class="talk-details">
     <h3 class="talk-title">Начальное распределение магнитных углов классических радиопульсаров</h3>
 		<span class="talk-presenter">Токарева Е.А.</span>
@@ -3362,7 +3362,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1500 / time-1515;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1500 / time-1515;" id="t260">
     <div class="talk-details">
     <h3 class="talk-title">Эволюция магнитного угла у аккрецирующих нейтронных звёзд</h3>
 		<span class="talk-presenter">Бирюков А.В.</span>
@@ -3371,7 +3371,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1515 / time-1530;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1515 / time-1530;" id="t261">
     <div class="talk-details">
     <h3 class="talk-title">Обнаружение изменения структуры и физических характеристик оптических пульсаций переходного миллисекундного пульсара J1023+0038</h3>
 		<span class="talk-presenter">Танашкин А.С.</span>
@@ -3380,7 +3380,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1530 / time-1545;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1530 / time-1545;" id="t262">
     <div class="talk-details">
     <h3 class="talk-title">Новые результаты по рентгеновским наблюдениям Her X-1 на спутниках SRG и Fermi</h3>
 		<span class="talk-presenter">Колесников Д.А.</span>
@@ -3389,7 +3389,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1545 / time-1600;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1545 / time-1600;" id="t263">
     <div class="talk-details">
     <h3 class="talk-title">Рентгеновская переменность источников вблизи Северного полюса эклиптики по данным обзора СРГ/eROSITA</h3>
 		<span class="talk-presenter">Медведев П.С.</span>
@@ -3398,7 +3398,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1600 / time-1615;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1600 / time-1615;" id="t264">
     <div class="talk-details">
     <h3 class="talk-title">События приливного разрушения, открытые в ходе рентгеновского обзора всего неба обсерватории СРГ</h3>
 		<span class="talk-presenter">Сазонов С.Ю.</span>
@@ -3407,7 +3407,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1615 / time-1630;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1615 / time-1630;" id="t265">
     <div class="talk-details">
     <h3 class="talk-title">Оптическое отождествление рентгеновских источников, обнаруженных телескопом ART- XC им. М.Н. Павлинского в ходе обзора всего неба</h3>
 		<span class="talk-presenter">Зазнобин И.А.</span>
@@ -3416,7 +3416,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1635 / time-1650;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1635 / time-1650;" id="t266">
     <div class="talk-details">
     <h3 class="talk-title">Ультраяркий рентгеновский источник с нейтронной звездой в старом звездном скоплении</h3>
 		<span class="talk-presenter">Атапин К.Е.</span>
@@ -3432,7 +3432,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1700 / time-1715;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1700 / time-1715;" id="t267">
     <div class="talk-details">
     <h3 class="talk-title">Диффузия тепла во внешней коре и рентгеновские сверхвсплески аккрецирующих нейтронных звезд</h3>
 		<span class="talk-presenter">Каминкер А.Д.</span>
@@ -3441,7 +3441,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1715 / time-1730;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1715 / time-1730;" id="t268">
     <div class="talk-details">
     <h3 class="talk-title">20 лет остывания нейтронной звезды в остатке сверхновой Кассиопея А: ограничения параметров сверхтекучести сверхплотного вещества</h3>
 		<span class="talk-presenter">Штернин П.С.</span>
@@ -3450,7 +3450,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1730 / time-1745;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1730 / time-1745;" id="t269">
     <div class="talk-details">
     <h3 class="talk-title">Магнитовращательная эволюция нейтронных звезд с переменным темпом аккреции</h3>
 		<span class="talk-presenter">Хохрякова А.Д.</span>
@@ -3459,7 +3459,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1745 / time-1800;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1745 / time-1800;" id="t270">
     <div class="talk-details">
     <h3 class="talk-title">Функция рентгеновской светимости аккрецирующих нейтронных звезд и черных дыр в галактиках</h3>
 		<span class="talk-presenter">Постнов К.А.</span>
@@ -3484,7 +3484,7 @@
 
       
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1430;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1430;" id="t271">
     <div class="talk-details">
     <h3 class="talk-title">Когда карликовые галактики оказываются спиральными</h3>
 		<span class="talk-presenter">Засов А.В.</span>
@@ -3493,7 +3493,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1430 / time-1450;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1430 / time-1450;" id="t272">
     <div class="talk-details">
     <h3 class="talk-title">Вертикальная структура барлинз в N-body моделях</h3>
 		<span class="talk-presenter">Тихоненко И.С.</span>
@@ -3502,7 +3502,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1450 / time-1515;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1450 / time-1515;" id="t273">
     <div class="talk-details">
     <h3 class="talk-title">Кинематический анализ моделей галактик с барлинзами</h3>
 		<span class="talk-presenter">Захарова Д.А.</span>
@@ -3511,7 +3511,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1515 / time-1540;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1515 / time-1540;" id="t274">
     <div class="talk-details">
     <h3 class="talk-title">Анализ согласия методов определения радиусов коротации в галактиках</h3>
 		<span class="talk-presenter">Марчук А.А.</span>
@@ -3520,7 +3520,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1540 / time-1605;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1540 / time-1605;" id="t275">
     <div class="talk-details">
     <h3 class="talk-title">Дисковые галактики со звездным противовращением</h3>
 		<span class="talk-presenter">Гасымов Д.Ф.</span>
@@ -3529,7 +3529,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1630;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1605 / time-1630;" id="t276">
     <div class="talk-details">
     <h3 class="talk-title">Гигант в профиль: толстый диск NGC 7572</h3>
 		<span class="talk-presenter">Каспарова А.В.</span>
@@ -3545,7 +3545,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1650 / time-1720;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1650 / time-1720;" id="t277">
     <div class="talk-details">
     <h3 class="talk-title">Некруговые движения газа в межзвездной среде близких карликовых галактик</h3>
 		<span class="talk-presenter">Егоров О.В.</span>
@@ -3554,7 +3554,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1720 / time-1740;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1720 / time-1740;" id="t278">
     <div class="talk-details">
     <h3 class="talk-title">Галактика Ark 18 как результат слияния двух карликов</h3>
 		<span class="talk-presenter">Егорова Е.С.</span>
@@ -3563,7 +3563,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1740 / time-1805;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1740 / time-1805;" id="t279">
     <div class="talk-details">
     <h3 class="talk-title">Как образовались гигантские галактики низкой яркости? Уроки, извлеченные из наблюдений</h3>
 		<span class="talk-presenter">Сабурова А.С.</span>
@@ -3572,7 +3572,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1805 / time-1825;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1805 / time-1825;" id="t280">
     <div class="talk-details">
     <h3 class="talk-title">Пылевые диски видимых с ребра галактик по данным КТ Гершель</h3>
 		<span class="talk-presenter">Усачев П.А.</span>
@@ -3581,7 +3581,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1825 / time-1850;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1825 / time-1850;" id="t281">
     <div class="talk-details">
     <h3 class="talk-title">Сверхтонкие галактики</h3>
 		<span class="talk-presenter">Бизяев Д.В.</span>
@@ -3598,8 +3598,8 @@
 
 
     </div>
-    <div class="conference-anyday conference-day-4">
-    <h2 class="conference-current-date">27.08.2021 (Пятница)</h2>
+    <h2 class="conference-current-date" id="day-4">27.08.2021 (Пятница)</h2>
+    <div class="conference-anyday" id="conference-day-4">
 
       <span class="track-slot" style="grid-column: track-inst; grid-row: tracks;">ИНСТ</span>
       <span class="track-slot" style="grid-column: track-celm; grid-row: tracks;">AM&НМ</span>
@@ -3755,7 +3755,7 @@
     
       
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1000 / time-1040;" id="t282">
     <div class="talk-details">
     <h3 class="talk-title">Планеты: современный взгляд</h3>
 		<span class="talk-presenter">Маров М.Я. (ГЕОХИ РАН)</span>
@@ -3764,7 +3764,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1040 / time-1120;" id="t283">
     <div class="talk-details">
     <h3 class="talk-title">Достижения в исследовании экзопланет</h3>
 		<span class="talk-presenter">Зеленый Л.М. (ИКИ РАН)</span>
@@ -3780,7 +3780,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1140 / time-1220;" id="t284">
     <div class="talk-details">
     <h3 class="talk-title">Радиотелескопы России – состояние и перспективы</h3>
 		<span class="talk-presenter">Ипатов А.В. (ИПА РАН)</span>
@@ -3789,7 +3789,7 @@
 	</div>
 
       
-  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;">
+  <div class="talk track-plenary" style="grid-column: 2 / -1; grid-row: time-1220 / time-1300;" id="t285">
     <div class="talk-details">
     <h3 class="talk-title">Оптические телескопы и приборы – статус и перспективы</h3>
 		<span class="talk-presenter">Балега Ю.Ю. (САО РАН)</span>
@@ -3807,7 +3807,7 @@
 
       
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1420 / time-1435;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1420 / time-1435;" id="t286">
     <div class="talk-details">
     <h3 class="talk-title">Эшелле-спектроскопия. I. Геометрия изображения эшелле-спектра, выбор оптимальных параметров спектрографа высокого разрешения</h3>
 		<span class="talk-presenter">Юшкин М.В.</span>
@@ -3816,7 +3816,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1435 / time-1450;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1435 / time-1450;" id="t287">
     <div class="talk-details">
     <h3 class="talk-title">Эшелле-спектроскопия. II. Эффективность, позиционная точность и методы стабилизации изображения</h3>
 		<span class="talk-presenter">Юшкин М.В.</span>
@@ -3825,7 +3825,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1450 / time-1510;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1450 / time-1510;" id="t288">
     <div class="talk-details">
     <h3 class="talk-title">Оптоволоконный спектрограф высокого спектрального разрешения для БТА</h3>
 		<span class="talk-presenter">Валявин Г.Г.</span>
@@ -3834,7 +3834,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1510 / time-1525;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1510 / time-1525;" id="t289">
     <div class="talk-details">
     <h3 class="talk-title">Новые спектральные приборы ИНАСАН</h3>
 		<span class="talk-presenter">Наливкин М.А.</span>
@@ -3843,7 +3843,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1525 / time-1545;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1525 / time-1545;" id="t290">
     <div class="talk-details">
     <h3 class="talk-title">Мультиобъектная спектроскопия в наблюдательном комплексе РТТ150</h3>
 		<span class="talk-presenter">Хамитов И.М.</span>
@@ -3859,7 +3859,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1605 / time-1620;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1605 / time-1620;" id="t291">
     <div class="talk-details">
     <h3 class="talk-title">Программа улучшения характеристик нэсмитовского эшелле спектрографа (НЭС) БТА</h3>
 		<span class="talk-presenter">Юшкин М.В.</span>
@@ -3868,7 +3868,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1620 / time-1635;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1620 / time-1635;" id="t292">
     <div class="talk-details">
     <h3 class="talk-title">Системы компенсации наклонов и кривизны волнового фронта</h3>
 		<span class="talk-presenter">Емельянов Э.В.</span>
@@ -3877,7 +3877,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1635 / time-1650;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1635 / time-1650;" id="t293">
     <div class="talk-details">
     <h3 class="talk-title">Быстродействующее фотоприемное устройство с широкоформатным малошумящим КМОП-фотоприемником</h3>
 		<span class="talk-presenter">Ардиланов В.И.</span>
@@ -3886,7 +3886,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1650 / time-1705;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1650 / time-1705;" id="t294">
     <div class="talk-details">
     <h3 class="talk-title">Результаты наземной отработки фотоприемного устройства УФ диапазона на основе ПЗС для проекта «Спектр-УФ</h3>
 		<span class="talk-presenter">Шугаров А.С.</span>
@@ -3895,7 +3895,7 @@
 	</div>
 
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1705 / time-1720;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1705 / time-1720;" id="t295">
     <div class="talk-details">
     <h3 class="talk-title">Центр коллективного пользования "Терскольская обсерватория" ИНАСАН: новые возможности и инструменты</h3>
 		<span class="talk-presenter">Нароенков С.А.</span>
@@ -3920,7 +3920,7 @@
 
       
       
-  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1400 / time-1420;">
+  <div class="talk track-inst" style="grid-column: track-inst; grid-row: time-1400 / time-1420;" id="t296">
     <div class="talk-details">
     <h3 class="talk-title">Космическая система обнаружения декаметровых астероидов, летящих со стороны Солнца (проект СОДА)</h3>
 		<span class="talk-presenter">Шугаров А.С.</span>
@@ -3931,7 +3931,7 @@
 
       
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1420;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1400 / time-1420;" id="t297">
     <div class="talk-details">
     <h3 class="talk-title">Оценка возраста двух молодых пар астероидов на близких орбитах</h3>
 		<span class="talk-presenter">Сафронова В.С.</span>
@@ -3940,7 +3940,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1420 / time-1440;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1420 / time-1440;" id="t298">
     <div class="talk-details">
     <h3 class="talk-title">Негравитационные эффекты в орбитальном движении объектов космического мусора</h3>
 		<span class="talk-presenter">Чувашов И.Н.</span>
@@ -3949,7 +3949,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1440 / time-1500;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1440 / time-1500;" id="t299">
     <div class="talk-details">
     <h3 class="talk-title">Сравнение дрейфа большой полуоси при учете эффекта Ярковского в двух орбитальных системах отсчета</h3>
 		<span class="talk-presenter">Санникова Т.Н.</span>
@@ -3960,7 +3960,7 @@
 
       
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1500 / time-1520;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1500 / time-1520;" id="t300">
     <div class="talk-details">
     <h3 class="talk-title">Измерения вращения Луны с поверхности Луны: результаты компьютерного моделирования</h3>
 		<span class="talk-presenter">Петрова Н.К.</span>
@@ -3969,7 +3969,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1520 / time-1540;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1520 / time-1540;" id="t301">
     <div class="talk-details">
     <h3 class="talk-title">Состояние и планы работ по определению параметров вращения Земли в ГМЦ ГСВЧ</h3>
 		<span class="talk-presenter">Пасынок С.Л.</span>
@@ -3978,7 +3978,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1540 / time-1600;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1540 / time-1600;" id="t302">
     <div class="talk-details">
     <h3 class="talk-title">Создание единой системы определения селеноцентрических координат с целью ее использования совместно с современными спутниковыми наблюдениями и методами космического позиционирования</h3>
 		<span class="talk-presenter">Андреев А.О.</span>
@@ -3994,7 +3994,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1630 / time-1650;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1630 / time-1650;" id="t303">
     <div class="talk-details">
     <h3 class="talk-title">Астрометрия квазаров и их протяжённые джеты: систематические отличия РСДБ-Gaia</h3>
 		<span class="talk-presenter">Плавин А.В.</span>
@@ -4003,7 +4003,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1650 / time-1710;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1650 / time-1710;" id="t304">
     <div class="talk-details">
     <h3 class="talk-title">Применение прямых измерений плотности и численных моделей солнечного ветра к обработке наблюдений дальности космических аппаратов</h3>
 		<span class="talk-presenter">Аксим Д. А.</span>
@@ -4012,7 +4012,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1710 / time-1730;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1710 / time-1730;" id="t305">
     <div class="talk-details">
     <h3 class="talk-title">Гравитационный маневр в задаче расширения областей посадки на поверхности Венеры</h3>
 		<span class="talk-presenter">Эйсмонт Н.А.</span>
@@ -4021,7 +4021,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1730 / time-1750;" id="t306">
     <div class="talk-details">
     <h3 class="talk-title">Исследование динамики группы объектов ГСО по данным наблюдений, полученным на пике Терскол</h3>
 		<span class="talk-presenter">Томилова И.В.</span>
@@ -4030,7 +4030,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1750 / time-1810;" id="t307">
     <div class="talk-details">
     <h3 class="talk-title">Анализ оптимальных схем перелета к Седне</h3>
 		<span class="talk-presenter">Зубко В.А.</span>
@@ -4039,7 +4039,7 @@
 	</div>
 
       
-  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;">
+  <div class="talk track-celm" style="grid-column: track-celm; grid-row: time-1810 / time-1830;" id="t308">
     <div class="talk-details">
     <h3 class="talk-title">Мультиволновая астрометрия</h3>
 		<span class="talk-presenter">Рыхлова Л. В.</span>
@@ -4057,7 +4057,7 @@
 
       
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1400 / time-1415;" id="t309">
     <div class="talk-details">
     <h3 class="talk-title">Анизотропное рассеяние радиоизлучения пульсаров</h3>
 		<span class="talk-presenter">Фадеев Е.Н.</span>
@@ -4066,7 +4066,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1415 / time-1430;" id="t310">
     <div class="talk-details">
     <h3 class="talk-title">Молекула OH в диффузной фазе межзвёздной среды</h3>
 		<span class="talk-presenter">Балашев С.А.</span>
@@ -4075,7 +4075,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1430 / time-1445;" id="t311">
     <div class="talk-details">
     <h3 class="talk-title">Галактический ветер при низкой скорости звездообразования</h3>
 		<span class="talk-presenter">Васильев Е.О.</span>
@@ -4084,7 +4084,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1445 / time-1500;" id="t312">
     <div class="talk-details">
     <h3 class="talk-title">Механизмы образования органических молекул в межзвездной среде</h3>
 		<span class="talk-presenter">Васюнин А.И.</span>
@@ -4093,7 +4093,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1500 / time-1515;" id="t313">
     <div class="talk-details">
     <h3 class="talk-title">О спектре рассеянного излучения протопланетных дисков</h3>
 		<span class="talk-presenter">Гринин В.П.</span>
@@ -4102,7 +4102,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1515 / time-1530;" id="t314">
     <div class="talk-details">
     <h3 class="talk-title">Полуаналитические модели испарения пыли в протозвёздах и их аккреционных дисках</h3>
 		<span class="talk-presenter">Замоздра С.Н.</span>
@@ -4111,7 +4111,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1530 / time-1545;" id="t315">
     <div class="talk-details">
     <h3 class="talk-title">Исследование рассеивающих свойств Млечного Пути на основе многочастотных РСДБ- наблюдений активных ядер галактик</h3>
 		<span class="talk-presenter">Корюкова Т.А.</span>
@@ -4120,7 +4120,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1545 / time-1600;" id="t316">
     <div class="talk-details">
     <h3 class="talk-title">Исследование эволюции ПАУ в ФДО Orion Bar</h3>
 		<span class="talk-presenter">Мурга М.С.</span>
@@ -4129,7 +4129,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1600 / time-1615;" id="t317">
     <div class="talk-details">
     <h3 class="talk-title">Кинематика газа в облаке L1287</h3>
 		<span class="talk-presenter">Пирогов Л.Е.</span>
@@ -4138,7 +4138,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1615 / time-1630;" id="t318">
     <div class="talk-details">
     <h3 class="talk-title">Изучение обновленной схемы формирования метанола на поверхности пылевых частиц</h3>
 		<span class="talk-presenter">Соколова В.А.</span>
@@ -4154,7 +4154,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1645 / time-1700;" id="t319">
     <div class="talk-details">
     <h3 class="talk-title">Спектроскопия планетарных туманностей с высоким разрешением. I. Скорости расширения, измеренные по линиям разных элементов</h3>
 		<span class="talk-presenter">Панчук В.Е.</span>
@@ -4163,7 +4163,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1700 / time-1715;" id="t320">
     <div class="talk-details">
     <h3 class="talk-title">Двухмерная МГД-модель динамики потоков газа около молодой звезды с джетом и протопланетным диском</h3>
 		<span class="talk-presenter">Григорьев В.В.</span>
@@ -4172,7 +4172,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1715 / time-1730;" id="t321">
     <div class="talk-details">
     <h3 class="talk-title">Геометрические свойства Галактических циррусов в оптике</h3>
 		<span class="talk-presenter">Марчук А.А.</span>
@@ -4181,7 +4181,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1730 / time-1745;" id="t322">
     <div class="talk-details">
     <h3 class="talk-title">Исследование галактических циррусов по данным обзора Stripe82 SDSS</h3>
 		<span class="talk-presenter">Савченко С.С.</span>
@@ -4190,7 +4190,7 @@
 	</div>
 
       
-  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;">
+  <div class="talk track-stars" style="grid-column: track-stars; grid-row: time-1745 / time-1800;" id="t323">
     <div class="talk-details">
     <h3 class="talk-title">Разрушение пыли на больших галактических высотах</h3>
 		<span class="talk-presenter">Сивкова Е.Э.</span>
@@ -4208,7 +4208,7 @@
 
       
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1400 / time-1415;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1400 / time-1415;" id="t324">
     <div class="talk-details">
     <h3 class="talk-title">Связь между экстремальной яркостью квазаров и их вспышками в радиодиапазоне</h3>
 		<span class="talk-presenter">Попков А.В. (от группы обзора активных ядер галактик проекта «Радиоастрон»)</span>
@@ -4217,7 +4217,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1415 / time-1430;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1415 / time-1430;" id="t325">
     <div class="talk-details">
     <h3 class="talk-title">Наблюдательные свидетельства рождения нейтрино высоких энергий в блазарах</h3>
 		<span class="talk-presenter">Плавин А.В.</span>
@@ -4226,7 +4226,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1430 / time-1445;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1430 / time-1445;" id="t326">
     <div class="talk-details">
     <h3 class="talk-title">Формы релятивистских струй активных ядер галактик: от параболы к конусу</h3>
 		<span class="talk-presenter">Ковалев Ю.Ю.</span>
@@ -4235,7 +4235,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1445 / time-1500;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1445 / time-1500;" id="t327">
     <div class="talk-details">
     <h3 class="talk-title">Связь переменности и усредненных по эпохам свойств линейной поляризации парсековых радиоджетов активных ядер галактик</h3>
 		<span class="talk-presenter">Зобнина Д.</span>
@@ -4244,7 +4244,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1500 / time-1515;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1500 / time-1515;" id="t328">
     <div class="talk-details">
     <h3 class="talk-title">Локализация области генерации гамма-излучения в активных ядрах галактик по данным многолетних наблюдений РСДБ и Fermi</h3>
 		<span class="talk-presenter">Крамаренко И.Г.</span>
@@ -4253,7 +4253,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1515 / time-1530;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1515 / time-1530;" id="t329">
     <div class="talk-details">
     <h3 class="talk-title">Моделирование вспышек вязких аккреционных дисков вокруг компактных объектов</h3>
 		<span class="talk-presenter">Липунова Г.</span>
@@ -4269,7 +4269,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1540 / time-1555;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1540 / time-1555;" id="t330">
     <div class="talk-details">
     <h3 class="talk-title">Магнитные поля аккреционных дисков и их вертикальная структура</h3>
 		<span class="talk-presenter">Пашенцева М.В.</span>
@@ -4278,7 +4278,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1555 / time-1610;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1555 / time-1610;" id="t331">
     <div class="talk-details">
     <h3 class="talk-title">Двухчастотное изучение джета галактики М87 с суб-парсековым разрешением в радио диапазоне</h3>
 		<span class="talk-presenter">Никонов А.С.</span>
@@ -4287,7 +4287,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1610 / time-1625;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1610 / time-1625;" id="t332">
     <div class="talk-details">
     <h3 class="talk-title">Указания на параболическую форму выбросов в области ядер по кинематике</h3>
 		<span class="talk-presenter">Нохрина Е.Е.</span>
@@ -4296,7 +4296,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1625 / time-1640;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1625 / time-1640;" id="t333">
     <div class="talk-details">
     <h3 class="talk-title">Мера вращения и вертикальная структура аккреционных дисков</h3>
 		<span class="talk-presenter">Булдаков М.А.</span>
@@ -4305,7 +4305,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1640 / time-1655;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1640 / time-1655;" id="t334">
     <div class="talk-details">
     <h3 class="talk-title">Глобальная конфигурация магнитного поля в джетах активных ядер галактик</h3>
 		<span class="talk-presenter">Бутузова М.С.</span>
@@ -4314,7 +4314,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1655 / time-1710;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1655 / time-1710;" id="t335">
     <div class="talk-details">
     <h3 class="talk-title">Космическая гравитационно-волновая обсерватория TianQin: концепция и современное состояние реализации проекта</h3>
 		<span class="talk-presenter">Милюков В.К.</span>
@@ -4330,7 +4330,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1720 / time-1735;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1720 / time-1735;" id="t336">
     <div class="talk-details">
     <h3 class="talk-title">Рентгеновская морфология пульсарных туманностей: влияние движения локальной среды</h3>
 		<span class="talk-presenter">Левенфиш К.П.</span>
@@ -4339,7 +4339,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1735 / time-1750;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1735 / time-1750;" id="t337">
     <div class="talk-details">
     <h3 class="talk-title">Ограничения на природу оптической излучающей области блазара S5 0716+714 из долговременной переменности</h3>
 		<span class="talk-presenter">Горбачев М.А.</span>
@@ -4348,7 +4348,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1750 / time-1805;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1750 / time-1805;" id="t338">
     <div class="talk-details">
     <h3 class="talk-title">Тени черных дыр и кротовых нор на фоне стандартного экрана: сходства и отличия</h3>
 		<span class="talk-presenter">Бугаев М.А.</span>
@@ -4357,7 +4357,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1805 / time-1820;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1805 / time-1820;" id="t339">
     <div class="talk-details">
     <h3 class="talk-title">Моделирование наблюдений теней черных дыр с помощью наземно-космических интерферометров</h3>
 		<span class="talk-presenter">Михеева Е.В.</span>
@@ -4366,7 +4366,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1820 / time-1835;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1820 / time-1835;" id="t340">
     <div class="talk-details">
     <h3 class="talk-title">Слияния первичных черных дыр в компактных кластерах</h3>
 		<span class="talk-presenter">Ерошенко Ю.Н.</span>
@@ -4375,7 +4375,7 @@
 	</div>
 
       
-  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1835 / time-1850;">
+  <div class="talk track-hea" style="grid-column: track-hea; grid-row: time-1835 / time-1850;" id="t341">
     <div class="talk-details">
     <h3 class="talk-title">Подтверждение кандидатов в черные дыры промежуточной массы при помощи рентгеновских наблюдений</h3>
 		<span class="talk-presenter">Топтун В.А.</span>
@@ -4386,7 +4386,7 @@
 
       
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1635 / time-1655;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1635 / time-1655;" id="t342">
     <div class="talk-details">
     <h3 class="talk-title">Нелинейная космогония балджа спиральных галактик</h3>
 		<span class="talk-presenter">Ботиров Ф.У.</span>
@@ -4411,7 +4411,7 @@
 
       
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1430;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1400 / time-1430;" id="t343">
     <div class="talk-details">
     <h3 class="talk-title">Очаги звездообразования в приливных структурах</h3>
 		<span class="talk-presenter">Засов А.В.</span>
@@ -4420,7 +4420,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1430 / time-1455;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1430 / time-1455;" id="t344">
     <div class="talk-details">
     <h3 class="talk-title">Оптические наблюдения массивных скоплений галактик из обзора всего неба СРГ/eROSITA</h3>
 		<span class="talk-presenter">Буренин Р.А.</span>
@@ -4429,7 +4429,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1455 / time-1515;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1455 / time-1515;" id="t345">
     <div class="talk-details">
     <h3 class="talk-title">Исследования скоплений галактик по архивным данным SDSS каталога</h3>
 		<span class="talk-presenter">Копылова Ф.Г.</span>
@@ -4438,7 +4438,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1515 / time-1535;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1515 / time-1535;" id="t346">
     <div class="talk-details">
     <h3 class="talk-title">Формирование UDG в скоплениях путем обдирания лобовым давлением богатых газом карликовых галактик</h3>
 		<span class="talk-presenter">Гришин К.А.</span>
@@ -4447,7 +4447,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1535 / time-1555;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1535 / time-1555;" id="t347">
     <div class="talk-details">
     <h3 class="talk-title">ККН22 – первый dSph спутник IC 342</h3>
 		<span class="talk-presenter">Макарова Л.Н.</span>
@@ -4456,7 +4456,7 @@
 	</div>
 
       
-  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1555 / time-1615;">
+  <div class="talk track-galaxies" style="grid-column: track-galaxies; grid-row: time-1555 / time-1615;" id="t348">
     <div class="talk-details">
     <h3 class="talk-title">Свойства диффузного света в компактных группах галактик</h3>
 		<span class="talk-presenter">Поляков Д.М.</span>
