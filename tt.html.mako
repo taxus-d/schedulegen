@@ -1,6 +1,12 @@
 <%!
   from utils import time2cssgrid, track2cssgrid
   from conference import Talk, maketimes
+  
+  talkcounter = 0
+  def talkn():
+    global talkcounter
+    talkcounter += 1
+    return talkcounter
 %>
 <%
   def get_colspec(track):
@@ -11,9 +17,10 @@
 
   def get_rowspec(e):
     return f"{time2cssgrid(e.begin)} / {time2cssgrid(e.end)}"
+
 %>
 <%def name="render_talk(t)">
-  <div class="talk track-${t.track.key}" style="grid-column: ${get_colspec(t.track)}; grid-row: ${get_rowspec(t)};">
+  <div class="talk track-${t.track.key}" style="grid-column: ${get_colspec(t.track)}; grid-row: ${get_rowspec(t)};" id="t${talkn()}">
     <div class="talk-details">
     <h3 class="talk-title">${t.title}</h3>
 		<span class="talk-presenter">${t.presenter}</span>
@@ -49,19 +56,19 @@
     <title>расписание</title>
   </head>
   <body>
-  <div class="days-button-list">
+  <div id="days-links-list">
   % for day in conference.days:
-    <button type="button" id="button-day-${loop.index}" style="grid-column: ${loop.index+1}">
-      <span class="button-label-date">${day.strftime("%d.%m.%Y")}</span>
-      <span class="button-label-weekday">${day.strftime("%A")}</span>
-    </button>
+    <a id="link-day-${loop.index}" href="#day-${loop.index}" style="grid-column: ${loop.index+1}">
+      <span class="link-day-label-date">${day.strftime("%d.%m.%Y")}</span>
+      <span class="link-day-label-weekday">${day.strftime("%A")}</span>
+    </a>
   % endfor 
   </div>
 
   <div class="schedule" aria-labelledby="schedule-heading">
 % for day in conference.days:
-    <div class="conference-anyday conference-day-${loop.index}">
-    <h2 class="conference-current-date">${day.strftime("%d.%m.%Y (%A)")}</h2>
+    <h2 class="conference-current-date" id="day-${loop.index}">${day.strftime("%d.%m.%Y (%A)")}</h2>
+    <div class="conference-anyday" id="conference-day-${loop.index}">
 
     ## tracks
     % for t in conference.tracks:

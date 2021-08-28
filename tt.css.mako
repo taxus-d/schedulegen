@@ -9,7 +9,7 @@
   )
 %>
 
-.days-button-list {
+#days-links-list {
   display: grid;
   grid-gap: 0.5ex;
   grid-template-columns:\
@@ -32,7 +32,7 @@
 <%
   times = maketimes(conference.sessions_on(day), dt)
 %>
-.schedule .conference-day-${loop.index} {
+.schedule #conference-day-${loop.index} {
     display: inherit;
     grid-gap: inherit;
     grid-template-rows:
