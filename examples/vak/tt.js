@@ -179,12 +179,15 @@ function PageUIAction(icon, callbacks) {
     }
 
     function enableEditing() {
-        UI.setAttribute("active", "1");
-        allTalks.forEach(t => {
-            action = selectTalkAction(t);
-            talkEventListeners[t.id] = action;
-            t.addEventListener("click", action)
-        });
+        // to prevent attaching multiple event listeners
+        if (!UI.getAttribute("active")) { 
+            UI.setAttribute("active", "1");
+            allTalks.forEach(t => {
+                action = selectTalkAction(t);
+                talkEventListeners[t.id] = action;
+                t.addEventListener("click", action)
+            });
+        }
     }
 
     function disableEditing() {
