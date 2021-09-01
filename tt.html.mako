@@ -56,6 +56,9 @@
     <title>расписание</title>
   </head>
   <body>
+  ## placeholder for interactive ui, populated by js
+  <div id="tt-actions"></div>
+  <div id="content">
   <div id="days-links-list">
   % for day in conference.days:
     <a id="link-day-${loop.index}" href="#day-${loop.index}" style="grid-column: ${loop.index+1}">
@@ -87,6 +90,7 @@
     % endfor
     </div>
 % endfor 
+  </div>
   </div>
 </body>
 </html>

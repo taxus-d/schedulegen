@@ -6,7 +6,7 @@
 }
 
 
-body {
+#content {
 	padding: 1em;
 	max-width: 1100px;
 	margin: 0 auto;
@@ -157,4 +157,34 @@ h3.talk-title {
 .conference-anyday {
 /*     overflow: scroll; */
     max-width: 100%;
+}
+
+#tt-actions {
+    display: none;
+    padding: 0pt;
+    position: fixed;
+    bottom: 1px;
+    left: 1px;
+    border-radius: 10px;
+    z-index: 2000;
+    background-color: rgba(255,255,255, 0.9);
+}
+
+#tt-actions[active] {
+    display: inline-block;
+}
+
+#tt-actions .action {
+    border:0;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 50px;
+    text-align: center;
+
+}
+#tt-actions .action:hover {
+    background-color: rgba(var(--selection-color), 0.2);
+}
+#tt-actions .action:active {
+    background-color: rgba(var(--selection-color), 0.5);
 }
